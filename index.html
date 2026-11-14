@@ -1,0 +1,5077 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>오사카 가족 여행 2026 · 12/15~18</title>
+<meta name="description" content="2026년 12월 15일~18일 오사카 6인 가족 여행 일정·예약·예산·준비물 안내. 이 기기에만 저장되는 오프라인 여행 앱입니다.">
+<meta name="theme-color" content="#0d2b4e">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* =========================================================
+   오사카 가족 여행 안내 — 모바일 우선 스타일
+   설계 기준: 최소 폭 360px에서 가로 넘침 0, 본문 17px, 터치 48px
+   ========================================================= */
+:root{
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --ink:#14181f;
+  --ink-2:#3d444d;
+  --ink-3:#5b636d;
+  --line:#c9d0d8;
+  --line-2:#e3e7ec;
+  --accent:#0b4f9e;
+  --accent-ink:#083a75;
+  --accent-soft:#e8f0fb;
+  --ok:#0d6b3c;
+  --ok-soft:#e6f4ec;
+  --warn:#8a4b00;
+  --warn-soft:#fdf0dd;
+  --danger:#a3121b;
+  --danger-soft:#fdeaea;
+  --neutral-soft:#eef1f4;
+  --focus:#0b4f9e;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(20,24,31,.08), 0 2px 8px rgba(20,24,31,.06);
+  --fs:17px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;max-width:100%}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Hiragino Sans","Yu Gothic",sans-serif;
+  font-size:var(--fs);
+  line-height:1.6;
+  overflow-wrap:anywhere;
+  word-break:keep-all;
+  padding-bottom:96px;
+}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:800;letter-spacing:-.01em}
+h1{font-size:23px}
+h2{font-size:20px}
+h3{font-size:18px}
+h4{font-size:17px}
+p{margin:.5em 0}
+a{color:var(--accent-ink)}
+ul,ol{margin:.4em 0;padding-left:1.15em}
+li{margin:.2em 0}
+small,.small{font-size:14px;line-height:1.5}
+.muted{color:var(--ink-3)}
+.wrap{max-width:820px;margin:0 auto;padding:0 12px}
+.skip-link{position:absolute;left:-9999px;top:0;background:#fff;padding:10px;z-index:99}
+.skip-link:focus{left:8px;top:8px}
+
+/* ---------- 상단 ---------- */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:#0d2b4e;color:#fff;
+  padding:10px 0 8px;
+  box-shadow:0 2px 10px rgba(0,0,0,.18);
+}
+.topbar h1{font-size:19px;color:#fff}
+.topbar .sub{font-size:14px;color:#d5e3f5;margin-top:2px}
+.savechip{
+  display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;
+  margin-top:8px;font-size:14px;font-weight:700;
+  padding:6px 10px;border-radius:999px;background:#1b4570;color:#fff;
+  border:1px solid #3a6c9f;min-height:36px;
+}
+.savechip.state-saving{background:#5a4708;border-color:#8a6f11}
+.savechip.state-saved{background:#0d4d2c;border-color:#2f7b52}
+.savechip.state-failed{background:#6b1218;border-color:#a8303a}
+.savechip .dot{width:9px;height:9px;border-radius:50%;background:#9fe3b9}
+.savechip.state-saving .dot{background:#ffd479}
+.savechip.state-failed .dot{background:#ffb3b8}
+
+/* ---------- 배너/알림 ---------- */
+.banner{
+  border-radius:var(--radius);padding:12px 14px;margin:12px 0;
+  border:2px solid;font-size:16px;
+}
+.banner h4{margin-bottom:6px}
+.banner.info{background:var(--accent-soft);border-color:#9dbfe8;color:#0a2f5e}
+.banner.warn{background:var(--warn-soft);border-color:#d8a05a;color:#5b3400}
+.banner.danger{background:var(--danger-soft);border-color:#d89399;color:#6d0d13}
+.banner.ok{background:var(--ok-soft);border-color:#8ec4a8;color:#0a4c2b}
+.banner .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+
+/* ---------- 카드 ---------- */
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px;margin:12px 0;box-shadow:var(--shadow);
+}
+.card.tight{padding:11px 12px}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.card-head h3,.card-head h4{min-width:0}
+
+/* ---------- 배지 ---------- */
+.badge{
+  display:inline-block;font-size:14px;font-weight:800;line-height:1.3;
+  padding:4px 9px;border-radius:8px;border:1.5px solid;white-space:nowrap;
+}
+.badge.confirmed{background:var(--ok-soft);color:#07552f;border-color:#7fbb9c}
+.badge.planned{background:var(--accent-soft);color:#083d78;border-color:#9dbfe8}
+.badge.optional{background:#f3eefb;color:#4b2a7a;border-color:#bda8dd}
+.badge.needs_check{background:var(--warn-soft);color:#6b3a00;border-color:#d8a05a}
+.badge.cancelled{background:#efe9e9;color:#6d2a30;border-color:#c9a6aa;text-decoration:line-through}
+.badge.plain{background:var(--neutral-soft);color:var(--ink-2);border-color:#c2cad3;white-space:normal}
+.badge-row{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0}
+.badge.sm{font-size:13px;padding:2px 7px}
+
+/* ---------- 버튼 ---------- */
+button,.btn{
+  font:inherit;font-size:16px;font-weight:700;
+  min-height:48px;padding:11px 14px;border-radius:12px;
+  border:2px solid var(--line);background:#fff;color:var(--ink);
+  cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  text-decoration:none;text-align:center;line-height:1.3;
+  -webkit-tap-highlight-color:transparent;
+}
+button:active,.btn:active{transform:translateY(1px)}
+button:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid var(--focus);outline-offset:2px;
+}
+button[disabled],.btn[disabled]{opacity:.55;cursor:not-allowed}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-ink)}
+.btn-soft{background:var(--accent-soft);border-color:#9dbfe8;color:#083d78}
+.btn-warn{background:var(--warn-soft);border-color:#d8a05a;color:#5b3400}
+.btn-danger{background:var(--danger-soft);border-color:#d89399;color:#7a0e14}
+.btn-ok{background:var(--ok-soft);border-color:#8ec4a8;color:#0a4c2b}
+.btn-sm{font-size:15px;min-height:44px;padding:8px 11px;border-radius:10px}
+.btn-block{width:100%}
+.btn-icon{min-width:48px;padding:11px 12px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.row.tight{gap:6px}
+.row-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.row-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stack{display:flex;flex-direction:column;gap:8px}
+.spacer{flex:1 1 auto}
+
+/* ---------- 탭 ---------- */
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  flex:0 0 auto;min-height:44px;padding:8px 13px;border-radius:999px;
+  border:2px solid var(--line);background:#fff;font-size:15px;font-weight:700;color:var(--ink-2);
+}
+.tab[aria-selected="true"]{background:#0d2b4e;border-color:#0d2b4e;color:#fff}
+
+/* ---------- 하단 내비 ---------- */
+.tabbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:#fff;border-top:2px solid var(--line);
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  padding:4px 2px calc(4px + env(safe-area-inset-bottom));
+  box-shadow:0 -2px 10px rgba(0,0,0,.07);
+}
+.tabbar button{
+  border:none;background:transparent;border-radius:10px;
+  min-height:52px;padding:4px 2px;font-size:14px;font-weight:800;color:var(--ink-3);
+  flex-direction:column;gap:2px;
+}
+.tabbar button[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+.tabbar .ico{font-size:17px;line-height:1}
+
+/* ---------- 폼 ---------- */
+label{display:block;font-weight:700;font-size:15px;margin:10px 0 4px;color:var(--ink-2)}
+input[type=text],input[type=time],input[type=date],input[type=number],input[type=password],select,textarea{
+  width:100%;font:inherit;font-size:16px;min-height:48px;padding:10px 12px;
+  border:2px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);
+  max-width:100%;
+}
+textarea{min-height:88px;resize:vertical}
+.check{display:flex;align-items:flex-start;gap:10px;padding:9px 2px;min-height:48px}
+.check input{width:24px;height:24px;margin:2px 0 0;flex:0 0 auto}
+.check span{flex:1 1 auto;font-weight:600;font-size:16px}
+.check.done span{text-decoration:line-through;color:var(--ink-3)}
+fieldset{border:2px solid var(--line-2);border-radius:12px;padding:8px 12px 12px;margin:10px 0}
+legend{font-weight:800;font-size:15px;padding:0 6px;color:var(--ink-2)}
+.hint{font-size:14px;color:var(--ink-3);margin:4px 0 0;line-height:1.5}
+
+/* ---------- 일정 아이템 ---------- */
+.item{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:12px;margin:10px 0;box-shadow:0 1px 2px rgba(20,24,31,.05);
+}
+.item.done{border-color:#8ec4a8;background:#fbfffc}
+.item.skipped{opacity:.82;border-style:dashed}
+.item.is-deadline{border-left:6px solid var(--danger);padding-left:10px}
+.item.is-confirmed{border-left:6px solid var(--ok)}
+.item-time{
+  display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;
+  font-weight:800;font-size:16px;color:var(--accent-ink);
+}
+.item-time .stay{font-weight:600;color:var(--ink-3);font-size:14px}
+.item-name{font-size:18px;font-weight:800;margin:2px 0 0}
+.item-meta{font-size:15px;color:var(--ink-2);margin-top:6px}
+.item-meta dt{font-weight:800;color:var(--ink);display:inline}
+.item-meta .line{display:block;margin-top:3px}
+.travel{
+  display:flex;gap:8px;align-items:flex-start;font-size:14px;
+  background:var(--neutral-soft);border-radius:9px;padding:6px 9px;margin:8px 0 0;color:var(--ink-2);
+}
+.travel.stale{background:var(--warn-soft);color:#5b3400;border:1px dashed #d8a05a}
+.notice{
+  border-radius:10px;padding:8px 10px;margin-top:8px;font-size:15px;border:1px solid;
+}
+.notice.danger{background:var(--danger-soft);border-color:#d89399;color:#6d0d13}
+.notice.warn{background:var(--warn-soft);border-color:#d8a05a;color:#5b3400}
+.notice.info{background:var(--accent-soft);border-color:#9dbfe8;color:#0a2f5e}
+.items{list-style:none;padding:0;margin:0}
+
+/* ---------- 접기 ---------- */
+details{
+  border:1px solid var(--line-2);border-radius:11px;background:#fcfdfe;margin:8px 0;padding:0 12px;
+}
+details[open]{padding-bottom:10px}
+summary{
+  cursor:pointer;font-weight:800;font-size:16px;padding:10px 0;min-height:44px;
+  display:flex;align-items:center;gap:8px;list-style:none;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--accent);font-size:15px}
+details[open]>summary::before{content:"▾"}
+details .body{font-size:16px;color:var(--ink-2)}
+
+/* ---------- 지도 링크 그리드 ---------- */
+.maplinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.maplinks .btn{font-size:15px;min-height:46px;padding:8px 6px}
+.maplinks .full{grid-column:1 / -1}
+.drive-note{font-size:13.5px;color:var(--ink-3);margin-top:6px;line-height:1.45}
+
+/* ---------- 요약 수치 ---------- */
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
+.kpi .k{font-size:13.5px;color:var(--ink-3);font-weight:700}
+.kpi .v{font-size:19px;font-weight:900;color:var(--ink);line-height:1.3}
+.kpi.warn{border-color:#d8a05a;background:var(--warn-soft)}
+.kpi.danger{border-color:#d89399;background:var(--danger-soft)}
+.kpi .v small{font-size:13px;font-weight:700;color:var(--ink-3)}
+
+/* ---------- 표 ---------- */
+.tablewrap{overflow-x:auto;margin-top:8px;border-radius:10px;border:1px solid var(--line-2)}
+table{border-collapse:collapse;width:100%;font-size:15px;background:#fff}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line-2);text-align:left;vertical-align:top}
+th{background:#f7f9fb;font-weight:800;white-space:nowrap}
+
+/* ---------- 개인 메모 ---------- */
+.personal{border:2px dashed #b9922f;background:#fffdf4;border-radius:12px;padding:12px;margin-top:10px}
+.personal h4{color:#6b4b00;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.masked{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em}
+textarea.memo{min-height:70px}
+
+/* ---------- 토스트 ---------- */
+.toast-area{
+  position:fixed;left:0;right:0;bottom:78px;z-index:60;
+  display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;padding:0 10px;
+}
+.toast{
+  pointer-events:auto;background:#14181f;color:#fff;border-radius:12px;padding:10px 14px;
+  font-size:15px;font-weight:700;display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+  max-width:min(560px,100%);box-shadow:0 6px 20px rgba(0,0,0,.28);
+}
+.toast button{min-height:40px;padding:6px 10px;font-size:15px;border-color:#5b636d;background:#2a313a;color:#fff}
+
+/* ---------- 대화상자 ---------- */
+dialog{
+  border:none;border-radius:16px;padding:0;max-width:min(560px,calc(100% - 20px));width:100%;
+  box-shadow:0 18px 50px rgba(0,0,0,.35);
+}
+dialog::backdrop{background:rgba(10,14,20,.55)}
+.dlg-head{padding:14px 16px;border-bottom:1px solid var(--line-2);background:#f7f9fb;border-radius:16px 16px 0 0}
+.dlg-body{padding:14px 16px;max-height:min(66vh,520px);overflow:auto}
+.dlg-foot{padding:12px 16px;border-top:1px solid var(--line-2);display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+
+/* ---------- 기타 ---------- */
+.hr{height:1px;background:var(--line-2);margin:14px 0;border:0}
+.pill{display:inline-block;background:var(--neutral-soft);border-radius:999px;padding:2px 9px;font-size:13.5px;font-weight:700;color:var(--ink-2);margin:2px 4px 2px 0}
+.list-plain{list-style:none;padding:0;margin:0}
+.list-plain li{padding:8px 0;border-bottom:1px solid var(--line-2);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.list-plain li:last-child{border-bottom:0}
+.callout{border-left:5px solid var(--accent);padding:2px 0 2px 10px;margin:10px 0;color:var(--ink-2)}
+.tiny{font-size:13px;color:var(--ink-3)}
+.nowrap{white-space:nowrap}
+.hidden{display:none !important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* PC */
+@media (min-width:760px){
+  h1{font-size:26px}
+  .topbar h1{font-size:22px}
+  .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .maplinks{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .maplinks .full{grid-column:auto}
+  body{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important}
+}
+@media print{
+  .tabbar,.topbar .savechip,.toast-area{display:none}
+  body{background:#fff;padding:0}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#app">본문으로 건너뛰기</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <h1>오사카 가족 여행 2026</h1>
+    <div class="sub" id="trip-line">6명 · 3박 4일 · 12/15~18</div>
+    <div class="savechip state-saved" id="save-chip" role="status" aria-live="polite"><span class="dot"></span>불러오는 중…</div>
+  </div>
+</header>
+
+<div class="wrap" id="conflict-zone" role="alert" aria-live="assertive"></div>
+
+<main id="app" class="wrap" tabindex="-1">
+  <div class="card"><p>앱을 불러오는 중입니다. 이 글이 계속 보이면 자바스크립트가 꺼져 있는지 확인하세요.</p></div>
+</main>
+
+<nav class="tabbar" id="tabbar" aria-label="주요 화면">
+  <button type="button" data-tab="home"><span class="ico" aria-hidden="true">🏠</span>홈</button>
+  <button type="button" data-tab="schedule"><span class="ico" aria-hidden="true">🗓</span>일정</button>
+  <button type="button" data-tab="reservations"><span class="ico" aria-hidden="true">🎫</span>예약</button>
+  <button type="button" data-tab="budget"><span class="ico" aria-hidden="true">₩</span>예산</button>
+  <button type="button" data-tab="prep"><span class="ico" aria-hidden="true">✅</span>준비</button>
+</nav>
+
+<div class="toast-area" id="toasts" aria-live="polite"></div>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <div class="dlg-head"><h2 id="dlg-title">제목</h2></div>
+  <div class="dlg-body" id="dlg-body"></div>
+  <div class="dlg-foot" id="dlg-foot"></div>
+</dialog>
+
+<noscript>
+  <div class="wrap"><div class="card"><h2>자바스크립트가 필요합니다</h2><p>이 여행 앱은 일정 편집·저장을 브라우저에서 처리합니다. 브라우저 설정에서 자바스크립트를 켜고 다시 열어 주세요.</p></div></div>
+</noscript>
+
+<script type="application/json" id="trip-data">
+{
+ "meta": {
+  "title": "오사카 가족 여행 2026",
+  "dataCheckedAt": "2026-11-15",
+  "schemaVersion": 2,
+  "appVersion": "1.1.0",
+  "tripTz": "Asia/Tokyo",
+  "homeTz": "Asia/Seoul",
+  "partySize": 6
+ },
+ "trip": {
+  "start": "2026-12-15",
+  "end": "2026-12-18",
+  "nights": 3,
+  "destination": "일본 오사카",
+  "headline": "2026년 12월 15일(화) ~ 12월 18일(금) · 3박 4일 · 6명",
+  "changes": [
+   "기존 12월 8일~11일 일정은 12월 15일~18일로 변경되었습니다. (12/8~11 관련 계획은 취소·제외로 표시)",
+   "출발 공항은 청주공항 검토를 마치고 인천국제공항 제2여객터미널(T2)로 확정되었습니다.",
+   "항공은 진에어 확정: 가는편 LJ355(12/15 14:50), 오는편 LJ314(12/18 10:50).",
+   "숙소는 호텔 몬토레 라 스루 오사카(교바시) 2객실 3박으로 확정되었습니다."
+  ]
+ },
+ "party": [
+  {
+   "id": "p1",
+   "label": "동행자 A",
+   "band": "어르신 (만 65세 이상)",
+   "needs": "시니어 요금 대상 · 계단과 장거리 도보 최소화 · 30~40분마다 앉아서 휴식 · 엘리베이터·의자 위치 우선 확인",
+   "notes": "USJ 시니어 요금, 고자부네 65세 이상 요금, 소라니와 70세 이상 요금(해당 시) 적용 여부를 매표소에서 확인"
+  },
+  {
+   "id": "p2",
+   "label": "동행자 B",
+   "band": "성인",
+   "needs": "짐·유모차 담당, 결제 담당 보조",
+   "notes": ""
+  },
+  {
+   "id": "p3",
+   "label": "동행자 C",
+   "band": "성인",
+   "needs": "어르신 동행",
+   "notes": ""
+  },
+  {
+   "id": "p4",
+   "label": "동행자 D",
+   "band": "성인",
+   "needs": "어린이 동행",
+   "notes": ""
+  },
+  {
+   "id": "p5",
+   "label": "동행자 E",
+   "band": "청소년 (중2)",
+   "needs": "항공·USJ는 성인 요금 · 오사카성은 중학생 이하 무료(학생증 등 증빙 필요)",
+   "notes": "학생증 또는 연령 확인 서류를 챙기면 오사카성 입장료가 면제됩니다"
+  },
+  {
+   "id": "p6",
+   "label": "동행자 F",
+   "band": "어린이 (만 6세)",
+   "needs": "USJ 어린이 요금(4~11세) · 일본 철도 소아 50% 할인 · 유모차 필요 여부 확인 · 이동 중 낮잠 시간 확보",
+   "notes": "해유관 3세 이상 700엔, 오사카성 무료 대상"
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-12-15",
+   "weekday": "화",
+   "title": "인천 출발 → 간사이 → 교바시",
+   "note": "이동일입니다. 비행기 시각이 고정이므로 공항 도착과 수속 마감 시각을 먼저 확인하세요.",
+   "items": [
+    {
+     "id": "d1-1",
+     "time": "08:50",
+     "endTime": "11:20",
+     "name": "원주 → 인천국제공항 제2여객터미널(T2) 이동",
+     "kind": "move",
+     "badge": "needs_check",
+     "origin": "사용자 계획",
+     "stay": "약 2시간 30분 (추정)",
+     "address": "인천광역시 중구 제2터미널대로 446",
+     "hours": "",
+     "booking": "미확정",
+     "note": "이동 수단이 아직 확정되지 않았습니다(자가용·공항버스·택시·픽업밴). 소요 시간은 추정값입니다.",
+     "details": "자가용으로 가면 T2 장기주차장 또는 여객터미널 주차장을 이용합니다. 주차 요금과 만차 여부는 확인되지 않았습니다. 6명과 캐리어가 한 차에 들어가는지, 유아 카시트가 필요한지도 함께 확인해야 합니다.",
+     "access": {
+      "walk": "터미널 출입구에서 카운터까지 도보 3~5분(추정)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "T2 장기주차장·여객터미널 주차장 — 요금·만차 확인 필요"
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d1-2",
+     "time": "11:30",
+     "endTime": "12:10",
+     "name": "진에어 체크인 · 위탁 수하물 15kg",
+     "kind": "checkin",
+     "badge": "planned",
+     "origin": "확정 예약",
+     "stay": "약 40분",
+     "address": "인천국제공항 제2여객터미널 3층 D·E 카운터",
+     "hours": "첫 출발편 3시간 전부터 운영",
+     "booking": "항공권 확정 · 좌석 지정은 미확인",
+     "note": "국제선 수속 마감은 출발 60분 전(13:50)입니다. 웹·모바일 체크인은 출발 48시간 전부터 가능하니 미리 하면 카운터에서는 수하물만 맡기면 됩니다.",
+     "details": "위탁 수하물은 1인 15kg 포함(진에어 국제선 기본)으로 안내되어 있으나, 예약 조건 최종 확인을 권장합니다. 기내 개인 소지품은 40×30×15cm 이내 1개입니다. 보조배터리·전자담배는 위탁할 수 없고 기내 반입만 가능합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "카운터 대기 줄이 길 수 있어 어르신용 의자 위치 확인 권장",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.jinair.com/"
+     },
+     "deadline": {
+      "time": "13:50",
+      "label": "진에어 국제선 수속 마감(출발 60분 전)"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d1-3",
+     "time": "12:20",
+     "endTime": "13:05",
+     "name": "점심 — T2 4층 일반식당가",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 50분",
+     "address": "인천국제공항 제2여객터미널 4층",
+     "hours": "점포별 상이",
+     "booking": "예약 없음",
+     "note": "출국 전 마지막 식사입니다. 어린이용 메뉴가 있는지 매장에서 확인하세요.",
+     "details": "탑승구가 멀면 식사 후 이동 시간이 10분 이상 걸릴 수 있습니다. 탑승구를 먼저 확인하고 가까운 식당을 고르는 편이 안전합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 3,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "엘리베이터·에스컬레이터 있음(확인 필요)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d1-4",
+     "time": "13:15",
+     "endTime": "13:55",
+     "name": "보안검색 · 출국심사",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "30~50분 (추정)",
+     "address": "인천국제공항 제2여객터미널 3층 출국장",
+     "hours": "24시간",
+     "booking": "없음",
+     "note": "수속 마감 13:50보다 늦지 않게 통과해야 합니다. 6명이 함께 움직이므로 줄이 길면 일찍 이동하세요.",
+     "details": "어르신·유아 동반 승객은 보안검색 우대 통로를 이용할 수 있는지 현장에서 문의해 보세요. 액체류 100ml 규정과 보조배터리 기내 반입 규정을 미리 확인하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d1-5",
+     "time": "14:50",
+     "endTime": "16:35",
+     "name": "LJ355 인천 T2 → 간사이 T1 (진에어)",
+     "kind": "flight",
+     "badge": "confirmed",
+     "origin": "확정 예약",
+     "stay": "1시간 45분",
+     "address": "인천국제공항 제2여객터미널 → 간사이국제공항 제1터미널",
+     "hours": "출발 14:50 / 도착 16:35 (현지 시각)",
+     "booking": "확정 · 일반석 · 보잉 737-800 · 기내식 불포함",
+     "note": "탑승 시작은 출발 30분 전(14:20)으로 예상됩니다. 탑승구는 당일 안내로 확인하세요.",
+     "details": "기내식이 포함되지 않으니 아이 간식과 물을 준비하는 편이 좋습니다. 좌석은 6명이 붙어 앉을 수 있는지 웹체크인에서 확인하세요. 기내 개인 소지품 1개(40×30×15cm), 위탁 15kg 포함입니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 8,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "탑승구까지 이동 거리 김 — 어르신은 휠체어 서비스 요청 가능(확인 필요)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.jinair.com/",
+      "ticket": "https://www.jinair.com/booking/bookingList"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d1-6",
+     "time": "16:50",
+     "endTime": "18:00",
+     "name": "간사이공항 T1 입국심사 · 수하물 수취 · 세관",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "60~90분 (추정)",
+     "address": "간사이국제공항 제1터미널 1층 도착 로비",
+     "hours": "24시간",
+     "booking": "없음",
+     "note": "입국심사 대기 시간은 예측할 수 없습니다. 17:45 기준으로 다음 이동 시간을 잡았습니다.",
+     "details": "비짓재팬웹(VJW) 등록 QR을 미리 만들어 두면 입국심사가 빠릅니다. 6명분 여권과 등록 화면을 대표 1명 휴대폰에 모아두면 편합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 15,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "도착 로비까지 이동 거리 있음(추정)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.kansai-airport.or.jp/",
+      "ticket": "https://www.vjw.digital.go.jp/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d1-7",
+     "time": "18:10",
+     "endTime": "19:25",
+     "name": "JR 간사이공항역 → 京橋(교바시) 관공쾌속",
+     "kind": "move",
+     "badge": "needs_check",
+     "origin": "조사 참고",
+     "stay": "약 75분",
+     "address": "간사이국제공항역(JR) 1층 → JR 교바시역",
+     "hours": "",
+     "booking": "현장 발권 또는 ICOCA",
+     "note": "요금은 성인 약 1,180엔·소아 약 590엔으로 안내되어 있으나, 역에서 최종 확인하세요. 6인 픽업밴도 후보로 남아 있습니다.",
+     "details": "관공쾌속은 日根野에서 차량을 분리합니다. 앞쪽 4량이 간사이공항 방면·교바시 방면이므로 반드시 앞 4량에 타야 합니다. 큰 캐리어를 둘 공간이 좁고 저녁 시간대는 붐빕니다. 어르신과 아이를 먼저 앉히고 짐은 통로를 막지 않게 정리하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 6,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "T1 2층에서 JR역까지 도보·에스컬레이터 이동",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.jr-odekake.net/",
+      "ticket": "https://www.westjr.co.jp/global/kr/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d1-8",
+     "time": "19:35",
+     "endTime": "19:45",
+     "name": "교바시역 → 호텔 (OBP 연결통로 도보 5분)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 5~8분",
+     "address": "JR 교바시역 서쪽 출구 → 오사카비즈니스파크(OBP) 연결통로",
+     "hours": "",
+     "booking": "없음",
+     "note": "지붕이 있는 연결통로로 이동합니다. 통로 안 계단·경사·엘리베이터 위치는 확인이 필요합니다.",
+     "details": "공식 안내 기준 JR·京阪 교바시역, 지하철 오사카비즈니스파크역에서 도보 약 5분입니다. 캐리어가 있으면 엘리베이터 동선을 먼저 찾으세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 6,
+      "source": "공식",
+      "stale": false
+     },
+     "access": {
+      "walk": "약 5~8분, 지붕 있는 연결통로",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d1-9",
+     "time": "19:55",
+     "endTime": "20:35",
+     "name": "호텔 몬토레 라 스루 오사카 체크인",
+     "kind": "hotel",
+     "badge": "confirmed",
+     "origin": "확정 예약",
+     "stay": "약 40분",
+     "address": "2-2-22 Shiromi, Chuo-ku, Osaka 540-0001 (오사카시 주오구 시로미 2-2-22)",
+     "phone": "+81-6-6944-7111",
+     "hours": "체크인 15:00~익일 06:00 / 체크아웃 11:00",
+     "booking": "확정 · 객실 2개 · 3박",
+     "note": "도착이 늦을 경우 호텔에 미리 연락하는 것이 안내되어 있습니다. 이 일정은 19:25 도착 예상이라 연락은 필수는 아닙니다.",
+     "details": "오사카시 숙박세는 1인 1박 5,000~15,000엔 구간 200엔, 15,000~20,000엔 400엔, 20,000엔 초과 500엔(2025-09-01 개정)입니다. 프런트에서 별도로 받는지, 결제에 포함됐는지 확인이 필요합니다. 16층에 천연온천이 있다고 안내되어 있으나 이용 조건(유료·시간)은 확인이 필요합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 6,
+      "source": "공식",
+      "stale": false
+     },
+     "access": {
+      "walk": "연결통로 도보 5분",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "호텔 주차장 유료 여부 확인 필요"
+     },
+     "links": {
+      "official": "https://www.hotelmonterey.co.jp/lasoeur_osaka/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d1-10",
+     "time": "20:45",
+     "endTime": "21:45",
+     "name": "저녁 — 교바시 (호텔 인근)",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 60분",
+     "address": "JR 교바시역 주변 상점가",
+     "hours": "점포별 상이",
+     "booking": "예약 없음",
+     "note": "1일차는 이동 피로가 크므로 호텔에서 가까운 곳에서 먹고 쉬는 쪽을 권합니다.",
+     "details": "교바시는 이자카야·우동·회전초밥 등 선택지가 많습니다. 6명이 한 번에 앉을 수 있는지 미리 확인하고, 대기하면 호텔에서 짐을 푼 뒤 다시 나오는 방법도 있습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d1-11",
+     "time": "22:10",
+     "endTime": "23:10",
+     "name": "도톤보리 야경 (선택)",
+     "kind": "visit",
+     "badge": "optional",
+     "origin": "사용자 계획",
+     "stay": "약 60분",
+     "address": "오사카시 주오구 도톤보리 1초메 일대",
+     "hours": "상점별 상이",
+     "booking": "없음",
+     "note": "이동에 20~25분(추정)이 더 걸립니다. 첫날 밤 일정은 체력에 따라 생략하세요.",
+     "details": "글리코 간판 앞은 사람이 매우 많습니다. 유모차·어르신 동반이면 강변 산책로 쪽이 덜 붐빕니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 22,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "혼잡, 노면 요철 있음(추정)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "주차 어려움 — 대중교통 권장"
+     },
+     "links": {},
+     "skip": "tired"
+    },
+    {
+     "id": "d1-12",
+     "time": "23:20",
+     "endTime": "23:40",
+     "name": "미도스지 일루미네이션 (선택 · 생략 가능)",
+     "kind": "visit",
+     "badge": "optional",
+     "origin": "공식 자료",
+     "stay": "약 20~30분",
+     "address": "미도스지 (한신앞 교차로 ~ 난바서입구 교차로)",
+     "hours": "2026-11-03 ~ 12-31, 17:00경 ~ 25:00",
+     "booking": "없음 · 무료",
+     "note": "22시 이후 일정이라 어린이·어르신에게는 부담이 됩니다. 생략을 기본으로 보고, 체력이 남으면 호텔 근처 구간만 보세요.",
+     "details": "御堂筋イルミネーション2026 공식 안내 기준 점등 기간 2026-11-03~12-31, 17:00경~25:00, 무료입니다. 4km 구간이라 전부 걷지 말고 한 블록만 보는 방식이 좋습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 10,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "보도 폭 넓음, 사람 많음",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://hikari-kyoen.com/core/midosuji/"
+     },
+     "opening": {
+      "open": "17:00",
+      "close": "25:00",
+      "closed": "기간 외 없음"
+     },
+     "skip": "tired"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-16",
+   "weekday": "수",
+   "title": "오사카성 · 해유관 · 나카노시마",
+   "note": "걷는 시간이 가장 긴 날입니다. 오전 오사카성, 오후 해유관, 밤 일루미네이션은 생략 가능 항목입니다.",
+   "items": [
+    {
+     "id": "d2-1",
+     "time": "07:30",
+     "endTime": "08:30",
+     "name": "조식 (호텔 또는 편의점)",
+     "kind": "meal",
+     "badge": "needs_check",
+     "origin": "사용자 계획",
+     "stay": "약 60분",
+     "address": "호텔 몬토레 라 스루 오사카",
+     "hours": "",
+     "booking": "조식 포함 여부 확인 필요",
+     "note": "에어텔 조건에 조식이 포함됐는지 확인되지 않았습니다. 미포함이면 호텔 주변 편의점·카페를 이용하세요.",
+     "details": "아이와 어르신이 있다면 아침을 든든히 먹고 나가는 편이 좋습니다. 물과 간식은 미리 사 두세요.",
+     "access": {
+      "walk": "호텔 내",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-2",
+     "time": "08:50",
+     "endTime": "09:10",
+     "name": "호텔 → 오사카성 공원 (도보)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 15~20분",
+     "address": "오사카비즈니스파크 → 오사카성 공원",
+     "hours": "",
+     "booking": "없음",
+     "note": "도보 15~20분은 추정값입니다. 계단·경사·엘리베이터 유무는 확인이 필요합니다.",
+     "details": "지하철로 이동하면 오사카비즈니스파크역 → 오사카성공원역 1정거장이지만, 역 안 이동과 계단이 더 부담일 수 있습니다. 걸을 수 있으면 도보가 오히려 편합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 18,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "약 15~20분, 오사카성 공원 내 완만한 경사",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "공원 주차장 유료(요금 확인 필요)"
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-3",
+     "time": "09:15",
+     "endTime": "10:45",
+     "name": "오사카성 천수각 (오사카성 박물관)",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 90분",
+     "address": "오사카시 주오구 오사카성 1-1",
+     "phone": "+81-6-6941-3044",
+     "hours": "09:00~18:00 (마지막 입장 17:30) · 휴관 12/28~1/1",
+     "booking": "현장 구매 (성인 1,200엔 · 대학생·고등학생 600엔 · 중학생 이하 무료, 증빙 필요)",
+     "note": "개장 직후가 가장 덜 붐빕니다. 8층 전망대까지 오르는 동선의 엘리베이터·계단 상황은 확인이 필요합니다.",
+     "details": "2025-04-01부터 입장료가 성인 1,200엔으로 변경되었습니다(오사카성 풍신수길 석벽관 관람 포함). 중학생 이하는 무료지만 연령 확인 서류(학생증·여권 등)가 필요합니다. 전시실은 층마다 계단 이동이 있고 엘리베이터 대기 줄이 길 수 있어, 어르신과 함께라면 엘리베이터 우선 이용을 권합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "공원 내 도보 후 천수각 입구까지",
+      "stairs": "전시실 층간 계단 있음 · 엘리베이터 유무 확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "공원 주차장은 유료이며 성수기 만차가 잦습니다(추정). 만차 시 오사카비즈니스파크(OBP) 주차장 또는 지하철 이용을 대안으로 보세요. 요금은 확인 필요."
+     },
+     "links": {
+      "official": "https://www.osakacastle.net/guide/"
+     },
+     "opening": {
+      "open": "09:00",
+      "close": "18:00",
+      "lastEntry": "17:30",
+      "closed": "12/28~1/1"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d2-4",
+     "time": "10:55",
+     "endTime": "11:35",
+     "name": "오사카성 고자부네(황금배) 승선",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 40분 (승선 20분 + 대기)",
+     "address": "오사카시 주오구 오사카성 2 · 극락교 북서쪽 승선장",
+     "phone": "+81-6-6314-3773",
+     "hours": "10:00~16:30 (최종편) · 10~15분 간격 · 악천후 결항",
+     "booking": "현장 구매 (성인 1,800엔 · 초·중학생 900엔 · 65세 이상 1,200엔)",
+     "note": "승하선 시 단차가 있는지 확인이 필요합니다. 어르신은 승선 전에 직원에게 도움을 요청하세요.",
+     "details": "내호를 약 20분 도는 코스입니다. 배에 지붕은 있지만 바람이 차므로 12월에는 방한 준비가 필요합니다. 정원이 작아 6명이 한 배에 타지 못할 수 있습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 8,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "천수각 북쪽 극락교까지 도보",
+      "stairs": "승하선 단차 확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.banpr.co.jp/"
+     },
+     "opening": {
+      "open": "10:00",
+      "close": "16:30",
+      "closed": "연말연시·악천후"
+     },
+     "skip": "rain"
+    },
+    {
+     "id": "d2-5",
+     "time": "11:45",
+     "endTime": "12:45",
+     "name": "점심 — 오사카성 공원 JO-TERRACE",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 60분",
+     "address": "오사카시 주오구 오사카성 3-11",
+     "hours": "점포별 상이 (확인 필요)",
+     "booking": "예약 없음",
+     "note": "공원 안 상업시설입니다. 6명 동시 착석 가능 여부는 현장 확인이 필요합니다.",
+     "details": "공원 밖으로 나가면 이동이 길어집니다. 붐비면 공원 내 매점에서 간단히 먹고 오후 일정을 앞당기는 편이 낫습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-6",
+     "time": "13:25",
+     "endTime": "14:05",
+     "name": "오사카성 → 해유관 (전철)",
+     "kind": "move",
+     "badge": "needs_check",
+     "origin": "조사 참고",
+     "stay": "약 35~40분 (추정)",
+     "address": "오사카성공원역 → 오사카코역(Osaka Metro 중앙선)",
+     "hours": "",
+     "booking": "ICOCA 등 교통카드",
+     "note": "환승 1~2회, 요금·소요 시간은 출발 시각에 따라 다릅니다. 역 엘리베이터 위치 확인이 필요합니다.",
+     "details": "JR 오사카조코엔역 → 벤텐초 → 오사카코역 경로도 있습니다. 어르신 동반이면 환승이 적은 경로를 역무원에게 문의하는 편이 빠릅니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 38,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "역 내 이동 있음",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-7",
+     "time": "14:15",
+     "endTime": "16:25",
+     "name": "해유관 (오사카 수족관)",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 2시간 10분",
+     "address": "오사카시 미나토구 가이간도리 1-1-10",
+     "phone": "+81-6-6576-5501",
+     "hours": "10:00~20:00 (입관 마감 19:00) · 계절 변동 · 1월 휴관일 있음",
+     "booking": "현장 또는 e-티켓 (성인 2,700엔 · 소·중학생 1,400엔 · 3세 이상 700엔 / 변동 가격제)",
+     "note": "입장권은 날짜·시간 지정 e-티켓이 편합니다. 12/16 요금은 공식 요금 캘린더에서 확인하세요.",
+     "details": "요금은 날짜별 변동 가격제라 위 금액은 기준가입니다. 관람 동선이 아래로 내려가는 구조라 유모차 이용 시 엘리베이터를 이용해야 합니다. 어르신은 중간중간 앉을 곳이 있으니 천천히 도세요. 근처 덴포잔 대관람차는 선택 일정입니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 7,
+      "source": "공식",
+      "stale": false
+     },
+     "access": {
+      "walk": "오사카코역 1번 출구에서 도보 약 5분",
+      "stairs": "에스컬레이터·엘리베이터 있음(확인 필요)",
+      "wheelchair": "확인 필요",
+      "parking": "해유관 주차장이 만차이면 덴포잔 주차장을 이용합니다. 요금·만차 여부는 확인 필요."
+     },
+     "links": {
+      "official": "https://www.kaiyukan.com/",
+      "ticket": "https://www.kaiyukan.com/info/ticket/kaiyukan/"
+     },
+     "opening": {
+      "open": "10:00",
+      "close": "20:00",
+      "lastEntry": "19:00",
+      "closed": "1월 중 2일(확인 필요)"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d2-8",
+     "time": "16:35",
+     "endTime": "17:15",
+     "name": "휴식 — 해유관 카페 / 덴포잔 (선택)",
+     "kind": "rest",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 40분",
+     "address": "해유관 2층 카페 또는 덴포잔 상점가",
+     "hours": "점포별 상이",
+     "booking": "없음",
+     "note": "이 시간은 일부러 비워 둔 휴식 시간입니다. 일정이 밀리면 여기서 줄이세요.",
+     "details": "어르신과 아이가 함께 쉬려면 앉을 자리가 있는 실내가 좋습니다. 대관람차는 줄이 길면 생략하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 3,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-9",
+     "time": "17:25",
+     "endTime": "18:25",
+     "name": "저녁 — 덴포잔 상점가",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 60분",
+     "address": "오사카시 미나토구 지카코 3-13-9 일대",
+     "hours": "점포별 상이",
+     "booking": "예약 없음",
+     "note": "복권·회전초밥 등 선택지가 있습니다. 6명 착석 가능 여부를 먼저 확인하세요.",
+     "details": "상점가 안쪽은 바람이 덜합니다. 식사 후 바로 나카노시마로 이동합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-10",
+     "time": "19:00",
+     "endTime": "19:35",
+     "name": "오사카코 → 나카노시마 (전철)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 30분 (추정)",
+     "address": "오사카코역 → 나니와바시역(게이한 나카노시마선)",
+     "hours": "",
+     "booking": "교통카드",
+     "note": "환승 1회 추정. 나니와바시역 출구에서 회장까지 도보 이동이 있습니다.",
+     "details": "짐이 많으면 호텔로 먼저 돌아가 짐을 두고 나오는 편이 낫습니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 30,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "역에서 회장까지 도보",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-11",
+     "time": "19:45",
+     "endTime": "20:45",
+     "name": "OSAKA 광의 르네상스 2026 (나카노시마)",
+     "kind": "visit",
+     "badge": "optional",
+     "origin": "공식 자료",
+     "stay": "약 60분",
+     "address": "오사카시청 앞 ~ 나카노시마 공원 (나니와바시역·오에바시역 주변)",
+     "hours": "2026-12-11 ~ 12-25 · 17:00~25:00 (프로젝션 매핑 17:30~21:30)",
+     "booking": "없음 · 무료",
+     "note": "야외 행사입니다. 비·강풍이면 일부 중단될 수 있어 대체 일정을 보세요. 체력이 부족하면 생략하세요.",
+     "details": "大阪市中央公会堂 프로젝션 매핑은 약 7~10분, 12분 간격으로 상영됩니다(공식 자료 기준 21:20 마지막). 12/11~12/25 한정이며 관람 무료입니다. 행사 기간 16:00~22:00 차량 통행이 제한됩니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 6,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "강변 산책로, 노면 평탄(추정)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "행사 기간 16:00~22:00 차량 통행 제한 — 주차 후 도보 이동을 권합니다."
+     },
+     "links": {
+      "official": "https://hikari-kyoen.com/core/renaissance/"
+     },
+     "opening": {
+      "open": "17:00",
+      "close": "25:00",
+      "closed": "12/11~12/25 외"
+     },
+     "skip": "tired"
+    },
+    {
+     "id": "d2-12",
+     "time": "21:05",
+     "endTime": "21:25",
+     "name": "나카노시마 → 호텔 (전철)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 20분 (추정)",
+     "address": "나니와바시역 → 교바시역",
+     "hours": "",
+     "booking": "교통카드",
+     "note": "막차 시간은 확인하지 않았습니다. 21시 이전 이동을 권합니다.",
+     "details": "게이한 나카노시마선 → 京橋 방면으로 이동하거나, 요도야바시역에서 지하철로 이동합니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 20,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-17",
+   "weekday": "목",
+   "title": "유니버설 스튜디오 재팬 (USJ)",
+   "note": "하루 종일 테마파크입니다. 입장권·확약권·익스프레스 구매 여부가 일정 품질을 좌우합니다.",
+   "items": [
+    {
+     "id": "d3-1",
+     "time": "07:00",
+     "endTime": "07:35",
+     "name": "조식 · 준비",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 35분",
+     "address": "호텔 또는 교바시역 주변",
+     "hours": "",
+     "booking": "조식 포함 여부 확인 필요",
+     "note": "개장 전 도착을 목표로 합니다. 우비·방수 신발·보조배터리를 챙기세요.",
+     "details": "파크 안 물가가 비싸므로 물과 간식을 조금 준비하는 편이 좋습니다. 단, 일부 음식물 반입 규정은 공식 안내를 확인하세요.",
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d3-2",
+     "time": "08:05",
+     "endTime": "08:35",
+     "name": "교바시 → 유니버설시티역 (JR)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 25~30분 (추정)",
+     "address": "JR 교바시역 → JR 유니버설시티역",
+     "hours": "",
+     "booking": "교통카드",
+     "note": "니시쿠조 환승이 필요합니다. 역 계단·엘리베이터 확인이 필요합니다.",
+     "details": "JR 오사카 순환선 → 니시쿠조 → 유니버설시티. 아침 시간대는 붐비지 않습니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 28,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "유니버설시티역에서 파크 입구까지 도보 5분 내외(추정)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "유료 주차장(요금 확인 필요)"
+     },
+     "links": {
+      "official": "https://www.usj.co.jp/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d3-3",
+     "time": "08:45",
+     "endTime": "08:55",
+     "name": "파크 입구 도착 · 입장 대기",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 45분",
+     "address": "유니버설 스튜디오 재팬 입구",
+     "hours": "공식 09:00 개장 (조기 개장 가능)",
+     "booking": "입장권 필요 — 미구매",
+     "note": "공식 개장 시각은 09:00으로 안내되어 있으나 실제로는 15~30분 일찍 열리는 경우가 있습니다. 입장권이 없으면 이 단계에서 들어갈 수 없습니다.",
+     "details": "12/17은 평일이지만 겨울 이벤트 기간입니다. 입장 직후 닌텐도 월드로 바로 이동하는 동선이 유리합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 6,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "입구까지 평탄(추정)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "USJ 주차장 만차 시 파크 사이드 주차장 안내를 따르세요. 요금·예약 필요 여부 확인 필요."
+     },
+     "links": {
+      "ticket": "https://www.usj.co.jp/ticket/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d3-4",
+     "time": "09:05",
+     "endTime": "10:35",
+     "name": "슈퍼 닌텐도 월드 (에어리어 입장 확약권 필요)",
+     "kind": "visit",
+     "badge": "needs_check",
+     "origin": "공식 자료",
+     "stay": "약 90분",
+     "address": "유니버설 스튜디오 재팬 내 슈퍼 닌텐도 월드",
+     "hours": "파크 운영 시간 내",
+     "booking": "에어리어 입장 확약권 또는 정리권·추첨권 필요",
+     "note": "확약권은 익스프레스 패스에 포함되거나 별도 발권입니다. 미보유 시 입장이 안 될 수 있습니다.",
+     "details": "확약권이 없으면 당일 정리권(무료·수량 한정)을 받아야 하는데, 오후에는 소진되는 경우가 많습니다. 어르신·6세 동반이면 대기 시간이 긴 어트랙션은 한두 개로 줄이세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 8,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "파크 내 도보 이동 많음",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d3-5",
+     "time": "10:45",
+     "endTime": "12:05",
+     "name": "해리 포터 마법 세계",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 80분",
+     "address": "유니버설 스튜디오 재팬 내 해리 포터 에어리어",
+     "hours": "파크 운영 시간 내",
+     "booking": "정리권이 필요할 수 있음",
+     "note": "탑승 제한(키·건강 조건)이 있습니다. 6세 아이는 보호자 동반 여부를 확인하세요.",
+     "details": "에어리어 자체는 자유 입장이지만 인기 어트랙션은 대기가 깁니다. 버터비어는 줄이 짧을 때 사는 편이 좋습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 10,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d3-6",
+     "time": "12:15",
+     "endTime": "13:15",
+     "name": "점심 (파크 내 레스토랑)",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 60분",
+     "address": "유니버설 스튜디오 재팬 내",
+     "hours": "점포별 상이",
+     "booking": "예약 없음 · 대기 가능",
+     "note": "12시대는 대기가 깁니다. 11:30 이전이나 13:30 이후로 옮기면 덜 기다립니다.",
+     "details": "6명이 한 테이블에 앉기 어려울 수 있습니다. 레스토랑 예약(유료) 제도가 있는지 공식 앱에서 확인하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d3-7",
+     "time": "13:25",
+     "endTime": "15:25",
+     "name": "어트랙션 · 쇼 (익스프레스 미구매 시 대기 60~90분 예상)",
+     "kind": "visit",
+     "badge": "needs_check",
+     "origin": "조사 참고",
+     "stay": "약 120분",
+     "address": "유니버설 스튜디오 재팬 내",
+     "hours": "파크 운영 시간 내",
+     "booking": "익스프레스 패스 미구매",
+     "note": "익스프레스를 살지 결정해야 합니다. 6명 기준 추가 비용이 크므로, 대기 시간을 감수할지 먼저 정하세요.",
+     "details": "익스프레스 패스는 입장권이 아니라 대기 시간을 줄이는 별도 상품입니다. 6명 전원분을 사면 비용이 크게 늘고, 어르신·6세가 모든 어트랙션을 타는 것도 아니므로 인원을 나눠 사는 방법을 검토하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "ticket": "https://www.usj.co.jp/ticket/express_pass/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d3-8",
+     "time": "15:35",
+     "endTime": "16:25",
+     "name": "휴식 (실내 휴게 공간)",
+     "kind": "rest",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 50분",
+     "address": "파크 내 휴게 공간",
+     "hours": "",
+     "booking": "없음",
+     "note": "어르신과 아이가 확실히 쉬어야 저녁 일정이 가능합니다. 실내 휴게실 위치는 확인이 필요합니다.",
+     "details": "유모차를 빌릴 수 있는지, 수유실·기저귀 교환실 위치는 공식 파크 맵에서 확인하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 4,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d3-9",
+     "time": "16:35",
+     "endTime": "17:35",
+     "name": "유니버설 원더랜드 (어린이 구역)",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 60분",
+     "address": "유니버설 스튜디오 재팬 내 유니버설 원더랜드",
+     "hours": "파크 운영 시간 내",
+     "booking": "없음",
+     "note": "6세 아이 중심 구역입니다. 어르신은 벤치에서 쉬어도 됩니다.",
+     "details": "스누피·헬로키티·세서미스트리트 구역으로, 순한 놀이기구와 실내 놀이 공간이 있습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 6,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d3-10",
+     "time": "17:45",
+     "endTime": "19:15",
+     "name": "저녁 · 크리스마스 이벤트",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 90분",
+     "address": "파크 내",
+     "hours": "이벤트 일정은 공식 앱 확인",
+     "booking": "예약 없음",
+     "note": "겨울 이벤트(트리·쇼) 시간은 당일 공식 앱에서 확인하세요.",
+     "details": "밤에는 기온이 크게 떨어집니다. 핫팩과 장갑을 준비하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d3-11",
+     "time": "19:50",
+     "endTime": "20:30",
+     "name": "유니버설시티 → 호텔 복귀",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 30~40분",
+     "address": "JR 유니버설시티역 → JR 교바시역",
+     "hours": "",
+     "booking": "교통카드",
+     "note": "폐장 시각(공식 21:00 예상) 전에 나오면 역이 덜 붐빕니다.",
+     "details": "아이가 잠들 수 있으니 유모차를 준비하거나, 어르신과 아이를 먼저 귀숙시키고 일부만 남는 방법도 있습니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 30,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-18",
+   "weekday": "금",
+   "title": "교바시 → 간사이공항 → 인천",
+   "note": "10:50 출발편입니다. 공항 08:20 이전 도착을 맞추려면 06:55 열차를 타야 합니다. 계획안의 ‘07:30 출발’은 차량 이동을 전제로 한 시각이라 철도로는 도착이 늦습니다.",
+   "items": [
+    {
+     "id": "d4-1",
+     "time": "05:50",
+     "endTime": "06:10",
+     "name": "기상 · 짐 최종 정리",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 25분",
+     "address": "호텔 몬토레 라 스루 오사카",
+     "hours": "",
+     "booking": "없음",
+     "note": "숙박세·미니바 등 현장 정산 항목이 있는지 프런트에 먼저 확인하세요.",
+     "details": "액체류·칼·라이터는 위탁 수하물로. 보조배터리는 기내 가방에 넣으세요.",
+     "access": {
+      "walk": "객실 내",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d4-2",
+     "time": "06:15",
+     "endTime": "06:30",
+     "name": "간단 조식 (편의점)",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 15분",
+     "address": "교바시역 주변 편의점",
+     "hours": "24시간",
+     "booking": "없음",
+     "note": "이른 시각이라 호텔 조식은 이용하지 못할 수 있습니다.",
+     "details": "기내식이 없으므로 공항에서 먹을 것을 조금 더 사 두면 좋습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 4,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d4-3",
+     "time": "06:35",
+     "endTime": "06:45",
+     "name": "체크아웃 (11:00 이전) · 교바시역 이동",
+     "kind": "checkin",
+     "badge": "confirmed",
+     "origin": "확정 예약",
+     "stay": "약 10분",
+     "address": "호텔 몬토레 라 스루 오사카 → JR 교바시역",
+     "phone": "+81-6-6944-7111",
+     "hours": "체크아웃 11:00 이전",
+     "booking": "확정",
+     "note": "짐이 많으면 프런트에 택배(공항 발송) 가능 여부를 문의하세요. 당일 도착은 보장되지 않습니다.",
+     "details": "연결통로를 따라 교바시역으로 이동합니다. 새벽이라 상점은 닫혀 있습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 4,
+      "source": "공식",
+      "stale": false
+     },
+     "access": {
+      "walk": "연결통로 도보 5~8분",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.hotelmonterey.co.jp/lasoeur_osaka/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d4-4",
+     "time": "06:55",
+     "endTime": "08:10",
+     "name": "JR 교바시 → 간사이공항 (관공쾌속)",
+     "kind": "move",
+     "badge": "needs_check",
+     "origin": "조사 참고",
+     "stay": "약 75분",
+     "address": "JR 교바시역 → 간사이공항역",
+     "hours": "",
+     "booking": "교통카드",
+     "note": "이 열차를 놓치면 08:20 도착 권장 시각을 맞출 수 없습니다. 첫차 시각은 역에서 확인하세요.",
+     "details": "간사이공항 방면 관공쾌속은 日根野에서 차량을 분리합니다. 앞 4량에 타야 합니다. 06:50 전후 첫차 여부는 확인이 필요합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 8,
+      "source": "공식",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.jr-odekake.net/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d4-5",
+     "time": "08:20",
+     "endTime": "08:35",
+     "name": "간사이공항 T1 도착 (08:20 이전 권장 충족)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 15분",
+     "address": "간사이국제공항 제1터미널 4층 출발 로비",
+     "hours": "",
+     "booking": "없음",
+     "note": "권장 도착 시각(08:20)보다 15분 이릅니다. 여유가 있으니 수속 후 앉아서 쉬세요.",
+     "details": "진에어 카운터 위치는 당일 안내 전광판에서 확인하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "역에서 터미널까지 도보·에스컬레이터",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.kansai-airport.or.jp/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d4-6",
+     "time": "08:40",
+     "endTime": "09:25",
+     "name": "진에어 체크인 · 수하물 위탁",
+     "kind": "checkin",
+     "badge": "planned",
+     "origin": "확정 예약",
+     "stay": "약 50분 (대기 포함)",
+     "address": "간사이국제공항 제1터미널 진에어 카운터",
+     "hours": "",
+     "booking": "확정 · 일반석",
+     "note": "수속 마감은 출발 60분 전(09:50)입니다. 마감이 임박하면 카운터에서 안내를 받으세요.",
+     "details": "면세점에서 산 액체류는 위탁 수하물에 넣어야 합니다. 위탁 15kg 초과분은 추가 요금이 발생합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 4,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.jinair.com/"
+     },
+     "deadline": {
+      "time": "09:50",
+      "label": "진에어 수속 마감(출발 60분 전)"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d4-7",
+     "time": "09:35",
+     "endTime": "10:10",
+     "name": "보안검색 · 출국심사",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 35분",
+     "address": "간사이국제공항 제1터미널 출국장",
+     "hours": "",
+     "booking": "없음",
+     "note": "수속 마감 09:50을 넘기면 탑승이 어렵습니다. 6명이 함께 움직이니 서두르세요.",
+     "details": "자동 출국 게이트 이용 가능 여부는 여권 종류에 따라 다릅니다. 가족은 일반 통로가 안전합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d4-8",
+     "time": "10:25",
+     "endTime": "10:45",
+     "name": "탑승구 대기 · 탑승",
+     "kind": "flight",
+     "badge": "planned",
+     "origin": "확정 예약",
+     "stay": "약 30분",
+     "address": "간사이국제공항 제1터미널 탑승구",
+     "hours": "",
+     "booking": "확정",
+     "note": "탑승구는 당일 안내로 확인하세요. 게이트가 멀면 10분 이상 걸립니다.",
+     "details": "면세점 쇼핑은 탑승 후 시간이 남을 때만 하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 8,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "탑승구까지 이동",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d4-9",
+     "time": "10:50",
+     "endTime": "13:05",
+     "name": "LJ314 간사이 T1 → 인천 T2 (진에어)",
+     "kind": "flight",
+     "badge": "confirmed",
+     "origin": "확정 예약",
+     "stay": "1시간 15분",
+     "address": "간사이국제공항 제1터미널 → 인천국제공항 제2여객터미널",
+     "hours": "출발 10:50 / 도착 13:05 (한국 시각)",
+     "booking": "확정 · 일반석 · 보잉 737-800 · 기내식 불포함",
+     "note": "출발 60분 전 수속 마감(09:50)입니다. 08:20 공항 도착 기준으로 여유 1시간 30분입니다.",
+     "details": "기내식이 없으니 공항에서 김밥·샌드위치 등을 사 두세요. 도착 후 수하물 수취까지 30~40분(추정) 걸립니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.jinair.com/"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d4-10",
+     "time": "13:25",
+     "endTime": "16:30",
+     "name": "인천 T2 입국 → 원주 이동",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 3시간 (공항 도착 후 이동 포함)",
+     "address": "인천국제공항 제2여객터미널 → 원주",
+     "hours": "",
+     "booking": "미확정 (차량·버스)",
+     "note": "귀가 수단은 출발 전에 미리 정해 두세요. 공항 도착 시간이 늦어지면 주차 요금이 늘어납니다.",
+     "details": "자가용이면 주차 위치를 사진으로 남겨 두세요. 짐이 많으면 택시·픽업 서비스를 검토하세요.",
+     "travel": {
+      "mode": "차량",
+      "min": 20,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    }
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "id": "c1",
+   "name": "교토 당일치기 (기요미즈데라 · 기온)",
+   "kind": "trip",
+   "badge": "optional",
+   "origin": "조사 참고",
+   "stay": "왕복 포함 8시간 이상",
+   "address": "교토시 히가시야마구 일대",
+   "travel": {
+    "mode": "전철",
+    "min": 45,
+    "source": "조사 참고"
+   },
+   "note": "교바시에서 게이한 특급으로 한 번에 갑니다. 성인 480엔·소아 240엔(2026-11-15 조회).",
+   "details": "기요미즈데라는 언덕과 계단이 많아 어르신·유모차에 부담이 큽니다. 간다면 버스보다 택시를 섞는 편이 낫고, 반나절 코스로 줄이는 것을 권합니다. 3일차 USJ를 하루 비우고 교토로 바꾸는 방식이 현실적입니다.",
+   "access": {
+    "walk": "언덕·계단 많음(확인 필요)",
+    "stairs": "계단 다수",
+    "wheelchair": "확인 필요",
+    "parking": ""
+   },
+   "links": {
+    "official": "https://www.keihan.co.jp/"
+   },
+   "reason": "왕복 1시간 30분 이상 + 언덕 이동 → 6명·어르신 동반에는 반나절 코스 권장"
+  },
+  {
+   "id": "c2",
+   "name": "소라니와 온천 OSAKA BAY TOWER",
+   "kind": "onsen",
+   "badge": "optional",
+   "origin": "공식 자료",
+   "stay": "2~3시간",
+   "address": "오사카시 미나토구 벤텐 1-2-3 (벤텐초역 직결)",
+   "phone": "+81-6-7670-5126",
+   "hours": "11:00~23:00 (최종 입관 22:00) · 월 1회 휴관(12/9, 1/13, 2/3)",
+   "booking": "입관료 성인 2,310엔~ · 소아 1,320엔 · 70세 이상 1,800엔 · 입욕세 150엔 별도",
+   "travel": {
+    "mode": "전철",
+    "min": 25,
+    "source": "추정"
+   },
+   "note": "12/16은 정상 영업일입니다. 어르신·아이 휴식용으로 가장 현실적인 대안입니다.",
+   "details": "벤텐초역과 연결통로로 이어집니다. 타월·관내복이 포함되어 있어 손으로 갈 수 있습니다. 12/9는 휴관이지만 여행 기간(12/15~18)과 겹치지 않습니다. 문신·수영복 착용 규정은 공식 안내를 확인하세요.",
+   "access": {
+    "walk": "역 직결(추정)",
+    "stairs": "확인 필요",
+    "wheelchair": "확인 필요",
+    "parking": "있음(확인 필요)"
+   },
+   "links": {
+    "official": "https://solaniwa.com/"
+   },
+   "reason": "실내·온천이라 추위에 강하지만, 욕탕 이용이 어려운 가족이 있으면 대안이 필요"
+  },
+  {
+   "id": "c3",
+   "name": "구로몬 시장 (먹거리)",
+   "kind": "market",
+   "badge": "optional",
+   "origin": "조사 참고",
+   "stay": "1~1.5시간",
+   "address": "오사카시 주오구 니혼바시 2초메 (니혼바시역 10번 출구 도보 5분)",
+   "phone": "+81-6-6631-0007",
+   "hours": "점포별 상이 · 안내센터 09:00~18:00 · 대부분 17~18시 마감",
+   "booking": "없음",
+   "travel": {
+    "mode": "전철",
+    "min": 20,
+    "source": "추정"
+   },
+   "note": "오전이 덜 붐비고 물건도 좋습니다. 일요일은 쉬는 점포가 많습니다.",
+   "details": "아케이드라 비가 와도 걷기 편합니다. 다만 노면이 젖어 미끄러울 수 있고 유모차가 지나가기 좁습니다. 2일차 오전을 구로몬으로 바꾸면 오사카성 일정이 밀리므로, 별도 반나절로 보는 편이 좋습니다.",
+   "access": {
+    "walk": "아케이드 580m, 좁은 구간 있음",
+    "stairs": "확인 필요",
+    "wheelchair": "확인 필요",
+    "parking": "주차장 없음"
+   },
+   "links": {
+    "official": "http://www.kuromon.com/"
+   },
+   "reason": "오전 방문 권장 · 일요일 휴무 점포 많음"
+  },
+  {
+   "id": "c4",
+   "name": "하루카스 300 전망대",
+   "kind": "view",
+   "badge": "optional",
+   "origin": "공식 자료",
+   "stay": "1시간",
+   "address": "오사카시 아베노구 아베노스지 1-1-43 (덴노지역)",
+   "hours": "09:00~22:00 (마지막 입장 21:30)",
+   "booking": "성인 2,200엔 · 소·중학생 900엔 · 5세 이하 무료 (웹 전날까지 1,980/810엔)",
+   "travel": {
+    "mode": "전철",
+    "min": 25,
+    "source": "추정"
+   },
+   "note": "비 오는 날 대안으로 좋습니다. 실내 전망대입니다.",
+   "details": "16층에서 전용 엘리베이터로 60층까지 올라갑니다. 일몰 시간대가 가장 붐빕니다. 12월 일몰은 17시 전후이니 16:30 도착을 목표로 하세요.",
+   "access": {
+    "walk": "덴노지역에서 연결",
+    "stairs": "엘리베이터 이용",
+    "wheelchair": "확인 필요",
+    "parking": "있음(유료)"
+   },
+   "links": {
+    "official": "https://www.abenoharukas-300.jp/observatory/"
+   },
+   "reason": "실내 전망대 · 비 오는 날 대안"
+  },
+  {
+   "id": "c5",
+   "name": "6인 공항 픽업밴 (간사이 → 호텔)",
+   "kind": "transfer",
+   "badge": "needs_check",
+   "origin": "사용자 계획",
+   "stay": "약 50~60분",
+   "address": "간사이국제공항 → 호텔 몬토레 라 스루 오사카",
+   "booking": "업체·요금 미확인",
+   "travel": {
+    "mode": "차량",
+    "min": 55,
+    "source": "추정"
+   },
+   "note": "짐이 많고 어르신이 있어 매력적이지만, 요금과 예약 가능 여부를 확인하지 못했습니다.",
+   "details": "6인 + 캐리어 6개면 밴 1대 또는 2대가 필요할 수 있습니다. 공항 도착 후 짐을 찾는 시간이 60~90분이라 픽업 시간을 여유 있게 잡아야 합니다. 예약하지 않으면 현장 택시 승강장 대기가 깁니다.",
+   "access": {
+    "walk": "터미널 앞 승하차",
+    "stairs": "확인 필요",
+    "wheelchair": "확인 필요",
+    "parking": ""
+   },
+   "links": {},
+   "reason": "요금·업체 미확인 — 예약 전 견적 필요"
+  },
+  {
+   "id": "c6",
+   "name": "덴포잔 대관람차",
+   "kind": "view",
+   "badge": "optional",
+   "origin": "조사 참고",
+   "stay": "약 30분",
+   "address": "오사카시 미나토구 지카코 3-9-15",
+   "hours": "확인 필요 (운휴일 있음)",
+   "booking": "요금 확인 필요",
+   "travel": {
+    "mode": "도보",
+    "min": 5,
+    "source": "추정"
+   },
+   "note": "해유관 옆입니다. 2일차 오후에 붙이기 좋습니다.",
+   "details": "6세 아이와 타기 좋지만 어르신이 고소 공포가 있으면 무리하지 마세요. 강풍 시 운휴될 수 있습니다.",
+   "access": {
+    "walk": "확인 필요",
+    "stairs": "확인 필요",
+    "wheelchair": "확인 필요",
+    "parking": ""
+   },
+   "links": {},
+   "reason": "요금·운휴 정보 미확인"
+  },
+  {
+   "id": "c7",
+   "name": "우메다 스카이빌딩 공중정원",
+   "kind": "view",
+   "badge": "optional",
+   "origin": "조사 참고",
+   "stay": "1시간",
+   "address": "오사카시 기타구 오요도나카 1-1-88",
+   "hours": "확인 필요",
+   "booking": "요금 확인 필요",
+   "travel": {
+    "mode": "전철",
+    "min": 25,
+    "source": "추정"
+   },
+   "note": "실외 전망대라 12월 밤에는 매우 춥습니다.",
+   "details": "실내 전망대를 원하면 하루카스 300이 낫습니다. 스카이빌딩은 야외라 바람을 막을 곳이 없습니다.",
+   "access": {
+    "walk": "확인 필요",
+    "stairs": "확인 필요",
+    "wheelchair": "확인 필요",
+    "parking": ""
+   },
+   "links": {},
+   "reason": "실외·한랭 → 겨울 가족 일정에는 후순위"
+  }
+ ],
+ "reservations": [
+  {
+   "id": "r1",
+   "category": "transport",
+   "title": "가는편 항공 LJ355 (진에어)",
+   "provider": "진에어",
+   "date": "2026-12-15",
+   "time": "14:50",
+   "endTime": "16:35",
+   "status": "confirmed",
+   "route": "인천국제공항 T2 → 간사이국제공항 T1",
+   "details": "일반석 · 보잉 737-800 · 기내식 불포함 · 개인 소지품 1개(40×30×15cm) · 위탁 15kg 포함(최종 확인 권장)",
+   "docs": [
+    {
+     "label": "e-티켓·예약 확인서",
+     "kind": "proof",
+     "state": "확인 필요",
+     "note": "출국심사에서 요구될 수 있음"
+    },
+    {
+     "label": "여권 (6명 전원)",
+     "kind": "entry",
+     "state": "확인 필요",
+     "note": "유효기간 6개월 이상 권장"
+    },
+    {
+     "label": "탑승권",
+     "kind": "entry",
+     "state": "발급 예정",
+     "note": "체크인 또는 모바일 탑승권"
+    }
+   ],
+   "notify": "미설정",
+   "linkedItemId": "d1-5",
+   "link": "https://www.jinair.com/"
+  },
+  {
+   "id": "r2",
+   "category": "transport",
+   "title": "오는편 항공 LJ314 (진에어)",
+   "provider": "진에어",
+   "date": "2026-12-18",
+   "time": "10:50",
+   "endTime": "13:05",
+   "status": "confirmed",
+   "route": "간사이국제공항 T1 → 인천국제공항 T2",
+   "details": "일반석 · 보잉 737-800 · 기내식 불포함 · 수속 마감 09:50 (출발 60분 전)",
+   "docs": [
+    {
+     "label": "e-티켓·예약 확인서",
+     "kind": "proof",
+     "state": "확인 필요",
+     "note": ""
+    },
+    {
+     "label": "여권 (6명 전원)",
+     "kind": "entry",
+     "state": "확인 필요",
+     "note": ""
+    }
+   ],
+   "notify": "미설정",
+   "linkedItemId": "d4-9",
+   "link": "https://www.jinair.com/"
+  },
+  {
+   "id": "r3",
+   "category": "lodging",
+   "title": "호텔 몬토레 라 스루 오사카 (2객실 3박)",
+   "provider": "Hotel Monterey La Soeur Osaka",
+   "date": "2026-12-15",
+   "time": "15:00",
+   "endTime": "11:00",
+   "status": "confirmed",
+   "route": "오사카시 주오구 시로미 2-2-22 · JR 교바시역 도보 5분",
+   "details": "체크인 15:00~익일 06:00, 체크아웃 11:00. 도착이 늦어지면 사전 연락 안내. 숙박세는 프런트 별도 지불 여부 확인 필요.",
+   "docs": [
+    {
+     "label": "숙소 예약 확인서",
+     "kind": "proof",
+     "state": "확인 필요",
+     "note": "에어텔 바우처 포함 여부 확인"
+    },
+    {
+     "label": "여권",
+     "kind": "entry",
+     "state": "확인 필요",
+     "note": "체크인 시 제시"
+    }
+   ],
+   "notify": "미설정",
+   "linkedItemId": "d1-9",
+   "link": "https://www.hotelmonterey.co.jp/lasoeur_osaka/",
+   "phone": "+81-6-6944-7111"
+  },
+  {
+   "id": "r4",
+   "category": "experience",
+   "title": "USJ 1일 스튜디오 패스 (6명)",
+   "provider": "유니버설 스튜디오 재팬",
+   "date": "2026-12-17",
+   "time": "09:00",
+   "endTime": "21:00",
+   "status": "needs_action",
+   "route": "유니버설 스튜디오 재팬",
+   "details": "성인 9,400엔 · 어린이(4~11세) 5,800엔 · 시니어(65세 이상) 7,600엔~ (2026-12-17 기준 조회, 변동 가격제). 닌텐도 월드 확약권과 익스프레스는 별도.",
+   "docs": [
+    {
+     "label": "QR 입장권",
+     "kind": "entry",
+     "state": "미보유",
+     "note": "구매 필요"
+    },
+    {
+     "label": "에어리어 입장 확약권",
+     "kind": "entry",
+     "state": "미보유",
+     "note": "닌텐도 월드 입장에 필요할 수 있음"
+    }
+   ],
+   "notify": "미설정",
+   "linkedItemId": "d3-4",
+   "link": "https://www.usj.co.jp/ticket/"
+  },
+  {
+   "id": "r5",
+   "category": "experience",
+   "title": "해유관 입장권 (6명)",
+   "provider": "해유관",
+   "date": "2026-12-16",
+   "time": "13:45",
+   "endTime": "15:55",
+   "status": "needs_action",
+   "route": "오사카시 미나토구 가이간도리 1-1-10",
+   "details": "성인 2,700엔 · 소·중학생 1,400엔 · 3세 이상 700엔 (기준가, 날짜별 변동 가격제)",
+   "docs": [
+    {
+     "label": "e-티켓 QR",
+     "kind": "entry",
+     "state": "미보유",
+     "note": "날짜·시간 지정 e-티켓 권장"
+    }
+   ],
+   "notify": "미설정",
+   "linkedItemId": "d2-7",
+   "link": "https://www.kaiyukan.com/info/ticket/kaiyukan/"
+  },
+  {
+   "id": "r6",
+   "category": "experience",
+   "title": "오사카성 고자부네 (현장 구매)",
+   "provider": "반피아르",
+   "date": "2026-12-16",
+   "time": "10:55",
+   "endTime": "11:35",
+   "status": "planned",
+   "route": "오사카성 극락교 북서쪽 승선장",
+   "details": "성인 1,800엔 · 초·중학생 900엔 · 65세 이상 1,200엔. 예약 없이 현장 구매, 악천후 결항 가능.",
+   "docs": [
+    {
+     "label": "승선권",
+     "kind": "entry",
+     "state": "현장 구매",
+     "note": ""
+    }
+   ],
+   "notify": "미설정",
+   "linkedItemId": "d2-4",
+   "link": "https://www.banpr.co.jp/"
+  },
+  {
+   "id": "r7",
+   "category": "insurance",
+   "title": "여행자 보험",
+   "provider": "미정",
+   "date": "2026-12-15",
+   "time": "",
+   "endTime": "",
+   "status": "needs_action",
+   "route": "",
+   "details": "가입 여부가 확인되지 않았습니다. 보장 범위·자기부담금·휴대품 손해·질병 치료 항목은 상품마다 다르므로 이 앱에서 추정하지 않습니다.",
+   "docs": [
+    {
+     "label": "보험 증권",
+     "kind": "proof",
+     "state": "미보유",
+     "note": "가입 시 보장 항목 확인"
+    }
+   ],
+   "notify": "미설정",
+   "linkedItemId": "",
+   "link": ""
+  },
+  {
+   "id": "r8",
+   "category": "lodging",
+   "title": "오사카시 숙박세 (현장 지불 여부 확인)",
+   "provider": "호텔 몬토레 라 스루 오사카",
+   "date": "2026-12-15",
+   "time": "",
+   "endTime": "",
+   "status": "needs_action",
+   "route": "",
+   "details": "2025-09-01 개정 기준 1인 1박 5,000~15,000엔 200엔 / 15,000~20,000엔 400엔 / 20,000엔 초과 500엔. 객실 요금 구간을 모르므로 총액은 계산하지 않았습니다.",
+   "docs": [],
+   "notify": "미설정",
+   "linkedItemId": "d1-9",
+   "link": "https://www.hotelmonterey.co.jp/lasoeur_osaka/stay/"
+  },
+  {
+   "id": "r9",
+   "category": "transport",
+   "title": "12/8~11 기존 검토 일정 (취소·제외)",
+   "provider": "—",
+   "date": "2026-12-08",
+   "time": "",
+   "endTime": "",
+   "status": "cancelled",
+   "route": "",
+   "details": "12월 8일~11일로 검토하던 일정은 12월 15일~18일로 변경되었습니다. 이 일정표에는 포함하지 않습니다.",
+   "docs": [],
+   "notify": "미설정",
+   "linkedItemId": "",
+   "link": ""
+  }
+ ],
+ "budget": {
+  "enabled": true,
+  "targetKrw": 3000000,
+  "bufferPct": 10,
+  "jpyRate": null,
+  "note": "금액이 확인되지 않은 항목은 0원으로 계산하지 않고 '금액 미확인'으로 따로 표시합니다. 엔화 항목은 환율을 입력해야 원화 합계에 더해집니다.",
+  "items": [
+   {
+    "id": "b1",
+    "label": "에어텔 (항공+숙소 3박)",
+    "category": "예약",
+    "status": "paid",
+    "currency": "KRW",
+    "amount": null,
+    "note": "결제 완료(2026-11-13). 정확한 결제 금액은 확인되지 않아 '금액 미확인'으로 둡니다. 카드 내역·에어텔 확인서에서 확인해 입력하세요.",
+    "refundCondition": ""
+   },
+   {
+    "id": "b2",
+    "label": "USJ 1일권 성인 4매",
+    "category": "입장권",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 37600,
+    "note": "9,400엔 × 4 (2026-12-17 기준가, 변동 가격제)",
+    "refundCondition": "구매 후 취소·변경 불가 안내 — 공식 규정 확인 필요"
+   },
+   {
+    "id": "b3",
+    "label": "USJ 1일권 시니어 1매 (65세 이상)",
+    "category": "입장권",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 7600,
+    "note": "7,600엔 기준 — 적용 방식(창구 발권 여부) 확인 필요",
+    "refundCondition": ""
+   },
+   {
+    "id": "b4",
+    "label": "USJ 1일권 어린이 1매 (만 6세)",
+    "category": "입장권",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 5800,
+    "note": "4~11세 어린이 요금 기준",
+    "refundCondition": ""
+   },
+   {
+    "id": "b5",
+    "label": "해유관 입장권 6명",
+    "category": "입장권",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 12900,
+    "note": "성인 2,700×4 + 소·중학생 1,400 + 3세 이상 700",
+    "refundCondition": ""
+   },
+   {
+    "id": "b6",
+    "label": "오사카성 천수각 4명",
+    "category": "입장권",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 4800,
+    "note": "성인 1,200엔 × 4 · 중학생 이하는 무료(증빙 필요)",
+    "refundCondition": ""
+   },
+   {
+    "id": "b7",
+    "label": "고자부네 6명",
+    "category": "입장권",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 7500,
+    "note": "성인 1,800×3 + 65세 이상 1,200 + 소아 900",
+    "refundCondition": "악천후 결항 시 환불 — 현장 규정 확인"
+   },
+   {
+    "id": "b8",
+    "label": "시내 교통 (4일·6명)",
+    "category": "교통",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 12000,
+    "note": "추정값입니다. 실제 이용 금액과 다를 수 있습니다.",
+    "refundCondition": ""
+   },
+   {
+    "id": "b9",
+    "label": "식비 (4일·6명)",
+    "category": "식비",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 150000,
+    "note": "1식 약 1,500~2,500엔 가정의 추정값입니다.",
+    "refundCondition": ""
+   },
+   {
+    "id": "b10",
+    "label": "숙박세 (18인박 · 200엔 가정)",
+    "category": "숙소",
+    "status": "estimate",
+    "currency": "JPY",
+    "amount": 3600,
+    "note": "객실 요금이 1인 1박 5,000~15,000엔 구간일 때 200엔. 구간이 다르면 금액이 달라집니다.",
+    "refundCondition": ""
+   },
+   {
+    "id": "b11",
+    "label": "여행자 보험",
+    "category": "보험",
+    "status": "unknown",
+    "currency": "KRW",
+    "amount": null,
+    "note": "미가입·보장 미확인. 보장 범위는 상품별로 다르므로 추정하지 않습니다.",
+    "refundCondition": ""
+   },
+   {
+    "id": "b12",
+    "label": "공항 픽업밴 (선택)",
+    "category": "교통",
+    "status": "unknown",
+    "currency": "JPY",
+    "amount": null,
+    "note": "업체·요금 미확인. 예약 여부를 정하면 입력하세요.",
+    "refundCondition": "예약 조건에 따라 다름"
+   }
+  ]
+ },
+ "checklist": [
+  {
+   "id": "k1",
+   "text": "여권 6명 유효기간 확인(출국일 기준 6개월 이상 권장)",
+   "done": false
+  },
+  {
+   "id": "k2",
+   "text": "비짓재팬웹(VJW) 입국·세관 등록 후 QR 저장",
+   "done": false
+  },
+  {
+   "id": "k3",
+   "text": "USJ 입장권 6매 구매 (성인4·시니어1·어린이1)",
+   "done": false
+  },
+  {
+   "id": "k4",
+   "text": "USJ 닌텐도 월드 확약권/정리권 방법 결정",
+   "done": false
+  },
+  {
+   "id": "k5",
+   "text": "USJ 익스프레스 패스 구매 여부·인원 결정",
+   "done": false
+  },
+  {
+   "id": "k6",
+   "text": "해유관 e-티켓(날짜·시간 지정) 구매",
+   "done": false
+  },
+  {
+   "id": "k7",
+   "text": "공항→호텔 이동수단 확정 (관공쾌속 또는 6인 픽업밴)",
+   "done": false
+  },
+  {
+   "id": "k8",
+   "text": "호텔 조식 포함 여부 확인",
+   "done": false
+  },
+  {
+   "id": "k9",
+   "text": "숙박세 현장 지불 여부 확인",
+   "done": false
+  },
+  {
+   "id": "k10",
+   "text": "여행자 보험 가입 (보장 항목 직접 확인)",
+   "done": false
+  },
+  {
+   "id": "k11",
+   "text": "진에어 위탁 15kg 포함 조건 최종 확인",
+   "done": false
+  },
+  {
+   "id": "k12",
+   "text": "유모차 필요 여부 결정 (6세·어르신 휴식 겸용)",
+   "done": false
+  },
+  {
+   "id": "k13",
+   "text": "어르신 상비약·처방약 준비 (처방전 사본 포함)",
+   "done": false
+  },
+  {
+   "id": "k14",
+   "text": "보조배터리·전자담배 기내 반입, 액체류 위탁 정리",
+   "done": false
+  },
+  {
+   "id": "k15",
+   "text": "엔화 현금·카드·교통카드(ICOCA 등) 준비",
+   "done": false
+  },
+  {
+   "id": "k16",
+   "text": "eSIM 또는 로밍 준비, 오프라인 지도 미리 저장",
+   "done": false
+  },
+  {
+   "id": "k17",
+   "text": "12월 방한복·핫팩·우비·방수 신발",
+   "done": false
+  },
+  {
+   "id": "k18",
+   "text": "원주 출발·귀가 교통 및 공항 주차 위치 확정",
+   "done": false
+  }
+ ],
+ "confirmations": [
+  {
+   "id": "q1",
+   "text": "USJ 입장권 6매 — 아직 구매 전",
+   "done": false,
+   "owner": "사용자",
+   "impact": "미구매 시 3일차 입장 불가"
+  },
+  {
+   "id": "q2",
+   "text": "USJ 닌텐도 월드 확약권·익스프레스 — 미정",
+   "done": false,
+   "owner": "사용자",
+   "impact": "미보유 시 닌텐도 월드 입장 제한 가능"
+  },
+  {
+   "id": "q3",
+   "text": "공항→호텔 이동수단 — 미확정(관공쾌속/픽업밴)",
+   "done": false,
+   "owner": "사용자",
+   "impact": "1일차 저녁 도착 시각이 달라짐"
+  },
+  {
+   "id": "q4",
+   "text": "숙박세 현장 지불 여부 — 미확인",
+   "done": false,
+   "owner": "사용자",
+   "impact": "체크인 시 추가 결제 발생 가능"
+  },
+  {
+   "id": "q5",
+   "text": "여행자 보험 — 미가입·보장 미확인",
+   "done": false,
+   "owner": "사용자",
+   "impact": "질병·휴대품 사고 시 비용 부담"
+  },
+  {
+   "id": "q6",
+   "text": "비짓재팬웹 등록 — 미완료",
+   "done": false,
+   "owner": "사용자",
+   "impact": "입국심사 대기 길어짐"
+  },
+  {
+   "id": "q7",
+   "text": "진에어 위탁 15kg 포함 — 최종 확인 권장",
+   "done": false,
+   "owner": "사용자",
+   "impact": "초과 시 추가 요금"
+  },
+  {
+   "id": "q8",
+   "text": "호텔 조식 포함 여부 — 미확인",
+   "done": false,
+   "owner": "사용자",
+   "impact": "아침 식사 동선 변경"
+  },
+  {
+   "id": "q9",
+   "text": "오사카성 엘리베이터·휠체어 접근성 — 미확인",
+   "done": false,
+   "owner": "앱 조사",
+   "impact": "어르신 동선 조정 필요할 수 있음"
+  },
+  {
+   "id": "q10",
+   "text": "귀국일 06:50 열차 운행 여부(첫차) — 미확인",
+   "done": false,
+   "owner": "앱 조사",
+   "impact": "놓치면 08:20 도착 불가"
+  }
+ ],
+ "alternatives": [
+  {
+   "id": "a1",
+   "dayDate": "2026-12-16",
+   "condition": "비·강풍",
+   "title": "2일차 비 오면: 실내 중심으로 압축",
+   "note": "오사카성 공원 산책과 고자부네(야외)를 빼고, 천수각 → 해유관 → 하루카스 300 순서로 바꿉니다.",
+   "steps": [
+    "09:30 오사카성 천수각 (실내 전시·전망) — 엘리베이터 대기 확인",
+    "11:30 점심 JO-TERRACE (비 오면 매장 대기 길어짐)",
+    "13:00 해유관 (전 구간 실내) — 이동은 지상·역 계단 포함",
+    "16:30 하루카스 300 전망대 (실내, 09:00~22:00)",
+    "18:30 덴노지 주변 저녁 후 귀숙"
+   ],
+   "cautions": [
+    "실내 시설도 이동 구간은 지상·계단·에스컬레이터를 지납니다. 무장애라고 가정하지 마세요.",
+    "나카노시마 일루미네이션(야외)은 생략합니다.",
+    "하루카스 300 입장료는 별도 발생합니다(성인 2,200엔·소·중학생 900엔)."
+   ]
+  },
+  {
+   "id": "a2",
+   "dayDate": "2026-12-17",
+   "condition": "비·한파",
+   "title": "3일차 USJ 비·한파 대응",
+   "note": "일정을 바꾸기보다 복장과 순서를 조정합니다. 야외 어트랙션 운휴 가능성을 전제로 합니다.",
+   "steps": [
+    "우비·방수 신발·여분 양말 준비, 유모차 방수 커버",
+    "실내 어트랙션·쇼 중심으로 순서 변경",
+    "15:30 조기 귀숙 또는 파크 내 실내 휴식 연장",
+    "저녁은 파크 밖(유니버설시티)에서 먹고 일찍 복귀"
+   ],
+   "cautions": [
+    "비로 야외 어트랙션이 멈추면 실내 쇼 대기 줄이 길어집니다.",
+    "한파 시 어르신은 2시간마다 실내 휴식이 필요합니다.",
+    "입장권 환불·변경 규정은 공식 안내 확인이 필요합니다.",
+    "파크 안 실내 시설도 입구·대기 줄에 계단과 단차가 있습니다. 무장애로 가정하지 말고 유모차 동선을 현장에서 확인하세요."
+   ]
+  },
+  {
+   "id": "a3",
+   "dayDate": "2026-12-15",
+   "condition": "체력 부족 (1일차)",
+   "title": "1일차 야간 일정 생략안",
+   "note": "도톤보리·미도스지(선택 항목)를 모두 빼고 호텔 근처에서 저녁만 먹고 쉽니다.",
+   "steps": [
+    "19:25 체크인 후 짐 정리",
+    "20:10 교바시에서 저녁",
+    "21:10 호텔 복귀, 16층 온천 이용 가능 여부 확인",
+    "다음 날 08:50 출발을 위해 22:30 취침"
+   ],
+   "cautions": [
+    "호텔 온천 이용 조건(유료·시간)은 확인이 필요합니다.",
+    "도톤보리를 포기하면 2일차 밤이나 4일차 이전 일정에 넣을 수 없습니다(4일차는 이른 출발).",
+    "호텔 온천·실내 시설도 계단·미끄러운 바닥이 있을 수 있습니다. 무장애로 가정하지 말고 프런트에 확인하세요."
+   ]
+  }
+ ],
+ "emergency": [
+  {
+   "id": "e1",
+   "label": "경찰 (일본)",
+   "number": "110",
+   "tel": "tel:110",
+   "note": "일본 현지 경찰. 한국어 통역이 필요하면 110 연결 후 상황을 말하고 통역을 요청하세요."
+  },
+  {
+   "id": "e2",
+   "label": "화재·구급 (일본)",
+   "number": "119",
+   "tel": "tel:119",
+   "note": "구급차 요청. 주소를 일본어로 말하기 어려우면 호텔 프런트에 도움을 요청하세요."
+  },
+  {
+   "id": "e3",
+   "label": "주오사카 대한민국 총영사관",
+   "number": "+81-6-4256-2345",
+   "tel": "tel:+81642562345",
+   "note": "오사카시 주오구 니시신사이바시 2-3-4 · 평일 09:00~17:30 (민원 09:00~16:00) · 근무시간 외 긴급 +81-90-3050-0746",
+   "link": "https://overseas.mofa.go.kr/jp-osaka-ko/index.do"
+  },
+  {
+   "id": "e4",
+   "label": "영사안전콜센터 (24시간)",
+   "number": "+82-2-3210-0404",
+   "tel": "tel:+82232100404",
+   "note": "외교부 운영. 해외 사건·사고 접수, 통역(일본어 포함), 긴급 지원.",
+   "link": "https://www.0404.go.kr/"
+  }
+ ],
+ "weather": {
+  "checkedAt": "2026-11-15",
+  "isLive": false,
+  "headline": "여행(12/15~18)은 약 30일 뒤라 예보 범위(10일) 밖입니다. 2026-12-05 이후에 예보를 확인할 수 있습니다.",
+  "summary": "이 화면은 2026-11-15에 정리한 안내이며 실시간 날씨가 아닙니다. 실제 기온·강수는 여행 10일 전부터 공식 예보로 확인하세요.",
+  "links": [
+   {
+    "label": "기상청 세계날씨 (오사카)",
+    "url": "https://worldweather.kma.go.kr/worldweather/index.do"
+   },
+   {
+    "label": "일본 기상청 예보 (오사카)",
+    "url": "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=270000"
+   },
+   {
+    "label": "오사카 관광 공식 (행사·개최 정보)",
+    "url": "https://osaka-info.jp/"
+   }
+  ],
+  "note": "예보와 실제는 다를 수 있습니다. '예측'과 '확인된 사실'을 구분해 표시하고, 개방 여부는 시설 공식 안내를 따르세요."
+ },
+ "notices": [
+  "이 앱의 모든 장소 정보는 2026-11-15에 확인한 값입니다. 요금·영업시간은 바뀔 수 있습니다.",
+  "확인된 예약 정보(항공·숙소) 외의 시간은 계획이며, 추정값과 확인 필요 항목을 배지로 구분했습니다.",
+  "도보 시간·계단·휠체어 접근성은 실측하지 않았습니다. '추정' 또는 '확인 필요'로 표시했습니다.",
+  "이 앱은 예약·결제를 대신 하지 않습니다. 링크는 공식 사이트로 이동만 합니다."
+ ]
+}
+</script>
+<script>
+/* =========================================================
+   core.js — 화면과 무관한 순수 로직 (검증 스크립트가 직접 실행)
+   DOM/localStorage 를 쓰지 않습니다.
+   ========================================================= */
+(function (g) {
+  'use strict';
+
+  var C = {};
+
+  C.SCHEMA_VERSION = 2;
+  C.STORAGE_KEY = 'osaka.trip.state.v1';
+  C.PERSONAL_KEY = 'osaka.trip.personal.v1';
+  C.RECOVERY_KEY = 'osaka.trip.recovery.v1';
+  C.PREFIX = 'osaka.trip.';
+
+  C.STATUS_LABEL = {
+    paid: '결제 완료',
+    reserved: '미결제 예약',
+    estimate: '예상 지출',
+    refund: '환불',
+    unknown: '금액 미확인'
+  };
+  C.BADGE_LABEL = {
+    confirmed: '확정',
+    planned: '계획',
+    optional: '선택',
+    needs_check: '확인 필요',
+    cancelled: '취소·제외'
+  };
+
+  /* ---------- 기본 유틸 ---------- */
+  C.clone = function (o) { return JSON.parse(JSON.stringify(o)); };
+
+  C.uid = function (prefix) {
+    var r = '';
+    if (g.crypto && typeof g.crypto.randomUUID === 'function') {
+      r = g.crypto.randomUUID().replace(/-/g, '').slice(0, 10);
+    } else {
+      r = Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
+    }
+    return (prefix || 'x') + '-' + r;
+  };
+
+  C.pad = function (n) { return (n < 10 ? '0' : '') + n; };
+
+  C.toMin = function (t) {
+    if (typeof t !== 'string') return null;
+    var m = /^(\d{1,2}):(\d{2})$/.exec(t.trim());
+    if (!m) return null;
+    var h = parseInt(m[1], 10), mi = parseInt(m[2], 10);
+    if (h > 47 || mi > 59) return null;
+    return h * 60 + mi;
+  };
+
+  C.fromMin = function (v) {
+    if (v === null || v === undefined || isNaN(v)) return '';
+    while (v < 0) v += 24 * 60;
+    var h = Math.floor(v / 60) % 48, m = v % 60;
+    return C.pad(h) + ':' + C.pad(m);
+  };
+
+  C.dateLabel = function (iso, weekday) {
+    if (!iso) return '';
+    var p = iso.split('-');
+    return parseInt(p[1], 10) + '월 ' + parseInt(p[2], 10) + '일' + (weekday ? '(' + weekday + ')' : '');
+  };
+
+  C.sum = function (arr, f) {
+    var s = 0;
+    for (var i = 0; i < arr.length; i++) { var v = f(arr[i]); if (typeof v === 'number' && isFinite(v)) s += v; }
+    return s;
+  };
+
+  C.fmtNum = function (n) {
+    if (n === null || n === undefined || n === '') return '';
+    var x = Math.round(n * 100) / 100;
+    var parts = String(x).split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return parts.join('.');
+  };
+
+  C.fmtMoney = function (n, cur) {
+    if (n === null || n === undefined) return '금액 미확인';
+    return C.fmtNum(n) + (cur === 'JPY' ? '엔' : '원');
+  };
+
+  C.esc = function (s) {
+    return String(s === null || s === undefined ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  };
+
+  /* ---------- 초기 상태 ---------- */
+  C.buildInitialState = function (data) {
+    var days = C.clone(data.days).map(function (d) {
+      d.items = (d.items || []).map(function (it, i) {
+        it.order = i;
+        it.status = it.status || 'planned';   /* planned | done | skipped */
+        if (it.travel && it.travel.min !== null) { it.travel.stale = false; }
+        return it;
+      });
+      return d;
+    });
+    return {
+      schemaVersion: C.SCHEMA_VERSION,
+      appVersion: data.meta.appVersion,
+      revision: 1,
+      savedAt: null,
+      dataCheckedAt: data.meta.dataCheckedAt,
+      trip: C.clone(data.trip),
+      party: C.clone(data.party),
+      days: days,
+      candidates: C.clone(data.candidates),
+      reservations: C.clone(data.reservations),
+      budget: C.clone(data.budget),
+      checklist: C.clone(data.checklist),
+      confirmations: C.clone(data.confirmations),
+      alternatives: C.clone(data.alternatives),
+      notices: C.clone(data.notices),
+      settings: {
+        tab: 'home',
+        viewMode: 'before',
+        activeDate: data.days[0].date,
+        editMode: false,
+        hidePersonal: true
+      },
+      trash: [],
+      savedCount: 0
+    };
+  };
+
+  C.emptyPersonal = function () { return { items: {}, general: '', updatedAt: null }; };
+
+  /* ---------- 찾기 ---------- */
+  C.findDay = function (state, date) {
+    for (var i = 0; i < state.days.length; i++) { if (state.days[i].date === date) return state.days[i]; }
+    return null;
+  };
+
+  C.dayOfItem = function (state, itemId) {
+    for (var i = 0; i < state.days.length; i++) {
+      var items = state.days[i].items;
+      for (var j = 0; j < items.length; j++) { if (items[j].id === itemId) return state.days[i]; }
+    }
+    return null;
+  };
+
+  C.findItem = function (state, itemId) {
+    var d = C.dayOfItem(state, itemId);
+    if (!d) return null;
+    for (var j = 0; j < d.items.length; j++) { if (d.items[j].id === itemId) return d.items[j]; }
+    return null;
+  };
+
+  C.pendingConfirmations = function (state) {
+    return (state.confirmations || []).filter(function (q) { return !q.done; });
+  };
+
+  C.checklistLeft = function (state) {
+    return (state.checklist || []).filter(function (k) { return !k.done; });
+  };
+
+  /* ---------- revision / 다중 탭 ---------- */
+  C.shouldBlockSave = function (myRevision, storedRevision) {
+    if (storedRevision === null || storedRevision === undefined) return false;
+    return Number(storedRevision) !== Number(myRevision);
+  };
+
+  C.detectConflict = function (myRevision, incomingRevision) {
+    return Number(incomingRevision) !== Number(myRevision);
+  };
+
+  /* ---------- 예산 ---------- */
+  C.budgetTotals = function (budget) {
+    var items = (budget && budget.items) || [];
+    var currencies = ['KRW', 'JPY'];
+    var out = {
+      enabled: !!(budget && budget.enabled),
+      krw: { paid: 0, reserved: 0, estimate: 0, refund: 0, refundConfirmed: 0, net: 0 },
+      jpy: { paid: 0, reserved: 0, estimate: 0, refund: 0, refundConfirmed: 0, net: 0 },
+      unknownCount: 0,
+      unknownLabels: [],
+      counts: { paid: 0, reserved: 0, estimate: 0, refund: 0, total: items.length },
+      byCategory: {},
+      totalKrw: null,
+      targetKrw: budget ? budget.targetKrw : null,
+      bufferPct: budget ? budget.bufferPct : 0,
+      limitKrw: null,
+      remainingKrw: null,
+      overLimit: false,
+      needsRate: false
+    };
+
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      var cur = it.currency === 'JPY' ? 'jpy' : 'krw';
+      var status = it.status;
+      if (status === 'unknown' || it.amount === null || it.amount === undefined) {
+        out.unknownCount++;
+        out.unknownLabels.push(it.label);
+        if (status === 'paid' || status === 'reserved' || status === 'estimate' || status === 'refund') {
+          out.counts[status] = (out.counts[status] || 0) + 1;
+        }
+        continue;
+      }
+      var amt = Number(it.amount);
+      if (!isFinite(amt)) { out.unknownCount++; out.unknownLabels.push(it.label); continue; }
+      if (status === 'paid' || status === 'reserved' || status === 'estimate' || status === 'refund') {
+        out[cur][status] += amt;
+        out.counts[status] = (out.counts[status] || 0) + 1;
+        if (status === 'refund') {
+          if (it.refundConfirmed) out[cur].refundConfirmed += amt;
+        } else {
+          var key = it.category || '기타';
+          if (!out.byCategory[key]) out.byCategory[key] = { krw: 0, jpy: 0 };
+          out.byCategory[key][cur] += amt;
+        }
+      }
+    }
+
+    out.krw.net = out.krw.paid + out.krw.reserved + out.krw.estimate - out.krw.refundConfirmed;
+    out.jpy.net = out.jpy.paid + out.jpy.reserved + out.jpy.estimate - out.jpy.refundConfirmed;
+
+    var rate = budget && budget.jpyRate ? Number(budget.jpyRate) : null;
+    if (rate && rate > 0) {
+      out.totalKrw = Math.round(out.krw.net + out.jpy.net * rate);
+    } else {
+      out.needsRate = out.jpy.net !== 0;
+    }
+    if (out.targetKrw) {
+      out.limitKrw = Math.round(out.targetKrw * (1 + (Number(out.bufferPct) || 0) / 100));
+      if (out.totalKrw !== null) {
+        out.remainingKrw = out.limitKrw - out.totalKrw;
+        out.overLimit = out.remainingKrw < 0;
+      }
+    }
+    return out;
+  };
+
+  /* 예상 → 실제 전환: 같은 항목을 고쳐 쓰므로 중복 합산이 생기지 않습니다. */
+  C.estimateToActual = function (budget, itemId, actualAmount) {
+    var items = budget.items || [];
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].id !== itemId) continue;
+      var it = items[i];
+      it.convertedFrom = {
+        status: it.status,
+        amount: it.amount,
+        currency: it.currency,
+        at: new Date().toISOString()
+      };
+      it.status = 'paid';
+      if (actualAmount !== undefined && actualAmount !== null && actualAmount !== '') {
+        it.amount = Number(actualAmount);
+      }
+      it.label = it.label.replace(/\s*\(예상\)$/, '');
+      return it;
+    }
+    return null;
+  };
+
+  /* ---------- 일정 편집 ---------- */
+  C.moveItemWithinDay = function (day, index, dir) {
+    var target = index + (dir === 'up' ? -1 : 1);
+    if (target < 0 || target >= day.items.length) return false;
+    var tmp = day.items[index];
+    day.items[index] = day.items[target];
+    day.items[target] = tmp;
+    C.reindex(day);
+    C.markTravelStale(day, target);
+    C.markTravelStale(day, index);
+    return true;
+  };
+
+  C.reindex = function (day) {
+    for (var i = 0; i < day.items.length; i++) { day.items[i].order = i; }
+  };
+
+  C.markTravelStale = function (day, index) {
+    if (!day || !day.items) return;
+    for (var k = Math.max(0, index); k <= Math.min(index + 1, day.items.length - 1); k++) {
+      var it = day.items[k];
+      if (it && it.travel && k > 0) it.travel.stale = true;
+    }
+  };
+
+  C.markAllTravelStale = function (day) {
+    if (!day || !day.items) return;
+    for (var i = 1; i < day.items.length; i++) { if (day.items[i].travel) day.items[i].travel.stale = true; }
+  };
+
+  /* 여행 전/중/후 뷰는 표시만 바꿉니다. 방문 완료·현재 목적지는 자동 지정하지 않습니다. */
+  C.viewModeLabel = function (mode) {
+    return { before: '여행 전', during: '여행 중', after: '여행 후' }[mode] || '여행 전';
+  };
+
+  C.setItemStatus = function (state, itemId, status) {
+    var it = C.findItem(state, itemId);
+    if (!it) return null;
+    if (['planned', 'done', 'skipped'].indexOf(status) < 0) return null;
+    it.status = status;
+    it.statusAt = new Date().toISOString();
+    return it;
+  };
+
+  /* ---------- 경고 계산 ---------- */
+  C.checkDay = function (day) {
+    var out = [];
+    var items = (day && day.items) || [];
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      var s = C.toMin(it.time), e = C.toMin(it.endTime);
+      if (it.time && s === null) {
+        out.push({ level: 'danger', itemId: it.id, text: '시각 형식이 잘못되었습니다: ' + it.time });
+      }
+      if (s !== null && e !== null && e < s && (s - e) < 12 * 60) {
+        out.push({ level: 'danger', itemId: it.id, text: '종료 시각이 시작 시각보다 빠릅니다: ' + it.name });
+      }
+      /* 운영시간 */
+      var op = it.opening;
+      if (op && s !== null) {
+        var open = C.toMin(op.open), close = C.toMin(op.close);
+        if (open !== null && s < open) {
+          out.push({ level: 'warn', itemId: it.id, text: '운영 시작(' + op.open + ') 전 도착입니다: ' + it.name });
+        }
+        if (close !== null && e !== null && e > close) {
+          out.push({ level: 'warn', itemId: it.id, text: '운영 종료(' + op.close + ') 후까지 걸립니다: ' + it.name });
+        }
+        if (op.lastEntry && s !== null) {
+          var le = C.toMin(op.lastEntry);
+          if (le !== null && s > le) {
+            out.push({ level: 'danger', itemId: it.id, text: '마지막 입장(' + op.lastEntry + ')을 넘겼습니다: ' + it.name });
+          }
+        }
+      }
+      /* 시간 겹침 */
+      if (i > 0) {
+        var prev = items[i - 1];
+        var pe = C.toMin(prev.endTime);
+        if (pe !== null && s !== null && s < pe) {
+          out.push({
+            level: 'danger', itemId: it.id,
+            text: '앞 일정(' + prev.name + ' ' + prev.endTime + ')과 ' + (pe - s) + '분 겹칩니다.'
+          });
+        }
+        var travel = it.travel;
+        if (travel && typeof travel.min === 'number' && pe !== null && s !== null) {
+          if (s - pe < travel.min) {
+            out.push({
+              level: 'warn', itemId: it.id,
+              text: '앞 일정 종료부터 ' + (s - pe) + '분뿐인데 이동에 ' +
+                travel.min + '분(' + travel.source + ')이 걸립니다.'
+            });
+          }
+        }
+      }
+      /* 예약·마감 */
+      if (it.deadline && it.deadline.time) {
+        var dl = C.toMin(it.deadline.time);
+        if (dl !== null && s !== null && s > dl) {
+          out.push({ level: 'danger', itemId: it.id, text: '이 항목이 마감(' + it.deadline.time + ') 이후에 시작합니다: ' + it.deadline.label });
+        }
+        if (i > 0) {
+          var pe2 = C.toMin(items[i - 1].endTime);
+          if (dl !== null && pe2 !== null && pe2 > dl) {
+            out.push({ level: 'danger', itemId: it.id, text: '앞 일정이 마감(' + it.deadline.time + ')을 넘깁니다: ' + it.deadline.label });
+          }
+        }
+      }
+    }
+    return out;
+  };
+
+  C.checkReservations = function (state) {
+    var out = [];
+    var list = (state && state.reservations) || [];
+    for (var i = 0; i < list.length; i++) {
+      var r = list[i];
+      if (r.status === 'cancelled') continue;
+      if (r.linkedItemId) {
+        var day = C.dayOfItem(state, r.linkedItemId);
+        if (!day) {
+          out.push({ level: 'danger', reservationId: r.id, text: '연결된 일정 항목을 찾을 수 없습니다: ' + r.title });
+        } else if (r.date && day.date !== r.date) {
+          out.push({
+            level: 'danger', reservationId: r.id,
+            text: '예약 날짜(' + r.date + ')와 일정 날짜(' + day.date + ')가 다릅니다: ' + r.title
+          });
+        }
+      }
+      if (r.status === 'needs_action') {
+        out.push({ level: 'warn', reservationId: r.id, text: '아직 처리되지 않은 예약입니다: ' + r.title });
+      }
+      if (r.notify && r.notify !== '설정됨') {
+        out.push({ level: 'info', reservationId: r.id, text: '알림: ' + r.notify + ' — ' + r.title });
+      }
+    }
+    return out;
+  };
+
+  /* 항목 하나에 대한 표시용 경고 모음 */
+  C.itemWarnings = function (state, day, index) {
+    var all = C.checkDay(day);
+    return all.filter(function (w) { return w.itemId === day.items[index].id; });
+  };
+
+  /* ---------- 지도·길찾기 링크 ---------- */
+  C.placeQuery = function (name, address) {
+    var q = [name || '', address || ''].filter(Boolean).join(' ');
+    return q.replace(/\s+/g, ' ').trim();
+  };
+
+  C.buildMapLinks = function (name, address) {
+    var q = C.placeQuery(name, address);
+    var e = encodeURIComponent(q);
+    return {
+      google: { label: 'Google 지도', href: 'https://www.google.com/maps/search/?api=1&query=' + e, kind: 'map' },
+      apple: { label: 'Apple 지도', href: 'https://maps.apple.com/?q=' + e, kind: 'map' },
+      naver: { label: '네이버 지도', href: 'https://map.naver.com/p/search/' + e, kind: 'map' },
+      kakao: { label: '카카오맵', href: 'https://map.kakao.com/?q=' + e, kind: 'map' },
+      tmap: { label: '티맵 (운전)', href: 'tmap://search?keyword=' + e, kind: 'drive' },
+      kakaonavi: { label: '카카오내비 (운전)', href: 'kakaonavi://search?keyword=' + e, kind: 'drive' }
+    };
+  };
+
+  C.driveSearchText = function (name, address) {
+    return C.placeQuery(name, address) + ' 주차';
+  };
+
+  /* ---------- ICS ---------- */
+  C.icsEscape = function (s) {
+    return String(s === null || s === undefined ? '' : s)
+      .replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,')
+      .replace(/\r?\n/g, '\\n');
+  };
+
+  C.utf8Len = function (codePoint) {
+    if (codePoint < 0x80) return 1;
+    if (codePoint < 0x800) return 2;
+    if (codePoint < 0x10000) return 3;
+    return 4;
+  };
+
+  /* RFC 5545: 줄은 75옥텟(UTF-8 바이트)을 넘지 않게 접고, 이어지는 줄은 공백으로 시작합니다. */
+  C.icsFold = function (line) {
+    var out = [], cur = '', bytes = 0, limit = 75;
+    for (var i = 0; i < line.length;) {
+      var cp = line.codePointAt ? line.codePointAt(i) : line.charCodeAt(i);
+      var b = C.utf8Len(cp);
+      if (bytes + b > limit) {
+        out.push(cur);
+        cur = ' ';
+        bytes = 1;
+      }
+      if (cp > 0xFFFF) { cur += line.substr(i, 2); i += 2; }
+      else { cur += line.charAt(i); i += 1; }
+      bytes += b;
+    }
+    out.push(cur);
+    return out.join('\r\n');
+  };
+
+  C.icsStamp = function (dateStr, timeStr) {
+    /* 입력은 현지(UTC+9) 시각, 출력은 UTC */
+    var p = dateStr.split('-');
+    var y = parseInt(p[0], 10), mo = parseInt(p[1], 10), d = parseInt(p[2], 10);
+    var t = C.toMin(timeStr || '00:00');
+    if (t === null) t = 0;
+    var dt = new Date(Date.UTC(y, mo - 1, d, 0, 0, 0));
+    dt.setUTCMinutes(dt.getUTCMinutes() + (t - 9 * 60));
+    return dt.getUTCFullYear() + C.pad(dt.getUTCMonth() + 1) + C.pad(dt.getUTCDate()) +
+      'T' + C.pad(dt.getUTCHours()) + C.pad(dt.getUTCMinutes()) + '00Z';
+  };
+
+  C.buildICS = function (state, nowUtc) {
+    var stamp = nowUtc || '20261115T000000Z';
+    var lines = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//osaka-trip-app//KO//KR',
+      'CALSCALE:GREGORIAN',
+      'METHOD:PUBLISH',
+      'X-WR-CALNAME:오사카 가족 여행 2026'
+    ];
+    var events = [];
+    var list = (state.reservations || []).filter(function (r) {
+      return r.status !== 'cancelled' && r.date && r.time;
+    });
+    for (var i = 0; i < list.length; i++) {
+      var r = list[i];
+      events.push({
+        uid: r.id + '@osaka-trip-app',
+        start: C.icsStamp(r.date, r.time),
+        end: C.icsStamp(r.date, r.endTime || r.time),
+        summary: r.title,
+        location: r.route || '',
+        description: (r.details || '') + ' · 알림: ' + (r.notify || '미설정')
+      });
+    }
+    for (var k = 0; k < events.length; k++) {
+      var ev = events[k];
+      lines.push('BEGIN:VEVENT');
+      lines.push('UID:' + ev.uid);
+      lines.push('DTSTAMP:' + stamp);
+      lines.push('DTSTART:' + ev.start);
+      lines.push('DTEND:' + ev.end);
+      lines.push(C.icsFold('SUMMARY:' + C.icsEscape(ev.summary)));
+      if (ev.location) lines.push(C.icsFold('LOCATION:' + C.icsEscape(ev.location)));
+      if (ev.description) lines.push(C.icsFold('DESCRIPTION:' + C.icsEscape(ev.description)));
+      lines.push('END:VEVENT');
+    }
+    lines.push('END:VCALENDAR');
+    return lines.join('\r\n') + '\r\n';
+  };
+
+  /* ---------- 백업·복구 ---------- */
+  C.exportPayload = function (state, personal, includePersonal, nowIso) {
+    var payload = {
+      app: 'osaka-trip-app',
+      schemaVersion: C.SCHEMA_VERSION,
+      appVersion: (state && state.appVersion) || '1.1.0',
+      exportedAt: nowIso || new Date().toISOString(),
+      includePersonal: !!includePersonal,
+      data: {
+        trip: state.trip,
+        party: state.party,
+        days: state.days,
+        candidates: state.candidates,
+        reservations: state.reservations,
+        budget: state.budget,
+        checklist: state.checklist,
+        confirmations: state.confirmations,
+        alternatives: state.alternatives,
+        notices: state.notices,
+        settings: state.settings
+      }
+    };
+    if (includePersonal && personal) { payload.personal = personal; }
+    return payload;
+  };
+
+  C.validateBackup = function (obj) {
+    var errors = [], warnings = [];
+    if (obj === null || typeof obj !== 'object') {
+      return { ok: false, errors: ['JSON 최상위가 객체가 아닙니다.'], warnings: [], summary: null };
+    }
+    if (!obj.schemaVersion) errors.push('schemaVersion 이 없습니다.');
+    else if (Number(obj.schemaVersion) > C.SCHEMA_VERSION) {
+      errors.push('이 앱보다 새로운 형식(schemaVersion ' + obj.schemaVersion + ')입니다.');
+    }
+    var d = obj.data || obj.state;
+    if (!d || typeof d !== 'object') {
+      errors.push('data(여행 자료)가 없습니다.');
+      return { ok: false, errors: errors, warnings: warnings, summary: null };
+    }
+    if (!Array.isArray(d.days) || d.days.length === 0) errors.push('days(일자)가 없습니다.');
+    if (!d.trip || !d.trip.start || !d.trip.end) errors.push('trip.start/end 가 없습니다.');
+
+    var itemCount = 0, dayCount = 0;
+    if (Array.isArray(d.days)) {
+      dayCount = d.days.length;
+      for (var i = 0; i < d.days.length; i++) {
+        var day = d.days[i];
+        if (!day || typeof day !== 'object') { errors.push('days[' + i + '] 가 객체가 아닙니다.'); continue; }
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(String(day.date || ''))) errors.push('days[' + i + '].date 형식이 잘못되었습니다.');
+        if (!Array.isArray(day.items)) { errors.push('days[' + i + '].items 가 배열이 아닙니다.'); continue; }
+        itemCount += day.items.length;
+        for (var j = 0; j < day.items.length; j++) {
+          var it = day.items[j];
+          if (!it || typeof it !== 'object') { errors.push('days[' + i + '].items[' + j + '] 가 객체가 아닙니다.'); continue; }
+          if (!it.id) errors.push('days[' + i + '].items[' + j + '].id 가 없습니다.');
+          if (!it.name) errors.push('days[' + i + '].items[' + j + '].name 이 없습니다.');
+          if (it.time && C.toMin(it.time) === null) errors.push('days[' + i + '].items[' + j + '].time 형식 오류: ' + it.time);
+        }
+      }
+    }
+    if (d.budget && Array.isArray(d.budget.items)) {
+      for (var b = 0; b < d.budget.items.length; b++) {
+        var bi = d.budget.items[b];
+        if (!bi || !bi.id) { errors.push('budget.items[' + b + '].id 가 없습니다.'); continue; }
+        if (['paid', 'reserved', 'estimate', 'refund', 'unknown'].indexOf(bi.status) < 0) {
+          errors.push('budget.items[' + b + '].status 값이 잘못되었습니다: ' + bi.status);
+        }
+        if (bi.amount !== null && bi.amount !== undefined && typeof bi.amount !== 'number') {
+          errors.push('budget.items[' + b + '].amount 가 숫자도 null 도 아닙니다.');
+        }
+        if (bi.currency && ['KRW', 'JPY'].indexOf(bi.currency) < 0) {
+          errors.push('budget.items[' + b + '].currency 값이 잘못되었습니다: ' + bi.currency);
+        }
+      }
+    }
+    if (!Array.isArray(d.candidates)) warnings.push('후보(candidates)가 없어 빈 목록으로 복원됩니다.');
+    if (!Array.isArray(d.reservations)) warnings.push('예약(reservations)이 없어 빈 목록으로 복원됩니다.');
+
+    var summary = {
+      tripStart: d.trip && d.trip.start,
+      tripEnd: d.trip && d.trip.end,
+      days: dayCount,
+      items: itemCount,
+      candidates: Array.isArray(d.candidates) ? d.candidates.length : 0,
+      reservations: Array.isArray(d.reservations) ? d.reservations.length : 0,
+      budgetItems: d.budget && Array.isArray(d.budget.items) ? d.budget.items.length : 0,
+      checklist: Array.isArray(d.checklist) ? d.checklist.length : 0,
+      confirmations: Array.isArray(d.confirmations) ? d.confirmations.length : 0,
+      hasPersonal: !!obj.personal,
+      exportedAt: obj.exportedAt || null
+    };
+    return { ok: errors.length === 0, errors: errors, warnings: warnings, summary: summary };
+  };
+
+  C.parseBackupText = function (text) {
+    var obj;
+    try { obj = JSON.parse(text); }
+    catch (e) { return { ok: false, errors: ['JSON 을 읽을 수 없습니다: ' + e.message], warnings: [], summary: null }; }
+    return C.validateBackup(obj);
+  };
+
+  /* 합치기: id 기준. 같은 id 는 현재 것을 유지하고, 새 id 만 더합니다. */
+  C.mergeStates = function (current, incoming) {
+    var out = C.clone(current);
+    var report = { addedItems: 0, skippedItems: 0, addedCandidates: 0, skippedCandidates: 0, addedChecklist: 0, addedConfirmations: 0, addedBudget: 0, addedReservations: 0, addedDays: 0, daysKept: [] };
+    var inc = C.clone(incoming);
+
+    if (Array.isArray(inc.days)) {
+      for (var i = 0; i < inc.days.length; i++) {
+        var incDay = inc.days[i];
+        var curDay = null;
+        for (var k = 0; k < out.days.length; k++) { if (out.days[k].date === incDay.date) { curDay = out.days[k]; break; } }
+        if (!curDay) {
+          out.days.push(incDay);
+          report.addedDays++;
+          report.addedItems += (incDay.items || []).length;
+          continue;
+        }
+        report.daysKept.push(incDay.date);
+        var existing = {};
+        for (var j = 0; j < curDay.items.length; j++) { existing[curDay.items[j].id] = true; }
+        for (var m = 0; m < (incDay.items || []).length; m++) {
+          var it = incDay.items[m];
+          if (existing[it.id]) { report.skippedItems++; continue; }
+          curDay.items.push(it);
+          report.addedItems++;
+        }
+        C.reindex(curDay);
+      }
+    }
+
+    function mergeList(key, label) {
+      if (!Array.isArray(inc[key])) return;
+      var seen = {};
+      for (var i = 0; i < out[key].length; i++) { seen[out[key][i].id] = true; }
+      for (var j = 0; j < inc[key].length; j++) {
+        if (seen[inc[key][j].id]) continue;
+        out[key].push(inc[key][j]);
+        report[label] = (report[label] || 0) + 1;
+      }
+    }
+    mergeList('candidates', 'addedCandidates');
+    mergeList('checklist', 'addedChecklist');
+    mergeList('confirmations', 'addedConfirmations');
+    mergeList('reservations', 'addedReservations');
+
+    if (inc.budget && Array.isArray(inc.budget.items)) {
+      var seenB = {};
+      for (var b = 0; b < out.budget.items.length; b++) { seenB[out.budget.items[b].id] = true; }
+      for (var c = 0; c < inc.budget.items.length; c++) {
+        if (seenB[inc.budget.items[c].id]) continue;
+        out.budget.items.push(inc.budget.items[c]);
+        report.addedBudget++;
+      }
+    }
+    return { state: out, report: report };
+  };
+
+  C.applyReplace = function (current, incoming) {
+    var next = C.clone(current);
+    var d = C.clone(incoming);
+    next.trip = d.trip || next.trip;
+    next.party = d.party || next.party;
+    next.days = d.days || next.days;
+    next.candidates = d.candidates || [];
+    next.reservations = d.reservations || [];
+    next.budget = d.budget || next.budget;
+    next.checklist = d.checklist || [];
+    next.confirmations = d.confirmations || [];
+    next.alternatives = d.alternatives || next.alternatives;
+    next.notices = d.notices || next.notices;
+    for (var i = 0; i < next.days.length; i++) { C.reindex(next.days[i]); }
+    return next;
+  };
+
+  /* ---------- 휴지통 ---------- */
+  C.trashPush = function (state, entry) {
+    if (!state.trash) state.trash = [];
+    var e = C.clone(entry);
+    e.id = e.id || C.uid('tr');
+    e.at = e.at || new Date().toISOString();
+    state.trash.unshift(e);
+    if (state.trash.length > 50) state.trash.length = 50;
+    return e;
+  };
+
+  C.removeItem = function (state, itemId, guard) {
+    if (guard && guard('remove:' + itemId) === false) return null;
+    for (var i = 0; i < state.days.length; i++) {
+      var day = state.days[i];
+      for (var j = 0; j < day.items.length; j++) {
+        if (day.items[j].id !== itemId) continue;
+        var item = day.items[j];
+        day.items.splice(j, 1);
+        C.reindex(day);
+        C.markTravelStale(day, Math.max(0, j - 1));
+        var entry = C.trashPush(state, { kind: 'item', dayId: day.date, index: j, payload: item, label: item.name });
+        return { entry: entry, day: day };
+      }
+    }
+    return null;
+  };
+
+  C.restoreTrash = function (state, trashId) {
+    if (!state.trash) return null;
+    for (var i = 0; i < state.trash.length; i++) {
+      var e = state.trash[i];
+      if (e.id !== trashId) continue;
+      if (e.kind === 'item') {
+        var day = C.findDay(state, e.dayId);
+        if (!day) return { ok: false, reason: '해당 날짜가 없습니다.' };
+        for (var j = 0; j < day.items.length; j++) {
+          if (day.items[j].id === e.payload.id) return { ok: false, reason: '이미 같은 항목이 있습니다.' };
+        }
+        var idx = Math.max(0, Math.min(e.index, day.items.length));
+        day.items.splice(idx, 0, e.payload);
+        C.reindex(day);
+        C.markAllTravelStale(day);
+      }
+      state.trash.splice(i, 1);
+      return { ok: true, restored: e };
+    }
+    return null;
+  };
+
+  C.emptyTrash = function (state, allow) {
+    if (!allow) return { ok: false, reason: '백업 확인이 필요합니다.' };
+    var n = (state.trash || []).length;
+    state.trash = [];
+    return { ok: true, removed: n };
+  };
+
+  /* 연속 클릭 중복 방지 (같은 키는 ms 동안 1회만 통과) */
+  C.makeGuard = function (nowFn) {
+    var seen = {};
+    var now = nowFn || function () { return Date.now(); };
+    return function (key, ms) {
+      var t = now();
+      var span = ms || 700;
+      if (seen[key] && t - seen[key] < span) return false;
+      seen[key] = t;
+      return true;
+    };
+  };
+
+  /* ---------- 개인 메모 ---------- */
+  C.maskText = function (s) {
+    if (!s) return '';
+    var str = String(s);
+    if (str.length <= 2) return '••';
+    return '•'.repeat(Math.min(12, str.length));
+  };
+
+  C.personalSummary = function (personal) {
+    if (!personal) return { itemCount: 0, hasGeneral: false };
+    var n = 0;
+    var items = personal.items || {};
+    for (var k in items) { if (Object.prototype.hasOwnProperty.call(items, k)) { if ((items[k].memo || items[k].ref || '').trim()) n++; } }
+    return { itemCount: n, hasGeneral: !!(personal.general && personal.general.trim()) };
+  };
+
+  /* ---------- 요약 ---------- */
+  C.summarize = function (state) {
+    var items = 0, done = 0, skipped = 0, optional = 0, needs = 0;
+    for (var i = 0; i < state.days.length; i++) {
+      for (var j = 0; j < state.days[i].items.length; j++) {
+        var it = state.days[i].items[j];
+        items++;
+        if (it.status === 'done') done++;
+        if (it.status === 'skipped') skipped++;
+        if (it.badge === 'optional') optional++;
+        if (it.badge === 'needs_check') needs++;
+      }
+    }
+    var budget = C.budgetTotals(state.budget);
+    return {
+      days: state.days.length,
+      items: items,
+      done: done,
+      skipped: skipped,
+      optional: optional,
+      needsCheck: needs,
+      checklistLeft: C.checklistLeft(state).length,
+      confirmationsLeft: C.pendingConfirmations(state).length,
+      candidates: state.candidates.length,
+      budget: budget
+    };
+  };
+
+  /* 검증용: 상태 전체에서 개인정보로 볼 수 있는 패턴 찾기 */
+  C.scanPersonalData = function (state) {
+    var text = JSON.stringify(state);
+    var findings = [];
+    if (/-?\b\d{6}-\d{7}\b/.test(text)) findings.push('주민등록번호 형식');
+    if (/\b[A-Z0-9]{6}\b/.test(text.replace(/"id":"[^"]*"/g, ''))) findings.push('PNR/예약번호로 보이는 6자리 코드');
+    if (/010-?\d{4}-?\d{4}/.test(text)) findings.push('휴대폰 번호');
+    if (/\b\d{4}-\d{4}-\d{4}-\d{4}\b/.test(text)) findings.push('카드 번호 형식');
+    return findings;
+  };
+
+  g.TripCore = C;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+</script>
+<script>
+/* =========================================================
+   ui.js — 화면 렌더링과 상호작용
+   ========================================================= */
+(function () {
+  'use strict';
+
+  var C = window.TripCore;
+  var DATA = JSON.parse(document.getElementById('trip-data').textContent);
+
+  var S = null;                 /* 여행 자료 상태 */
+  var P = C.emptyPersonal();    /* 기기 전용 개인 메모 */
+  var baseRev = 1;
+  var conflict = null;
+  var pendingImport = null;
+  var guard = C.makeGuard();
+  var saveTimer = null;
+  var lastSaveError = '';
+
+  var KIND_LABEL = {
+    move: '이동', visit: '방문', meal: '식사', rest: '휴식', shop: '쇼핑',
+    hotel: '숙소', checkin: '수속', flight: '항공', note: '안내'
+  };
+  var KIND_ICON = {
+    move: '↔', visit: '◎', meal: '🍽', rest: '☕', shop: '🛍',
+    hotel: '🏨', checkin: '🎫', flight: '✈', note: 'ℹ'
+  };
+  var CATEGORY_LABEL = {
+    transport: '교통', lodging: '숙소', experience: '체험·입장권', insurance: '보험'
+  };
+  var RES_STATUS = {
+    confirmed: { label: '확정', cls: 'confirmed' },
+    needs_action: { label: '처리 필요', cls: 'needs_check' },
+    planned: { label: '계획', cls: 'planned' },
+    cancelled: { label: '취소·제외', cls: 'cancelled' }
+  };
+
+  /* ---------------- 저장소 ---------------- */
+  function safeGet(key) {
+    try { return localStorage.getItem(key); }
+    catch (e) { return null; }
+  }
+  function safeSet(key, val) {
+    try { localStorage.setItem(key, val); return true; }
+    catch (e) { return false; }
+  }
+
+  function readStored() {
+    var raw = safeGet(C.STORAGE_KEY);
+    if (!raw) return null;
+    try {
+      var o = JSON.parse(raw);
+      if (o && typeof o === 'object') return o;
+      return null;
+    } catch (e) { return null; }
+  }
+
+  function setSave(status, detail) {
+    var chip = document.getElementById('save-chip');
+    if (!chip) return;
+    var time = '';
+    if (S && S.savedAt) {
+      var d = new Date(S.savedAt);
+      time = C.pad(d.getHours()) + ':' + C.pad(d.getMinutes()) + ':' + C.pad(d.getSeconds());
+    }
+    chip.className = 'savechip state-' + status;
+    if (status === 'saving') chip.innerHTML = '<span class="dot"></span>저장 중…';
+    else if (status === 'saved') chip.innerHTML = '<span class="dot"></span>저장됨 · ' + time + ' (이 기기에만)';
+    else chip.innerHTML = '<span class="dot"></span>저장 실패 · 기기 저장 공간 확인' + (detail ? ' (' + C.esc(detail) + ')' : '');
+  }
+
+  function writeNow(after) {
+    setSave('saving');
+    S.savedAt = new Date().toISOString();
+    var raw = JSON.stringify(S);
+    var ok = safeSet(C.STORAGE_KEY, raw);
+    if (ok) {
+      baseRev = S.revision;
+      lastSaveError = '';
+      window.setTimeout(function () { setSave('saved'); }, 30);
+    } else {
+      lastSaveError = '용량 초과 또는 저장이 막힌 브라우저';
+      setSave('failed', lastSaveError);
+    }
+    if (typeof after === 'function') after(ok);
+    return ok;
+  }
+
+  /* 모든 편집은 이 함수를 지나갑니다. 다른 탭이 먼저 저장했다면 덮어쓰지 않습니다. */
+  function commit(mutator, opts) {
+    opts = opts || {};
+    if (conflict) { renderConflict(); toast('다른 탭의 변경과 충돌이 있습니다. 먼저 아래 배너에서 처리하세요.'); return false; }
+    var stored = readStored();
+    if (stored && C.shouldBlockSave(baseRev, stored.revision)) {
+      conflict = stored;
+      renderConflict();
+      toast('다른 탭이 먼저 저장했습니다. 덮어쓰지 않았습니다.');
+      return false;
+    }
+    mutator(S);
+    S.revision = baseRev + 1;
+    writeNow();
+    if (!opts.noRender) render();
+    return true;
+  }
+
+  function loadAll() {
+    var raw = safeGet(C.STORAGE_KEY);
+    if (raw) {
+      try {
+        var parsed = JSON.parse(raw);
+        if (parsed && parsed.schemaVersion && parsed.days) S = parsed;
+      } catch (e) { S = null; }
+    }
+    if (!S) {
+      S = C.buildInitialState(DATA);
+      S.revision = 1;
+      writeNow();
+    }
+    if (!S.settings) S.settings = { tab: 'home', viewMode: 'before', activeDate: S.days[0].date, editMode: false, hidePersonal: true };
+    if (!Array.isArray(S.trash)) S.trash = [];
+    baseRev = S.revision;
+    var praw = safeGet(C.PERSONAL_KEY);
+    if (praw) { try { var p = JSON.parse(praw); if (p && p.items) P = p; } catch (e) { } }
+  }
+
+  function savePersonal() {
+    P.updatedAt = new Date().toISOString();
+    if (!safeSet(C.PERSONAL_KEY, JSON.stringify(P))) toast('개인 메모를 저장하지 못했습니다(기기 저장 공간 확인).');
+  }
+
+  /* ---------------- 공통 조각 ---------------- */
+  function esc(s) { return C.esc(s); }
+
+  function badge(code) {
+    if (!code) return '';
+    return '<span class="badge ' + code + '">' + esc(C.BADGE_LABEL[code] || code) + '</span>';
+  }
+
+  function toast(msg, actionLabel, actionAct, payload) {
+    var area = document.getElementById('toasts');
+    var t = document.createElement('div');
+    t.className = 'toast';
+    t.innerHTML = '<span>' + esc(msg) + '</span>' +
+      (actionLabel ? '<button type="button" class="btn-sm" data-act="' + actionAct + '" data-payload="' + esc(payload || '') + '">' + esc(actionLabel) + '</button>' : '');
+    area.appendChild(t);
+    window.setTimeout(function () { if (t.parentNode) t.parentNode.removeChild(t); }, actionLabel ? 12000 : 5000);
+  }
+
+  function days() { return S.days; }
+
+  function activeDay() {
+    var d = C.findDay(S, S.settings.activeDate);
+    return d || S.days[0];
+  }
+
+  function personalFor(itemId) {
+    return (P.items && P.items[itemId]) || { memo: '', ref: '' };
+  }
+
+  function fmtWhen(iso) {
+    try { return new Date(iso).toLocaleString('ko-KR'); }
+    catch (e) { return String(iso || '').replace('T', ' ').slice(0, 16); }
+  }
+
+  function maskOrShow(text) {
+    if (!text) return '';
+    return S.settings.hidePersonal ? C.maskText(text) : esc(text);
+  }
+
+  /* ---------------- 대화상자 ---------------- */
+  var dlg = null;
+  function ensureDlg() {
+    if (!dlg) dlg = document.getElementById('dlg');
+    return dlg;
+  }
+
+  function openDlg(opts) {
+    var d = ensureDlg();
+    document.getElementById('dlg-title').textContent = opts.title || '';
+    var body = opts.body || '';
+    document.getElementById('dlg-body').innerHTML = body;
+    var actions = opts.actions || [{ label: '닫기', act: 'close', cls: '' }];
+    document.getElementById('dlg-foot').innerHTML = actions.map(function (a) {
+      return '<button type="button" class="' + (a.cls || '') + '" data-dlg="' + a.act + '"' + (a.disabled ? ' disabled' : '') + '>' + esc(a.label) + '</button>';
+    }).join('');
+    dlgHandler = opts.onAction || function () { };
+    if (typeof dlg.showModal === 'function') { if (!dlg.open) dlg.showModal(); }
+    else { dlg.setAttribute('open', ''); }
+  }
+
+  function closeDlg() {
+    var d = ensureDlg();
+    if (typeof d.close === 'function' && d.open) d.close();
+    else d.removeAttribute('open');
+    dlgHandler = function () { };
+  }
+
+  var dlgHandler = function () { };
+
+  function fieldHtml(f) {
+    var id = 'fld-' + f.name;
+    var req = f.required ? ' required' : '';
+    var hint = f.hint ? '<p class="hint">' + f.hint + '</p>' : '';
+    if (f.type === 'textarea') {
+      return '<label for="' + id + '">' + esc(f.label) + '</label><textarea id="' + id + '" name="' + esc(f.name) + '"' + req +
+        (f.placeholder ? ' placeholder="' + esc(f.placeholder) + '"' : '') + '>' + esc(f.value || '') + '</textarea>' + hint;
+    }
+    if (f.type === 'select') {
+      var opts = (f.options || []).map(function (o) {
+        var v = typeof o === 'string' ? o : o.value;
+        var l = typeof o === 'string' ? o : o.label;
+        return '<option value="' + esc(v) + '"' + (String(f.value) === String(v) ? ' selected' : '') + '>' + esc(l) + '</option>';
+      }).join('');
+      return '<label for="' + id + '">' + esc(f.label) + '</label><select id="' + id + '" name="' + esc(f.name) + '">' + opts + '</select>' + hint;
+    }
+    if (f.type === 'checkbox') {
+      return '<label class="check"><input type="checkbox" name="' + esc(f.name) + '"' + (f.value ? ' checked' : '') + '><span>' + esc(f.label) + '</span></label>' + hint;
+    }
+    return '<label for="' + id + '">' + esc(f.label) + '</label><input id="' + id + '" type="' + (f.type || 'text') + '" name="' + esc(f.name) + '" value="' + esc(f.value === null || f.value === undefined ? '' : f.value) + '"' + req + '>' + hint;
+  }
+
+  function formHtml(fields, extra) {
+    return '<form id="dlg-form" novalidate>' + fields.map(fieldHtml).join('') + (extra || '') + '</form>';
+  }
+
+  function readForm() {
+    var form = document.getElementById('dlg-form');
+    if (!form) return {};
+    var fd = new FormData(form);
+    var o = {};
+    var els = form.querySelectorAll('input,select,textarea');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      if (el.type === 'checkbox') o[el.name] = el.checked;
+      else o[el.name] = fd.get(el.name) === null ? '' : String(fd.get(el.name)).trim();
+    }
+    return o;
+  }
+
+  /* ---------------- 개인정보·공유 안내 ---------------- */
+  function privacyCard() {
+    return '' +
+      '<div class="card">' +
+      '<h3>개인정보와 공유 범위</h3>' +
+      '<p>이 앱의 기본 자료에는 이름·생년월일·집주소·차량번호·계좌·예약번호(PNR·호텔 확정번호·항공권 번호)가 들어 있지 않습니다. 동행자는 <b>동행자 A~F</b>로만 표시됩니다.</p>' +
+      '<div class="banner warn"><h4>주소를 공유할 때</h4>' +
+      '<p>링크·파일을 다른 사람에게 보내면 <b>이 기기에 저장한 개인 메모와 예약번호는 함께 가지 않습니다</b>(자동 동기화 없음). 대신 상대가 자기 기기에서 열면 <b>기본 정보만</b> 보입니다. 내가 추가·수정한 일정은 그 사람 화면에 자동으로 반영되지 않습니다.</p>' +
+      '<p>공개 게시(블로그·SNS)에는 여행 날짜, 항공편명, 숙소 이름이 그대로 드러납니다. 공개 범위를 ‘나만 보기’로 두거나, 게시용 사본에서는 항공편·숙소를 지우세요.</p></div>' +
+      '<p class="hint">일반 메모(항목 설명)에 적은 내용은 자동으로 개인정보가 제거되지 않습니다. 이름·번호를 적었다면 직접 지워야 합니다.</p>' +
+      '<p class="hint"><b>웹에 올려 공유하려면</b> 파일을 올릴 저장 공간(호스팅)이 필요하고, 업체에 따라 비용이 들 수 있습니다. 이 파일 자체는 무료로 열리고, 인터넷 주소가 없으면 링크 공유도 되지 않습니다. 이 앱에서 고친 내용은 대화나 다른 기기에 자동으로 반영되지 않습니다.</p>' +
+      '</div>';
+  }
+
+  /* ---------------- 홈 ---------------- */
+  function renderHome() {
+    var sum = C.summarize(S);
+    var budget = sum.budget;
+    var pending = C.pendingConfirmations(S);
+    var left = C.checklistLeft(S);
+    var day1 = S.days[0];
+
+    var html = '';
+
+    html += '<div class="card" style="border-width:2px;border-color:#0d2b4e">' +
+      '<div class="badge-row"><span class="badge confirmed">확정 약속</span><span class="badge plain">6명 · 3박 4일</span></div>' +
+      '<h2 style="margin-top:8px">2026년 12월 15일(화) ~ 18일(금)</h2>' +
+      '<p class="muted" style="margin-top:4px">인천 T2 ↔ 간사이 T1 · 호텔 몬토레 라 스루 오사카(교바시)</p>' +
+      '<ul class="list-plain" style="margin-top:10px">' +
+      '<li><b>12/15(화) 14:50</b> LJ355 인천 T2 → 16:35 간사이 T1 <span class="pill">수속 마감 13:50</span></li>' +
+      '<li><b>12/15 15:00</b> 체크인 (도착 예상 19:25)</li>' +
+      '<li><b>12/18(금) 11:00</b> 체크아웃 → <b>10:50</b> LJ314 간사이 T1 → 13:05 인천 T2 <span class="pill">수속 마감 09:50</span></li>' +
+      '</ul>' +
+      '<div class="row" style="margin-top:10px">' +
+      '<button type="button" class="btn-primary" data-act="go" data-tab="schedule">일정 보기</button>' +
+      '<button type="button" class="btn-soft" data-act="go" data-tab="prep">확인할 일 ' + left.length + '개</button>' +
+      '</div></div>';
+
+    html += '<div class="kpis">' +
+      '<div class="kpi"><div class="k">일정 항목</div><div class="v">' + sum.items + '<small>개</small></div></div>' +
+      '<div class="kpi' + (pending.length ? ' warn' : '') + '"><div class="k">남은 확인사항</div><div class="v">' + pending.length + '<small>개</small></div></div>' +
+      '<div class="kpi"><div class="k">준비물 남음</div><div class="v">' + left.length + '<small>개</small></div></div>' +
+      '<div class="kpi' + (budget.unknownCount ? ' warn' : '') + '"><div class="k">금액 미확인 항목</div><div class="v">' + budget.unknownCount + '<small>개</small></div></div>' +
+      '</div>';
+
+    html += '<div class="card"><h3>지금 확인할 일</h3>' +
+      (pending.length ? '<ol style="margin-top:8px">' + pending.slice(0, 4).map(function (q) {
+        return '<li><b>' + esc(q.text) + '</b><br><span class="small muted">' + esc(q.impact || '') + '</span></li>';
+      }).join('') + '</ol>' : '<p class="small">남은 확인사항이 없습니다.</p>') +
+      '<div class="row" style="margin-top:8px"><button type="button" class="btn-soft btn-sm" data-act="go" data-tab="prep">전체 보기</button></div></div>';
+
+    html += '<div class="card"><h3>변경·충돌 안내</h3><ul style="margin-top:8px">' +
+      (S.trip.changes || []).map(function (c) { return '<li class="small">' + esc(c) + '</li>'; }).join('') +
+      '</ul></div>';
+
+    html += '<div class="card"><h3>여행 전 / 중 / 후 보기</h3>' +
+      '<p class="small muted">보기 방식만 바꿉니다. 앱이 현재 위치나 도착 여부를 임의로 정하지 않습니다. 방문 완료·건너뛰기는 일정에서 직접 표시하세요.</p>' +
+      viewSwitch() + '</div>';
+
+    html += '<div class="banner info"><h4>이 앱의 데이터 기준</h4>' +
+      '<p class="small">장소·요금·운영시간은 <b>2026-11-15</b>에 확인한 값입니다. 확인된 예약과 계획, 선택 항목, 확인 필요 항목을 배지로 구분했고, 실측하지 않은 도보·계단·휠체어 정보는 ‘추정’ 또는 ‘확인 필요’로 표시했습니다.</p></div>';
+
+    html += '<div class="row"><button type="button" class="btn" data-act="go" data-tab="weather">날씨와 대체 일정</button>' +
+      '<button type="button" class="btn" data-act="go" data-tab="data">백업·복구</button></div>';
+
+    return html;
+  }
+
+  function viewSwitch() {
+    var modes = [['before', '여행 전'], ['during', '여행 중'], ['after', '여행 후']];
+    return '<div class="row" role="group" aria-label="보기 방식">' + modes.map(function (m) {
+      return '<button type="button" class="btn-sm ' + (S.settings.viewMode === m[0] ? 'btn-primary' : '') + '" data-act="view" data-mode="' + m[0] + '" aria-pressed="' + (S.settings.viewMode === m[0]) + '">' + m[1] + '</button>';
+    }).join('') + '</div>';
+  }
+
+  /* ---------------- 일정 ---------------- */
+  function mapsBlock(it) {
+    var links = C.buildMapLinks(it.name, it.address || '');
+    var html = '<div class="maplinks">';
+    html += '<a class="btn btn-sm" href="' + links.google.href + '" target="_blank" rel="noopener">Google 지도</a>';
+    html += '<a class="btn btn-sm" href="' + links.apple.href + '" target="_blank" rel="noopener">Apple 지도</a>';
+    html += '<a class="btn btn-sm" href="' + links.naver.href + '" target="_blank" rel="noopener">네이버 지도</a>';
+    html += '<a class="btn btn-sm" href="' + links.kakao.href + '" target="_blank" rel="noopener">카카오맵</a>';
+    html += '<a class="btn btn-sm" href="' + links.tmap.href + '">티맵 (운전)</a>';
+    html += '<a class="btn btn-sm" href="' + links.kakaonavi.href + '">카카오내비 (운전)</a>';
+    if (it.address) {
+      html += '<button type="button" class="btn btn-sm full" data-act="copy" data-copy="' + esc(it.address) + '">주소 복사</button>';
+    }
+    if (it.phone) {
+      html += '<a class="btn btn-sm full" href="tel:' + esc(it.phone.replace(/[^\d+]/g, '')) + '">전화 걸기 ' + esc(it.phone) + '</a>';
+    }
+    html += '</div>';
+    html += '<p class="drive-note">지도 링크는 <b>장소명 + 주소 검색</b>으로 엽니다(좌표를 확인하지 않아 좌표 링크를 만들지 않았습니다). 티맵·카카오내비는 앱이 설치되어 있어야 열리고, 출발지·도착지는 앱에서 지정하세요. 운전 검색어: ' + esc(C.driveSearchText(it.name, it.address || '')) + '</p>';
+    return html;
+  }
+
+  function accessBlock(it) {
+    var a = it.access || {};
+    if (!a.walk && !a.stairs && !a.wheelchair && !a.parking) return '';
+    return '<details><summary>보행·계단·주차 정보</summary><div class="body"><ul>' +
+      (a.walk ? '<li>도보: ' + esc(a.walk) + '</li>' : '') +
+      (a.stairs ? '<li>계단: ' + esc(a.stairs) + '</li>' : '') +
+      (a.wheelchair ? '<li>휠체어 접근성: ' + esc(a.wheelchair) + '</li>' : '') +
+      (a.parking ? '<li>주차: ' + esc(a.parking) + '</li>' : '') +
+      '</ul><p class="hint">실측값이 아닌 항목은 ‘추정’·‘확인 필요’로 표시되어 있습니다. 방문 전 시설에 직접 확인하세요.</p></div></details>';
+  }
+
+  function itemCard(day, it, idx) {
+    var edit = S.settings.editMode;
+    var warns = C.checkDay(day).filter(function (w) { return w.itemId === it.id; });
+    var p = personalFor(it.id);
+    var hasPersonal = (p.memo || '').trim() || (p.ref || '').trim();
+
+    var cls = 'item';
+    if (it.status === 'done') cls += ' done';
+    if (it.status === 'skipped') cls += ' skipped';
+    if (it.badge === 'confirmed') cls += ' is-confirmed';
+    if (it.deadline) cls += ' is-deadline';
+
+    var h = '<li class="' + cls + '" id="it-' + esc(it.id) + '">';
+    h += '<div class="item-time">' + (KIND_ICON[it.kind] || '•') + ' ' + esc(it.time || '시간 미정') +
+      (it.endTime ? '–' + esc(it.endTime) : '') +
+      (it.stay ? '<span class="stay">체류 ' + esc(it.stay) + '</span>' : '') +
+      (it.status === 'done' ? '<span class="badge sm confirmed">방문 완료</span>' : '') +
+      (it.status === 'skipped' ? '<span class="badge sm plain">건너뜀</span>' : '') +
+      '</div>';
+    h += '<div class="item-name">' + esc(it.name) + '</div>';
+    h += '<div class="badge-row">' + badge(it.badge) +
+      '<span class="badge plain">' + esc(KIND_LABEL[it.kind] || it.kind) + '</span>' +
+      (it.skip === 'tired' ? '<span class="badge plain">체력 부족 시 우선 생략</span>' : '') +
+      (it.skip === 'rain' ? '<span class="badge plain">비 오면 생략</span>' : '') +
+      (it.origin ? '<span class="badge plain">출처: ' + esc(it.origin) + '</span>' : '') +
+      '<span class="badge plain">확인 2026-11-15</span>' +
+      '</div>';
+
+    h += '<div class="item-meta">';
+    if (it.address) h += '<span class="line"><dt>주소</dt> ' + esc(it.address) + '</span>';
+    if (it.phone) h += '<span class="line"><dt>연락처</dt> ' + esc(it.phone) + '</span>';
+    if (it.hours) h += '<span class="line"><dt>시간</dt> ' + esc(it.hours) + '</span>';
+    if (it.booking) h += '<span class="line"><dt>예약</dt> ' + esc(it.booking) + '</span>';
+    if (it.deadline) h += '<span class="line" style="color:#a3121b;font-weight:800">마감 ' + esc(it.deadline.time) + ' · ' + esc(it.deadline.label) + '</span>';
+    h += '</div>';
+
+    if (it.travel && idx > 0) {
+      var tr = it.travel;
+      h += '<div class="travel' + (tr.stale ? ' stale' : '') + '">↔ 앞 일정에서 ' + esc(tr.mode || '이동') +
+        ' ' + (typeof tr.min === 'number' ? tr.min + '분' : '시간 미확인') +
+        ' · ' + esc(tr.source || '추정') +
+        (tr.stale ? ' · <b>순서가 바뀌어 재조회 필요</b>' : '') + '</div>';
+    }
+
+    if (warns.length) {
+      h += warns.map(function (w) {
+        return '<div class="notice ' + (w.level === 'danger' ? 'danger' : 'warn') + '">' + esc(w.text) + '</div>';
+      }).join('');
+    }
+
+    if (it.note) h += '<p class="small" style="margin-top:8px">' + esc(it.note) + '</p>';
+
+    h += '<details><summary>자세히 · 지도 · 연락처</summary><div class="body">' +
+      (it.details ? '<p>' + esc(it.details) + '</p>' : '') + mapsBlock(it) + accessBlock(it) +
+      ((it.links && (it.links.official || it.links.ticket)) ?
+        '<div class="row" style="margin-top:8px">' +
+        (it.links.official ? '<a class="btn btn-sm" href="' + esc(it.links.official) + '" target="_blank" rel="noopener">공식 사이트</a>' : '') +
+        (it.links.ticket ? '<a class="btn btn-sm" href="' + esc(it.links.ticket) + '" target="_blank" rel="noopener">예약·발권</a>' : '') +
+        '</div>' : '') +
+      '</div></details>';
+
+    h += '<div class="row tight" style="margin-top:10px">' +
+      '<button type="button" class="btn btn-sm ' + (it.status === 'done' ? 'btn-ok' : '') + '" data-act="item-status" data-id="' + esc(it.id) + '" data-status="done">방문 완료</button>' +
+      '<button type="button" class="btn btn-sm" data-act="item-status" data-id="' + esc(it.id) + '" data-status="skipped">건너뛰기</button>' +
+      '<button type="button" class="btn btn-sm" data-act="item-status" data-id="' + esc(it.id) + '" data-status="planned">기본</button>' +
+      '<button type="button" class="btn btn-sm" data-act="personal" data-id="' + esc(it.id) + '">' + (hasPersonal ? '개인 메모 ●' : '개인 메모') + '</button>' +
+      '</div>';
+
+    if (hasPersonal) {
+      h += '<div class="personal"><h4>기기 전용 개인 메모</h4>' +
+        '<p class="small"><b>메모</b>: ' + (S.settings.hidePersonal ? '<span class="masked">' + esc(C.maskText(p.memo || '(없음)')) + '</span>' : esc(p.memo || '') ) + '</p>' +
+        ((p.ref || '').trim() ? '<p class="small"><b>예약번호</b>: <span class="masked">' + (S.settings.hidePersonal ? esc(C.maskText(p.ref)) : esc(p.ref)) + '</span></p>' : '') +
+        '<div class="row"><button type="button" class="btn btn-sm" data-act="toggle-hide">' + (S.settings.hidePersonal ? '가리기 해제' : '가리기') + '</button>' +
+        '<button type="button" class="btn btn-sm" data-act="personal" data-id="' + esc(it.id) + '">수정</button></div></div>';
+    }
+
+    if (edit) {
+      h += '<div class="row tight" style="margin-top:10px;border-top:1px dashed #c9d0d8;padding-top:10px">' +
+        '<button type="button" class="btn btn-sm" data-act="item-up" data-id="' + esc(it.id) + '"' + (idx === 0 ? ' disabled' : '') + '>↑ 위로</button>' +
+        '<button type="button" class="btn btn-sm" data-act="item-down" data-id="' + esc(it.id) + '"' + (idx === day.items.length - 1 ? ' disabled' : '') + '>↓ 아래로</button>' +
+        '<button type="button" class="btn btn-sm" data-act="item-edit" data-id="' + esc(it.id) + '">수정</button>' +
+        '<button type="button" class="btn btn-sm" data-act="item-to-cand" data-id="' + esc(it.id) + '">후보로 보내기</button>' +
+        '<button type="button" class="btn btn-sm btn-danger" data-act="item-del" data-id="' + esc(it.id) + '">삭제</button>' +
+        '</div>';
+    }
+    h += '</li>';
+    return h;
+  }
+
+  function renderSchedule() {
+    var day = activeDay();
+    var warns = C.checkDay(day);
+    var items = day.items;
+    var optionalCount = items.filter(function (i) { return i.badge === 'optional'; }).length;
+    var h = '';
+
+    h += '<div class="card tight"><div class="row" style="justify-content:space-between">' +
+      '<div><h2>일정</h2><p class="small muted">' + esc(S.trip.headline) + '</p></div>' +
+      '<button type="button" class="btn btn-sm ' + (S.settings.editMode ? 'btn-warn' : '') + '" data-act="toggle-edit" aria-pressed="' + S.settings.editMode + '">' + (S.settings.editMode ? '편집 끝내기' : '편집하기') + '</button>' +
+      '</div>' + viewSwitch() +
+      '<p class="hint">' + (S.settings.editMode ? '편집 모드입니다. 순서를 바꾸면 인접 이동시간이 ‘재조회 필요’로 표시됩니다.' : '보기 모드입니다. 수정하려면 ‘편집하기’를 누르세요. 방문 완료·건너뛰기는 보기 모드에서도 저장됩니다.') + '</p>' +
+      '</div>';
+
+    h += '<details><summary>배지와 출처 보는 법</summary><div class="body">' +
+      '<ul class="small">' +
+      '<li>' + badge('confirmed') + ' 예약·결제가 끝난 확정 사항</li>' +
+      '<li>' + badge('planned') + ' 계획한 일정(바뀔 수 있음)</li>' +
+      '<li>' + badge('optional') + ' 선택 후보(체력·날씨에 따라 생략)</li>' +
+      '<li>' + badge('needs_check') + ' 아직 확인·예약이 필요한 사항</li>' +
+      '<li>' + badge('cancelled') + ' 취소·제외된 일정</li>' +
+      '</ul>' +
+      '<p class="small"><b>출처</b>: ‘확정 예약’은 예약된 사실, ‘사용자 계획’은 요청하신 계획, ‘조사 참고’는 제가 찾은 자료, ‘공식 자료’는 시설·행사 공식 안내입니다. 모든 값의 확인일은 2026-11-15입니다.</p></div></details>';
+
+    h += '<div class="tabs" role="tablist">' + days().map(function (d) {
+      return '<button type="button" class="tab" role="tab" aria-selected="' + (d.date === day.date) + '" data-act="set-date" data-date="' + d.date + '">' +
+        esc(C.dateLabel(d.date, d.weekday)) + '</button>';
+    }).join('') + '</div>';
+
+    h += '<div class="card"><div class="card-head"><div><h3>' + esc(C.dateLabel(day.date, day.weekday)) + ' · ' + esc(day.title) + '</h3>' +
+      '<p class="small muted">' + esc(day.note || '') + '</p></div></div>' +
+      '<div class="badge-row"><span class="badge plain">항목 ' + items.length + '개</span>' +
+      '<span class="badge plain">선택 ' + optionalCount + '개</span>' +
+      '<span class="badge plain">방문 완료 ' + items.filter(function (i) { return i.status === 'done'; }).length + '개</span></div>';
+
+    if (warns.length) {
+      h += '<details open><summary>이 날의 경고 ' + warns.length + '건</summary><div class="body">' +
+        warns.map(function (w) {
+          return '<div class="notice ' + (w.level === 'danger' ? 'danger' : 'warn') + '">' + esc(w.text) + '</div>';
+        }).join('') + '</div></details>';
+    }
+    h += '</div>';
+
+    if (S.settings.viewMode === 'after') {
+      var doneN = items.filter(function (i) { return i.status === 'done'; }).length;
+      var skipN = items.filter(function (i) { return i.status === 'skipped'; }).length;
+      h += '<div class="banner info"><h4>여행 후 보기</h4><p class="small">방문 완료 ' + doneN + '개 · 건너뜀 ' + skipN + '개 · 미표시 ' + (items.length - doneN - skipN) + '개. 아래에 전체 일정이 그대로 표시됩니다.</p></div>';
+    }
+    if (S.settings.viewMode === 'during') {
+      h += '<div class="card"><h3>여행 중 빠른 보기</h3>' +
+        '<p class="small muted">현재 위치나 시각으로 ‘다음 목적지’를 자동 지정하지 않습니다. 아래에서 직접 고르세요.</p>' +
+        '<ul class="list-plain">' + items.map(function (i) {
+          return '<li><b class="nowrap">' + esc(i.time || '--:--') + '</b><span style="flex:1 1 140px;min-width:0">' + esc(i.name) + '</span>' +
+            (i.status === 'done' ? '<span class="badge sm confirmed">완료</span>' : i.status === 'skipped' ? '<span class="badge sm plain">건너뜀</span>' : '') + '</li>';
+        }).join('') + '</ul></div>';
+    }
+
+    h += '<ol class="items">' + items.map(function (it, i) { return itemCard(day, it, i); }).join('') + '</ol>';
+
+    if (!items.length) h += '<div class="card"><p>이 날의 일정이 비었습니다. 편집 모드에서 항목을 추가하거나 후보를 이동하세요.</p></div>';
+
+    if (S.settings.editMode) {
+      h += '<div class="row"><button type="button" class="btn btn-primary" data-act="item-add">+ 이 날에 장소 추가</button>' +
+        '<button type="button" class="btn" data-act="go" data-tab="candidates">후보에서 가져오기</button></div>';
+    }
+
+    h += '<div class="card"><h3>이동시간 다시 조회하기</h3><p class="small">순서를 바꾼 뒤에는 지도 앱에서 실제 이동 시간을 확인하고, 아래 버튼으로 값을 갱신하세요.</p>' +
+      '<div class="row"><button type="button" class="btn btn-sm" data-act="travel-reset">이 날 이동시간 ‘확인 필요’로 표시</button>' +
+      '<button type="button" class="btn btn-sm" data-act="go" data-tab="candidates">선택 후보 보기</button></div></div>';
+
+    return h;
+  }
+
+  /* ---------------- 후보 ---------------- */
+  function renderCandidates() {
+    var h = '<div class="card"><h2>선택 후보</h2><p class="small muted">일정에 넣지 않은 후보입니다. 넣을 날짜를 골라야 실제 일정이 바뀝니다.</p></div>';
+    h += S.candidates.map(function (c) {
+      return '<div class="card"><div class="card-head"><div><h3>' + esc(c.name) + '</h3></div>' + badge(c.badge) + '</div>' +
+        '<div class="item-meta">' +
+        (c.address ? '<span class="line"><dt>주소</dt> ' + esc(c.address) + '</span>' : '') +
+        (c.phone ? '<span class="line"><dt>연락처</dt> ' + esc(c.phone) + '</span>' : '') +
+        (c.hours ? '<span class="line"><dt>시간</dt> ' + esc(c.hours) + '</span>' : '') +
+        (c.booking ? '<span class="line"><dt>요금·예약</dt> ' + esc(c.booking) + '</span>' : '') +
+        (c.stay ? '<span class="line"><dt>체류</dt> ' + esc(c.stay) + '</span>' : '') +
+        '</div>' +
+        '<p class="small" style="margin-top:8px">' + esc(c.note || '') + '</p>' +
+        '<details><summary>자세히 · 지도</summary><div class="body"><p>' + esc(c.details || '') + '</p>' +
+        (c.reason ? '<p class="hint">검토 의견: ' + esc(c.reason) + '</p>' : '') + mapsBlock(c) + accessBlock(c) +
+        ((c.links && (c.links.official || c.links.ticket)) ? '<div class="row" style="margin-top:8px">' +
+          (c.links.official ? '<a class="btn btn-sm" href="' + esc(c.links.official) + '" target="_blank" rel="noopener">공식 사이트</a>' : '') +
+          (c.links.ticket ? '<a class="btn btn-sm" href="' + esc(c.links.ticket) + '" target="_blank" rel="noopener">예약·발권</a>' : '') +
+          '</div>' : '') + '</div></details>' +
+        '<div class="row" style="margin-top:10px">' +
+        '<button type="button" class="btn btn-primary btn-sm" data-act="cand-to-day" data-id="' + esc(c.id) + '">일정에 넣기</button>' +
+        '<button type="button" class="btn btn-sm btn-danger" data-act="cand-del" data-id="' + esc(c.id) + '">후보에서 삭제</button>' +
+        '</div></div>';
+    }).join('');
+    if (!S.candidates.length) h += '<div class="card"><p>후보가 없습니다. 일정 항목을 ‘후보로 보내기’ 하면 여기에 쌓입니다.</p></div>';
+    return h;
+  }
+
+  /* ---------------- 예약 ---------------- */
+  function renderReservations() {
+    var warns = C.checkReservations(S);
+    var h = '<div class="card"><h2>예약정보 모음</h2><p class="small muted">교통·숙소·체험·보험을 한곳에 모았습니다. ‘증빙’은 확인용 서류, ‘입장·탑승 필요’는 실제로 제시해야 하는 문서입니다.</p></div>';
+
+    var hardWarns = warns.filter(function (w) { return w.level !== 'info'; });
+    var infoWarns = warns.filter(function (w) { return w.level === 'info'; });
+    if (hardWarns.length || infoWarns.length) {
+      h += '<div class="card"><h3>확인이 필요한 경고</h3>' + hardWarns.map(function (w) {
+        return '<div class="notice ' + (w.level === 'danger' ? 'danger' : 'warn') + '">' + esc(w.text) + '</div>';
+      }).join('');
+      if (infoWarns.length) {
+        h += '<div class="notice info">알림 미설정 ' + infoWarns.length + '건 — 이 앱은 휴대폰 알림을 실제로 설정하지 않았습니다. 필요한 알림은 캘린더 앱에서 직접 켜야 합니다.</div>';
+      }
+      h += '</div>';
+    }
+
+    ['transport', 'lodging', 'experience', 'insurance'].forEach(function (cat) {
+      var list = S.reservations.filter(function (r) { return r.category === cat; });
+      if (!list.length) return;
+      h += '<h3 style="margin:16px 0 4px">' + CATEGORY_LABEL[cat] + '</h3>';
+      h += list.map(function (r) {
+        var st = RES_STATUS[r.status] || RES_STATUS.planned;
+        return '<div class="card">' +
+          '<div class="card-head"><div><h4>' + esc(r.title) + '</h4>' +
+          '<p class="small muted">' + esc(r.provider || '') + (r.date ? ' · ' + esc(C.dateLabel(r.date, (C.findDay(S, r.date) || {}).weekday || '')) + (r.time ? ' ' + esc(r.time) : '') + (r.endTime ? '~' + esc(r.endTime) : '') : '') + '</p></div>' +
+          '<span class="badge ' + st.cls + '">' + st.label + '</span></div>' +
+          (r.route ? '<p class="small"><b>구간·장소</b> ' + esc(r.route) + '</p>' : '') +
+          (r.details ? '<p class="small">' + esc(r.details) + '</p>' : '') +
+          (r.docs && r.docs.length ? '<div class="tablewrap"><table><thead><tr><th>문서</th><th>종류</th><th>상태</th></tr></thead><tbody>' +
+            r.docs.map(function (d) {
+              return '<tr><td>' + esc(d.label) + (d.note ? '<br><span class="tiny">' + esc(d.note) + '</span>' : '') + '</td><td>' +
+                (d.kind === 'proof' ? '증빙(확인용)' : '입장·탑승 필요') + '</td><td>' + esc(d.state) + '</td></tr>';
+            }).join('') + '</tbody></table></div>' : '<p class="small muted">등록된 문서가 없습니다.</p>') +
+          '<div class="badge-row"><span class="badge plain">알림: ' + esc(r.notify || '미설정') + '</span>' +
+          (r.phone ? '<a class="btn btn-sm" href="tel:' + esc(r.phone.replace(/[^\d+]/g, '')) + '">' + esc(r.phone) + '</a>' : '') +
+          (r.link ? '<a class="btn btn-sm" href="' + esc(r.link) + '" target="_blank" rel="noopener">공식·예약 페이지</a>' : '') + '</div>' +
+          '</div>';
+      }).join('');
+    });
+
+    h += '<div class="card"><h3>캘린더 파일(.ics) 저장</h3>' +
+      '<p class="small">항공·숙소·체험 예약을 휴대폰 캘린더에 넣을 수 있는 파일을 내려받습니다. 이 앱은 알림을 실제로 설정하지 않으므로, 캘린더 앱에서 알림을 직접 켜야 합니다.</p>' +
+      '<ol class="small"><li>아래 버튼을 눌러 .ics 파일을 저장합니다.</li>' +
+      '<li>파일을 열면 캘린더 앱이 ‘일정 추가’ 화면을 띄웁니다(안 열리면 파일 앱에서 공유 → 캘린더).</li>' +
+      '<li>일정마다 알림(예: 1시간 전)을 직접 켭니다.</li>' +
+      '<li>시간은 일본 현지 시각 기준으로 넣었습니다.</li></ol>' +
+      '<div class="row"><button type="button" class="btn btn-primary" data-act="ics">.ics 파일 내려받기</button></div>' +
+      '<p class="hint">예약번호·이름은 파일에 넣지 않았습니다. 제목과 장소만 들어갑니다.</p></div>';
+
+    return h;
+  }
+
+  /* ---------------- 예산 ---------------- */
+  function renderBudget() {
+    var b = S.budget;
+    var t = C.budgetTotals(b);
+    var h = '<div class="card"><div class="card-head"><div><h2>예산</h2><p class="small muted">결제 완료·미결제 예약·예상 지출·환불·금액 미확인을 구분해 계산합니다.</p></div>' +
+      '<button type="button" class="btn btn-sm ' + (b.enabled ? 'btn-primary' : '') + '" data-act="budget-toggle" aria-pressed="' + b.enabled + '">' + (b.enabled ? '예산 사용 중' : '예산 사용 안 함') + '</button></div></div>';
+
+    if (!b.enabled) {
+      h += '<div class="banner info"><h4>예산 기능이 꺼져 있습니다</h4><p class="small">기록은 남아 있고 계산·표시만 숨깁니다. 다시 켜면 그대로 돌아옵니다.</p></div>';
+      return h;
+    }
+
+    var paidUnknown = b.items.filter(function (x) { return x.status === 'paid' && (x.amount === null || x.amount === undefined); }).length;
+    h += '<div class="kpis">' +
+      '<div class="kpi"><div class="k">결제 완료</div><div class="v">' + C.fmtNum(t.krw.paid) + '<small>원</small></div>' +
+      (paidUnknown ? '<div class="tiny">금액 미확인 ' + paidUnknown + '건 제외</div>' : '') + '</div>' +
+      '<div class="kpi"><div class="k">미결제 예약</div><div class="v">' + C.fmtNum(t.krw.reserved) + '<small>원</small></div></div>' +
+      '<div class="kpi"><div class="k">예상 지출</div><div class="v">' + C.fmtNum(t.krw.estimate) + '<small>원</small></div>' +
+      (t.jpy.estimate ? '<div class="tiny">엔화 ' + C.fmtNum(t.jpy.estimate) + '엔 별도</div>' : '') + '</div>' +
+      '<div class="kpi"><div class="k">원화 합계</div><div class="v">' + C.fmtNum(t.krw.net) + '<small>원</small></div></div>' +
+      '<div class="kpi"><div class="k">엔화 합계</div><div class="v">' + C.fmtNum(t.jpy.net) + '<small>엔</small></div></div>' +
+      '<div class="kpi' + (t.unknownCount ? ' warn' : '') + '"><div class="k">금액 미확인</div><div class="v">' + t.unknownCount + '<small>건</small></div></div>' +
+      '<div class="kpi' + (t.overLimit ? ' danger' : '') + '"><div class="k">목표 대비 남은 금액</div><div class="v">' + (t.remainingKrw === null ? '환율 필요' : C.fmtNum(t.remainingKrw) + '<small>원</small>') + '</div></div>' +
+      '<div class="kpi"><div class="k">환불 예정(확정)</div><div class="v">' + C.fmtNum(t.krw.refundConfirmed) + '<small>원</small></div></div>' +
+      '</div>';
+
+    if (t.unknownCount) {
+      h += '<div class="banner warn"><h4>금액 미확인 ' + t.unknownCount + '건은 0원으로 계산하지 않았습니다</h4>' +
+        '<p class="small">합계에서 빠져 있습니다: ' + esc(t.unknownLabels.join(', ')) + '</p></div>';
+    }
+    if (t.needsRate) {
+      h += '<div class="banner info"><h4>엔화 항목은 환율을 입력해야 원화 목표와 비교됩니다</h4>' +
+        '<p class="small">환율을 모르면 원화 합계와 엔화 합계를 따로 보세요. 임의의 환율을 넣지 않았습니다.</p></div>';
+    }
+
+    h += '<div class="card"><h3>목표 예산</h3>' + formBudgetSettings(t) + '</div>';
+
+    h += '<div class="card"><div class="card-head"><h3>항목</h3><button type="button" class="btn btn-sm btn-primary" data-act="budget-add">+ 항목 추가</button></div>' +
+      '<ul class="list-plain" style="margin-top:8px">' +
+      b.items.map(function (it) {
+        var st = C.STATUS_LABEL[it.status] || it.status;
+        return '<li><div style="flex:1 1 200px;min-width:0">' +
+          '<b>' + esc(it.label) + '</b><br>' +
+          '<span class="small muted">' + esc(it.category || '기타') + ' · ' + esc(st) + '</span>' +
+          (it.convertedFrom ? '<br><span class="tiny">예상 ' + C.fmtMoney(it.convertedFrom.amount, it.convertedFrom.currency) + ' → 실제로 전환됨(중복 합산 없음)</span>' : '') +
+          (it.note ? '<br><span class="small">' + esc(it.note) + '</span>' : '') +
+          (it.refundCondition ? '<br><span class="small" style="color:#8a4b00">환불 조건: ' + esc(it.refundCondition) + '</span>' : '') +
+          '</div>' +
+          '<span class="badge ' + (it.amount === null || it.status === 'unknown' ? 'needs_check' : it.status === 'refund' ? 'optional' : it.status === 'paid' ? 'confirmed' : 'planned') + '">' + esc(C.fmtMoney(it.amount, it.currency)) + '</span>' +
+          '<div class="row tight">' +
+          (it.status === 'estimate' ? '<button type="button" class="btn btn-sm" data-act="budget-convert" data-id="' + esc(it.id) + '">실제로 전환</button>' : '') +
+          '<button type="button" class="btn btn-sm" data-act="budget-edit" data-id="' + esc(it.id) + '">수정</button>' +
+          '<button type="button" class="btn btn-sm btn-danger" data-act="budget-del" data-id="' + esc(it.id) + '">삭제</button>' +
+          '</div></li>';
+      }).join('') + '</ul></div>';
+
+    h += '<div class="card"><h3>분류별</h3><div class="tablewrap"><table><thead><tr><th>분류</th><th>원화</th><th>엔화</th></tr></thead><tbody>' +
+      Object.keys(t.byCategory).map(function (k) {
+        return '<tr><td>' + esc(k) + '</td><td>' + C.fmtNum(t.byCategory[k].krw) + '</td><td>' + C.fmtNum(t.byCategory[k].jpy) + '</td></tr>';
+      }).join('') + '</tbody></table></div>' +
+      '<p class="hint">환불 항목은 분류 합계에서 빠지고 ‘환불 예정’에 따로 더해집니다. 조건이 확인되지 않은 환불은 합계에 넣지 않습니다(항목에서 ‘환불 확정’ 체크).</p></div>';
+
+    return h;
+  }
+
+  function formBudgetSettings(t) {
+    return '<form id="budget-form">' +
+      '<label for="b-target">목표 예산 (원)</label>' +
+      '<input id="b-target" name="target" type="number" inputmode="numeric" min="0" step="10000" value="' + esc(S.budget.targetKrw || '') + '">' +
+      '<label for="b-buffer">여유 한도 (%)</label>' +
+      '<input id="b-buffer" name="buffer" type="number" inputmode="numeric" min="0" max="100" step="1" value="' + esc(S.budget.bufferPct || 0) + '">' +
+      '<label for="b-rate">엔화 환율 (1엔 = ? 원, 모르면 비워 두기)</label>' +
+      '<input id="b-rate" name="rate" type="number" inputmode="decimal" min="0" step="0.01" value="' + esc(S.budget.jpyRate === null ? '' : S.budget.jpyRate) + '">' +
+      '<p class="hint">한도 ' + (t.limitKrw ? C.fmtNum(t.limitKrw) + '원' : '-') + ' · 여유 한도를 넘으면 표시가 바뀝니다.</p>' +
+      '<button type="button" class="btn btn-primary" data-act="budget-settings-save" style="margin-top:6px">목표 저장</button>' +
+      '</form>';
+  }
+
+  /* ---------------- 준비 ---------------- */
+  function renderPrep() {
+    var left = C.checklistLeft(S);
+    var h = '<div class="card"><h2>준비물과 확인할 일</h2><p class="small muted">체크 상태는 자동 저장됩니다. 남은 확인사항은 여행 전에 하나씩 지워 가세요.</p></div>';
+
+    h += '<div class="card"><div class="card-head"><h3>체크리스트 (' + (S.checklist.length - left.length) + '/' + S.checklist.length + ')</h3></div>' +
+      S.checklist.map(function (k) {
+        return '<div class="check ' + (k.done ? 'done' : '') + '"><input type="checkbox" id="ck-' + esc(k.id) + '" data-act="check-toggle" data-id="' + esc(k.id) + '"' + (k.done ? ' checked' : '') + '>' +
+          '<span><label for="ck-' + esc(k.id) + '" style="margin:0;font-weight:600">' + esc(k.text) + '</label></span>' +
+          '<button type="button" class="btn btn-sm" data-act="check-del" data-id="' + esc(k.id) + '" aria-label="삭제">✕</button></div>';
+      }).join('') +
+      '<div class="row" style="margin-top:10px"><button type="button" class="btn btn-sm btn-primary" data-act="check-add">+ 항목 추가</button></div></div>';
+
+    h += '<div class="card"><h3>남은 확인사항 (' + C.pendingConfirmations(S).length + ')</h3>' +
+      S.confirmations.map(function (q) {
+        return '<div class="check ' + (q.done ? 'done' : '') + '"><input type="checkbox" id="cf-' + esc(q.id) + '" data-act="conf-toggle" data-id="' + esc(q.id) + '"' + (q.done ? ' checked' : '') + '>' +
+          '<span><label for="cf-' + esc(q.id) + '" style="margin:0;font-weight:600">' + esc(q.text) + '</label>' +
+          '<br><span class="tiny">' + esc(q.owner || '') + ' · ' + esc(q.impact || '') + '</span></span></div>';
+      }).join('') + '</div>';
+
+    h += '<div class="card"><h3>긴급 연락처</h3>' +
+      '<p class="small">번호는 2026-11-15에 확인한 값입니다. 보험 보장 내용은 상품마다 달라 이 앱에서 추정하지 않습니다.</p>' +
+      '<ul class="list-plain">' + DATA_EMERGENCY().map(function (e) {
+        return '<li><div style="flex:1 1 200px;min-width:0"><b>' + esc(e.label) + '</b><br><span class="small">' + esc(e.note) + '</span></div>' +
+          '<a class="btn btn-sm" href="' + esc(e.tel) + '">' + esc(e.number) + '</a>' +
+          (e.link ? '<a class="btn btn-sm" href="' + esc(e.link) + '" target="_blank" rel="noopener">안내</a>' : '') + '</li>';
+      }).join('') + '</ul></div>';
+
+    h += '<div class="card"><h3>주변 약국·병원 찾기</h3>' +
+      '<p class="small">현재 위치 기준 검색입니다. 전화번호는 확인하지 않았으니 지도에서 확인하세요.</p>' +
+      '<div class="maplinks">' +
+      '<a class="btn btn-sm" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('약국 オサカ ホテル モントレ ラ・スール大阪 周辺') + '" target="_blank" rel="noopener">약국(Google)</a>' +
+      '<a class="btn btn-sm" href="https://map.naver.com/p/search/' + encodeURIComponent('오사카 교바시 약국') + '" target="_blank" rel="noopener">약국(네이버)</a>' +
+      '<a class="btn btn-sm" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('病院 大阪 京橋 救急') + '" target="_blank" rel="noopener">병원(Google)</a>' +
+      '<a class="btn btn-sm" href="https://map.kakao.com/?q=' + encodeURIComponent('오사카 병원 응급') + '" target="_blank" rel="noopener">병원(카카오)</a>' +
+      '</div>' +
+      '<p class="hint">일본 병원은 예약·소개장이 필요한 곳이 많습니다. 급하면 119에 전화하고 호텔 프런트에 통역을 부탁하세요.</p></div>';
+
+    return h;
+  }
+
+  function DATA_EMERGENCY() {
+    var raw = DATA.emergency;
+    return raw;
+  }
+
+  /* ---------------- 날씨·대안 ---------------- */
+  function renderWeather() {
+    var w = DATA.weather;
+    var h = '<div class="card"><h2>날씨와 대체 일정</h2>' +
+      '<p class="small"><b>확인일 2026-11-15</b> · 아래 내용은 <b>실시간이 아닙니다</b>. 예보는 여행 10일 전부터 확인할 수 있습니다.</p>' +
+      '<div class="banner info"><h4>' + esc(w.headline) + '</h4><p class="small">' + esc(w.summary) + '</p></div>' +
+      '<div class="row">' + w.links.map(function (l) {
+        return '<a class="btn btn-sm" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + '</a>';
+      }).join('') + '</div>' +
+      '<p class="hint">' + esc(w.note) + '</p></div>';
+
+    h += '<div class="card"><h3>기본 코스와 대안 비교</h3><p class="small">아래 대안은 <b>보기만 해서는 원래 일정이 바뀌지 않습니다</b>. ‘대안 자세히’를 눌러도 일정은 그대로이고, 실제로 바꾸려면 교체 동작을 따로 해야 합니다.</p></div>';
+
+    S.alternatives.forEach(function (a) {
+      var day = C.findDay(S, a.dayDate);
+      h += '<div class="card"><div class="card-head"><div><h4>' + esc(a.title) + '</h4>' +
+        '<p class="small muted">' + esc(C.dateLabel(a.dayDate, day ? day.weekday : '')) + ' · 조건: ' + esc(a.condition) + '</p></div>' +
+        '<span class="badge optional">대안</span></div>' +
+        '<p class="small">' + esc(a.note) + '</p>' +
+        '<details><summary>대안 자세히 (일정은 바뀌지 않음)</summary><div class="body"><ol>' +
+        a.steps.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol>' +
+        '<p class="small"><b>주의</b></p><ul>' + a.cautions.map(function (c) { return '<li class="small">' + esc(c) + '</li>'; }).join('') + '</ul>' +
+        '<p class="hint">대안도 실내라고 해서 무장애라고 가정하지 않았습니다. 이동 구간의 계단·경사를 확인하세요.</p>' +
+        (day ? '<button type="button" class="btn btn-sm btn-warn" data-act="alt-apply" data-id="' + esc(a.id) + '">이 대안을 일정에 반영(확인 필요)</button>' : '') +
+        '</div></details></div>';
+    });
+
+    return h;
+  }
+
+  /* ---------------- 데이터 ---------------- */
+  function recoveryBlock() {
+    var raw = safeGet(C.RECOVERY_KEY);
+    if (!raw) {
+      return '<div class="card"><h3>자동 복구본</h3><p class="small">아직 없습니다. 백업 파일을 가져오거나 대안 일정을 반영하기 직전에 현재 상태를 자동으로 저장해 둡니다.</p></div>';
+    }
+    var r = null;
+    try { r = JSON.parse(raw); } catch (e) { r = null; }
+    if (!r || !r.state) {
+      return '<div class="card"><h3>자동 복구본</h3><p class="small">복구본을 읽지 못했습니다.</p></div>';
+    }
+    var items = 0;
+    try { (r.state.days || []).forEach(function (d) { items += (d.items || []).length; }); } catch (e) { }
+    return '<div class="card"><h3>자동 복구본</h3>' +
+      '<p class="small">' + esc(fmtWhen(r.at)) + ' · ' + esc(r.mode || '가져오기') + ' 직전 상태 · 일정 항목 ' + items + '개</p>' +
+      '<p class="hint">덮어쓰기 직전 상태를 하나만 보관합니다(기기 저장 공간). 되돌리기 전에 지금 상태를 백업하는 것을 권합니다.</p>' +
+      '<div class="row"><button type="button" class="btn btn-sm btn-warn" data-act="recovery-restore">이 복구본으로 되돌리기</button>' +
+      '<button type="button" class="btn btn-sm" data-act="export">지금 상태 백업</button></div></div>';
+  }
+
+  function renderData() {
+    var ps = C.personalSummary(P);
+    var h = '<div class="card"><h2>저장·백업·복구</h2>' +
+      '<p class="small"><b>이 기기에만 저장</b>됩니다. 자동 동기화는 없습니다. 브라우저 데이터를 지우거나 시크릿 창을 쓰면 자료가 사라집니다.</p>' +
+      '<div class="badge-row"><span class="badge plain">항목 ' + C.summarize(S).items + '개</span>' +
+      '<span class="badge plain">개인 메모 ' + ps.itemCount + '개</span>' +
+      '<span class="badge plain">휴지통 ' + (S.trash || []).length + '개</span>' +
+      '<span class="badge plain">revision ' + S.revision + '</span></div>' +
+      '<p class="hint">마지막 저장: ' + esc(S.savedAt ? new Date(S.savedAt).toLocaleString('ko-KR') : '아직 없음') + '</p></div>';
+
+    h += '<div class="card"><h3>파일로 백업 (JSON)</h3>' +
+      '<p class="small">다른 기기로 옮기거나 실수로 지웠을 때 되돌리는 용도입니다.</p>' +
+      '<label class="check"><input type="checkbox" id="exp-personal"><span>개인 메모와 예약번호도 함께 내보내기 (기본: 제외)</span></label>' +
+      '<p class="hint">포함하면 파일을 받은 사람이 그 내용을 볼 수 있습니다. 공유용이면 체크하지 마세요.</p>' +
+      '<div class="row"><button type="button" class="btn btn-primary" data-act="export">백업 파일 내려받기</button>' +
+      '<button type="button" class="btn" data-act="import-pick">백업 파일 가져오기</button>' +
+      '<input type="file" id="import-file" accept="application/json,.json" class="hidden"></div></div>';
+
+    h += '<div class="card"><h3>휴대폰에 앱처럼 두기</h3>' +
+      '<p class="small">브라우저 메뉴에서 ‘홈 화면에 추가’를 고르면 아이콘으로 바로 열 수 있습니다(안드로이드 크롬: 오른쪽 위 ⋮ → 홈 화면에 추가). 파일을 옮기거나 이름을 바꾸면 홈 화면 아이콘이 열리지 않을 수 있으니, 먼저 이 화면에서 백업 파일을 받아 두세요.</p></div>' +
+      '<div class="card"><h3>오프라인 vs 인터넷 필요</h3><ul class="small">' +
+      '<li><b>인터넷 없이 됨</b>: 일정 보기·편집, 예산, 체크리스트, 개인 메모, 백업 파일 만들기(이 기기에서).</li>' +
+      '<li><b>인터넷 필요</b>: 지도·길찾기 링크, 공식 사이트, 전화 걸기(통화망), .ics 파일을 캘린더 앱으로 보내기(기기에 따라).</li>' +
+      '<li>지도 앱이 오프라인 지도를 지원하면 미리 내려받아 두세요.</li></ul></div>';
+
+    h += '<div class="card"><h3>휴지통</h3>' +
+      ((S.trash || []).length ? '<ul class="list-plain">' + S.trash.map(function (t) {
+        return '<li><div style="flex:1 1 200px;min-width:0"><b>' + esc(t.label || t.kind) + '</b><br><span class="tiny">' + esc(fmtWhen(t.at)) + ' · ' + esc(t.dayId || '') + '</span></div>' +
+          '<button type="button" class="btn btn-sm" data-act="trash-restore" data-id="' + esc(t.id) + '">복원</button></li>';
+      }).join('') + '</ul>' : '<p class="small">휴지통이 비어 있습니다.</p>') +
+      '<div class="row" style="margin-top:10px"><button type="button" class="btn btn-sm btn-danger" data-act="trash-empty">휴지통 비우기</button></div>' +
+      '<p class="hint">삭제 직후에는 화면 아래 ‘실행취소’로 되돌릴 수 있고, 휴지통은 새로고침해도 남습니다. 비우기 전에 백업할 기회를 먼저 드립니다.</p></div>';
+
+    h += recoveryBlock();
+    h += privacyCard();
+
+    h += '<div class="card"><h3>처음 상태로 되돌리기</h3><p class="small">내가 고친 일정·예산·체크를 모두 지우고 기본 자료로 돌아갑니다. 백업 없이 진행하면 되돌릴 수 없습니다.</p>' +
+      '<div class="row"><button type="button" class="btn btn-danger" data-act="reset-all">전체 초기화</button></div></div>';
+
+    h += '<div class="card"><h3>안내</h3><ul class="small">' + S.notices.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join('') + '</ul></div>';
+
+    return h;
+  }
+
+  /* ---------------- 충돌 배너 ---------------- */
+  function renderConflict() {
+    var zone = document.getElementById('conflict-zone');
+    if (!conflict) { zone.innerHTML = ''; return; }
+    zone.innerHTML = '<div class="banner danger"><h4>다른 탭/창에서 이 앱을 수정했습니다</h4>' +
+      '<p class="small">내 저장본 rev ' + baseRev + ' · 다른 창 rev ' + conflict.revision + '. 덮어쓰지 않았습니다.</p>' +
+      '<div class="row">' +
+      '<button type="button" class="btn btn-sm btn-primary" data-act="conflict-load">다른 창 내용 불러오기(내 편집 사라짐)</button>' +
+      '<button type="button" class="btn btn-sm" data-act="conflict-merge">내 편집을 합쳐 저장</button>' +
+      '<button type="button" class="btn btn-sm" data-act="export">먼저 백업</button>' +
+      '</div><p class="hint">‘합쳐 저장’은 id가 같은 항목은 그대로 두고 새 항목만 더합니다.</p></div>';
+  }
+
+  /* ---------------- 렌더 ---------------- */
+  var SCREENS = { home: renderHome, schedule: renderSchedule, candidates: renderCandidates, reservations: renderReservations, budget: renderBudget, prep: renderPrep, weather: renderWeather, data: renderData };
+
+  function render(opts) {
+    opts = opts || {};
+    var tab = S.settings.tab || 'home';
+    if (!SCREENS[tab]) tab = 'home';
+    var keepY = window.scrollY || 0;
+    document.getElementById('app').innerHTML = SCREENS[tab]();
+    document.getElementById('trip-line').textContent = S.trip.headline;
+    Array.prototype.forEach.call(document.querySelectorAll('.tabbar button'), function (b) {
+      if (b.getAttribute('data-tab') === tab) b.setAttribute('aria-current', 'page');
+      else b.removeAttribute('aria-current');
+    });
+    renderConflict();
+    setSave(lastSaveError ? 'failed' : 'saved');
+    if (opts.top) window.scrollTo(0, 0);
+    else window.scrollTo(0, keepY);
+  }
+
+  /* 화면 이동 같은 표시 설정은 충돌이 있어도 막지 않습니다(내용은 저장하지 않음). */
+  function softCommit(mutator, opts) {
+    var ok = commit(mutator, opts);
+    if (!ok) {
+      mutator(S);
+      render(opts && opts.top ? { top: true } : undefined);
+    }
+    return ok;
+  }
+
+  function go(tab) {
+    softCommit(function (st) { st.settings.tab = tab; }, { noRender: true });
+    render({ top: true });
+  }
+
+  /* ---------------- 항목 편집 대화상자 ---------------- */
+  function itemFields(it) {
+    it = it || {};
+    return [
+      { name: 'name', label: '장소·일정 이름', value: it.name, required: true },
+      { name: 'kind', label: '종류', type: 'select', value: it.kind || 'visit', options: Object.keys(KIND_LABEL).map(function (k) { return { value: k, label: KIND_LABEL[k] }; }) },
+      { name: 'badge', label: '구분 배지', type: 'select', value: it.badge || 'planned', options: Object.keys(C.BADGE_LABEL).map(function (k) { return { value: k, label: C.BADGE_LABEL[k] }; }) },
+      { name: 'time', label: '시작 시각 (HH:MM)', type: 'time', value: it.time || '' },
+      { name: 'endTime', label: '종료 시각', type: 'time', value: it.endTime || '' },
+      { name: 'stay', label: '체류 시간', value: it.stay || '' },
+      { name: 'address', label: '주소 (없으면 비움)', value: it.address || '' },
+      { name: 'phone', label: '연락처 (공개된 시설 번호만)', value: it.phone || '' },
+      { name: 'hours', label: '운영시간·예약 조건', value: it.hours || '' },
+      { name: 'booking', label: '예약 상태', value: it.booking || '' },
+      { name: 'note', label: '짧은 메모(공유됨)', type: 'textarea', value: it.note || '', hint: '이름·예약번호 같은 개인정보를 적지 마세요. 자동으로 지워지지 않습니다.' },
+      { name: 'details', label: '자세한 설명(공유됨)', type: 'textarea', value: it.details || '' },
+      { name: 'travelMode', label: '앞 일정에서 이동 수단', type: 'select', value: (it.travel && it.travel.mode) || '도보', options: ['도보', '전철', '버스', '차량'] },
+      { name: 'travelMin', label: '이동 시간(분)', type: 'number', value: it.travel ? it.travel.min : '' },
+      { name: 'travelSource', label: '이동 시간 출처', type: 'select', value: (it.travel && it.travel.source) || '추정', options: ['공식', '추정', '확인 필요', '실측'] },
+      { name: 'walk', label: '도보 정보', value: (it.access && it.access.walk) || '' },
+      { name: 'stairs', label: '계단 정보', value: (it.access && it.access.stairs) || '' },
+      { name: 'wheelchair', label: '휠체어 접근성', value: (it.access && it.access.wheelchair) || '' },
+      { name: 'parking', label: '주차 정보', value: (it.access && it.access.parking) || '' },
+      { name: 'official', label: '공식 사이트 링크', value: (it.links && it.links.official) || '' },
+      { name: 'ticket', label: '예약·발권 링크', value: (it.links && it.links.ticket) || '' }
+    ];
+  }
+
+  function applyItemForm(target, v) {
+    target.name = v.name || '(이름 없음)';
+    target.kind = v.kind || 'visit';
+    target.badge = v.badge || 'planned';
+    target.time = v.time || '';
+    target.endTime = v.endTime || '';
+    target.stay = v.stay || '';
+    target.address = v.address || '';
+    target.phone = v.phone || '';
+    target.hours = v.hours || '';
+    target.booking = v.booking || '';
+    target.note = v.note || '';
+    target.details = v.details || '';
+    target.travel = {
+      mode: v.travelMode || '도보',
+      min: v.travelMin === '' ? null : Number(v.travelMin),
+      source: v.travelSource || '추정',
+      stale: false
+    };
+    target.access = { walk: v.walk || '', stairs: v.stairs || '', wheelchair: v.wheelchair || '', parking: v.parking || '' };
+    target.links = {};
+    if (v.official) target.links.official = v.official;
+    if (v.ticket) target.links.ticket = v.ticket;
+  }
+
+  function openItemEditor(itemId) {
+    var day = C.dayOfItem(S, itemId);
+    var it = C.findItem(S, itemId);
+    if (!it) return;
+    var fields = [{ name: 'date', label: '날짜', type: 'select', value: day.date, options: S.days.map(function (d) { return { value: d.date, label: C.dateLabel(d.date, d.weekday) + ' — ' + d.title }; }) }].concat(itemFields(it));
+    openDlg({
+      title: '일정 수정',
+      body: formHtml(fields, '<p class="hint">날짜·순서·시각을 바꾸면 인접 이동시간이 ‘재조회 필요’로 표시됩니다.</p>'),
+      actions: [{ label: '취소', act: 'close' }, { label: '저장', act: 'save-item', cls: 'btn-primary' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        if (act !== 'save-item') return;
+        var v = readForm();
+        var oldTimes = it.time + '|' + it.endTime;
+        commit(function () {
+          applyItemForm(it, v);
+          if (v.date && v.date !== day.date) {
+            var toDay = C.findDay(S, v.date);
+            var at = day.items.indexOf(it);
+            if (at >= 0) day.items.splice(at, 1);
+            C.reindex(day);
+            toDay.items.push(it);
+            C.reindex(toDay);
+            C.markAllTravelStale(day);
+            C.markAllTravelStale(toDay);
+          } else if (oldTimes !== (it.time + '|' + it.endTime)) {
+            C.markTravelStale(day, day.items.indexOf(it));
+          }
+        });
+        closeDlg();
+        toast('수정했습니다.');
+      }
+    });
+  }
+
+  function openItemAdd() {
+    var day = activeDay();
+    openDlg({
+      title: '장소·일정 추가 — ' + C.dateLabel(day.date, day.weekday),
+      body: formHtml(itemFields({ badge: 'planned', kind: 'visit', time: '10:00' })),
+      actions: [{ label: '취소', act: 'close' }, { label: '추가', act: 'add-item', cls: 'btn-primary' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        var v = readForm();
+        if (!v.name) { toast('이름을 입력하세요.'); return; }
+        commit(function () {
+          var it = { id: C.uid('it'), status: 'planned', origin: '사용자 추가', skip: 'none' };
+          applyItemForm(it, v);
+          day.items.push(it);
+          C.reindex(day);
+          C.markTravelStale(day, day.items.length - 1);
+        });
+        closeDlg();
+        toast('추가했습니다.');
+      }
+    });
+  }
+
+  /* ---------------- 예산 대화상자 ---------------- */
+  function openBudgetEditor(itemId) {
+    var it = itemId ? S.budget.items.filter(function (x) { return x.id === itemId; })[0] : null;
+    var cats = {};
+    S.budget.items.forEach(function (x) { if (x.category) cats[x.category] = 1; });
+    var catList = Object.keys(cats);
+    if (!catList.length) catList = ['예약', '입장권', '교통', '식비', '숙소', '보험', '기타'];
+    var fields = [
+      { name: 'label', label: '항목 이름', value: it ? it.label : '', required: true },
+      { name: 'category', label: '분류', type: 'select', value: it ? it.category : catList[0], options: catList.concat(['기타']) },
+      { name: 'status', label: '상태', type: 'select', value: it ? it.status : 'estimate', options: Object.keys(C.STATUS_LABEL).map(function (k) { return { value: k, label: C.STATUS_LABEL[k] }; }) },
+      { name: 'currency', label: '통화', type: 'select', value: it ? it.currency : 'KRW', options: [{ value: 'KRW', label: '원' }, { value: 'JPY', label: '엔' }] },
+      { name: 'amount', label: '금액 (모르면 비움)', type: 'number', value: it && it.amount !== null ? it.amount : '', hint: '비우면 0원이 아니라 ‘금액 미확인’으로 계산에서 제외됩니다.' },
+      { name: 'refundCondition', label: '환불 조건', value: it ? it.refundCondition || '' : '' },
+      { name: 'refundConfirmed', label: '환불이 확정됨(금액 차감에 반영)', type: 'checkbox', value: it ? !!it.refundConfirmed : false },
+      { name: 'note', label: '메모', type: 'textarea', value: it ? it.note || '' : '' }
+    ];
+    openDlg({
+      title: itemId ? '예산 항목 수정' : '예산 항목 추가',
+      body: formHtml(fields),
+      actions: [{ label: '취소', act: 'close' }, { label: '저장', act: 'save-budget', cls: 'btn-primary' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        var v = readForm();
+        if (!v.label) { toast('이름을 입력하세요.'); return; }
+        commit(function () {
+          var target = it;
+          if (!target) { target = { id: C.uid('b') }; S.budget.items.push(target); }
+          target.label = v.label;
+          target.category = v.category;
+          target.status = v.status;
+          target.currency = v.currency;
+          target.amount = v.amount === '' ? null : Number(v.amount);
+          if (target.amount !== null && !isFinite(target.amount)) target.amount = null;
+          target.refundCondition = v.refundCondition;
+          target.refundConfirmed = !!v.refundConfirmed;
+          target.note = v.note;
+        });
+        closeDlg();
+        toast('저장했습니다.');
+      }
+    });
+  }
+
+  /* ---------------- 개인 메모 ---------------- */
+  function openPersonal(itemId) {
+    var it = C.findItem(S, itemId);
+    var p = personalFor(itemId);
+    if (!P.items) P.items = {};
+    openDlg({
+      title: '기기 전용 개인 메모',
+      body: '<div class="banner warn"><p class="small">이 메모는 <b>이 기기에만</b> 저장되고 자동 동기화되지 않습니다. 백업에서 ‘개인 메모 포함’을 체크하지 않으면 파일에도 들어가지 않습니다.</p></div>' +
+        '<label for="p-memo">메모 (예약번호·탑승구·연락처 등)</label>' +
+        '<textarea id="p-memo" name="memo" class="memo" placeholder="예: 항공 예약번호 ABC123">' + esc(p.memo || '') + '</textarea>' +
+        '<label for="p-ref">예약번호·확정번호</label>' +
+        '<input id="p-ref" type="text" name="ref" value="' + esc(p.ref || '') + '">' +
+        '<p class="hint">' + esc(it ? it.name : '') + '</p>' +
+        '<div class="row" style="margin-top:10px"><button type="button" class="btn btn-sm" data-act="toggle-hide">' + (S.settings.hidePersonal ? '가리기 해제' : '가리기') + '</button></div>',
+      actions: [{ label: '닫기', act: 'close' }, { label: '삭제', act: 'del-personal', cls: 'btn-danger' }, { label: '저장', act: 'save-personal', cls: 'btn-primary' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        if (act === 'del-personal') {
+          delete P.items[itemId];
+          savePersonal(); closeDlg(); render(); toast('개인 메모를 지웠습니다.');
+          return;
+        }
+        var memo = document.getElementById('p-memo').value;
+        var ref = document.getElementById('p-ref').value;
+        if (!P.items) P.items = {};
+        P.items[itemId] = { memo: memo, ref: ref };
+        savePersonal(); closeDlg(); render(); toast('개인 메모를 저장했습니다(이 기기에만).');
+      }
+    });
+  }
+
+  /* ---------------- 가져오기 ---------------- */
+  function handleImportFile(file) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var res = C.parseBackupText(String(reader.result || ''));
+      if (!res.ok) {
+        openDlg({
+          title: '가져올 수 없는 파일입니다',
+          body: '<p>파일을 바꾸지 않고 그대로 두었습니다. 아래 이유를 확인하세요.</p><ul>' +
+            res.errors.map(function (e) { return '<li>' + esc(e) + '</li>'; }).join('') + '</ul>',
+          actions: [{ label: '닫기', act: 'close' }]
+        });
+        return;
+      }
+      pendingImport = { obj: JSON.parse(String(reader.result)), res: res };
+      var s = res.summary;
+      openDlg({
+        title: '가져오기 전 확인',
+        body: '<p class="small">내용을 확인한 뒤 적용 방식을 고르세요. 지금 상태는 자동으로 복구본에 저장해 둡니다.</p>' +
+          '<ul class="small">' +
+          '<li>여행 기간: ' + esc(s.tripStart) + ' ~ ' + esc(s.tripEnd) + '</li>' +
+          '<li>일자 ' + s.days + '일 · 일정 항목 ' + s.items + '개</li>' +
+          '<li>후보 ' + s.candidates + ' · 예약 ' + s.reservations + ' · 예산 ' + s.budgetItems + '</li>' +
+          '<li>체크리스트 ' + s.checklist + ' · 확인사항 ' + s.confirmations + '</li>' +
+          '<li>개인 메모 포함: ' + (s.hasPersonal ? '예 (적용하면 현재 개인 메모와 합칩니다)' : '아니오') + '</li>' +
+          '<li>내보낸 시각: ' + esc(s.exportedAt || '기록 없음') + '</li>' +
+          '</ul>' +
+          (res.warnings.length ? '<div class="banner warn"><p class="small">' + res.warnings.map(esc).join('<br>') + '</p></div>' : '') +
+          '<fieldset><legend>적용 방식</legend>' +
+          '<label class="check"><input type="radio" name="mode" value="merge" checked><span><b>합치기</b> — id가 같은 항목은 그대로 두고 새 항목만 더합니다. 같은 이름이라도 id가 다르면 별개로 추가됩니다.</span></label>' +
+          '<label class="check"><input type="radio" name="mode" value="replace"><span><b>전체 교체</b> — 지금 내용을 모두 지우고 파일 내용으로 바꿉니다. (자동 복구본을 먼저 만듭니다)</span></label>' +
+          '</fieldset>',
+        actions: [{ label: '취소', act: 'close' }, { label: '적용', act: 'import-apply', cls: 'btn-primary' }],
+        onAction: function (act) {
+          if (act === 'close') { pendingImport = null; return closeDlg(); }
+          if (act !== 'import-apply' || !pendingImport) return;
+          var modeEl = document.querySelector('input[name="mode"]:checked');
+          var mode = modeEl ? modeEl.value : 'merge';
+          applyImport(mode);
+        }
+      });
+    };
+    reader.readAsText(file);
+  }
+
+  function applyImport(mode) {
+    var inc = pendingImport.obj.data || pendingImport.obj.state;
+    var personalIn = pendingImport.obj.personal;
+    var before = C.clone(S);
+    var recovery = { at: new Date().toISOString(), mode: mode, state: before };
+    safeSet(C.RECOVERY_KEY, JSON.stringify(recovery));
+
+    var ok = commit(function (st) {
+      if (mode === 'replace') {
+        var next = C.applyReplace(st, inc);
+        next.revision = st.revision;
+        next.savedAt = st.savedAt;
+        next.trash = st.trash;
+        next.settings = st.settings;
+        S = next;
+      } else {
+        var merged = C.mergeStates(st, inc);
+        st.days = merged.state.days;
+        st.candidates = merged.state.candidates;
+        st.reservations = merged.state.reservations;
+        st.budget = merged.state.budget;
+        st.checklist = merged.state.checklist;
+        st.confirmations = merged.state.confirmations;
+      }
+      if (personalIn && personalIn.items) {
+        P.items = Object.assign({}, personalIn.items, P.items || {});
+        savePersonal();
+      }
+    });
+    pendingImport = null;
+    closeDlg();
+    if (ok) toast('가져왔습니다. 되돌리려면 ‘가져오기 취소’를 누르세요.', '가져오기 취소', 'import-undo');
+  }
+
+  /* ---------------- 전체 초기화 ---------------- */
+  function openReset() {
+    openDlg({
+      title: '전체 초기화',
+      body: '<div class="banner danger"><p class="small">내가 추가·수정한 일정, 예산, 체크리스트, 휴지통이 모두 사라지고 기본 자료로 돌아갑니다.</p></div>' +
+        '<label class="check"><input type="checkbox" id="rs-backup"><span>먼저 백업 파일을 내려받았습니다</span></label>' +
+        '<p class="hint">백업 없이 진행하면 되돌릴 수 없습니다.</p>',
+      actions: [{ label: '취소', act: 'close' }, { label: '백업 내려받기', act: 'export' }, { label: '초기화', act: 'do-reset', cls: 'btn-danger' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        if (act === 'export') { exportJson(false); return; }
+        if (act !== 'do-reset') return;
+        var cb = document.getElementById('rs-backup');
+        if (!cb || !cb.checked) { toast('먼저 백업을 받거나 체크박스를 선택하세요.'); return; }
+        conflict = null;
+        S = C.buildInitialState(DATA);
+        S.revision = baseRev + 1;
+        writeNow();
+        closeDlg();
+        render();
+        toast('초기화했습니다.');
+      }
+    });
+  }
+
+  /* ---------------- 다운로드 ---------------- */
+  function download(filename, text, mime) {
+    try {
+      var blob = new Blob([text], { type: mime || 'application/json' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+      return true;
+    } catch (e) {
+      toast('파일을 만들지 못했습니다: ' + e.message);
+      return false;
+    }
+  }
+
+  function stampName() {
+    var d = new Date();
+    return d.getFullYear() + C.pad(d.getMonth() + 1) + C.pad(d.getDate()) + '-' + C.pad(d.getHours()) + C.pad(d.getMinutes());
+  }
+
+  function utcStampNow() {
+    var d = new Date();
+    return d.getUTCFullYear() + C.pad(d.getUTCMonth() + 1) + C.pad(d.getUTCDate()) + 'T' +
+      C.pad(d.getUTCHours()) + C.pad(d.getUTCMinutes()) + C.pad(d.getUTCSeconds()) + 'Z';
+  }
+
+  function exportJson(includePersonal) {
+    var payload = C.exportPayload(S, P, includePersonal);
+    download('osaka-trip-backup-' + stampName() + '.json', JSON.stringify(payload, null, 2), 'application/json');
+    toast(includePersonal ? '개인 메모를 포함해 백업했습니다.' : '개인 메모를 제외하고 백업했습니다.');
+  }
+
+  /* ---------------- 이벤트 ---------------- */
+  function handleClick(ev) {
+    var t = ev.target.closest('[data-act]');
+    if (!t) return;
+    var act = t.getAttribute('data-act');
+    var id = t.getAttribute('data-id');
+
+    switch (act) {
+      case 'go':
+        go(t.getAttribute('data-tab'));
+        return;
+      case 'view':
+        softCommit(function (st) { st.settings.viewMode = t.getAttribute('data-mode'); }, { noRender: true });
+        render({ top: true });
+        return;
+      case 'set-date':
+        softCommit(function (st) { st.settings.activeDate = t.getAttribute('data-date'); }, { noRender: true });
+        render({ top: true });
+        return;
+      case 'toggle-edit':
+        softCommit(function (st) { st.settings.editMode = !st.settings.editMode; }, { noRender: true });
+        render({ top: true });
+        return;
+      case 'toggle-hide':
+        softCommit(function (st) { st.settings.hidePersonal = !st.settings.hidePersonal; });
+        toast(S.settings.hidePersonal ? '개인 메모를 가립니다.' : '개인 메모를 표시합니다(화면을 보는 사람에게 노출).');
+        return;
+      case 'item-status':
+        commit(function (st) { C.setItemStatus(st, id, t.getAttribute('data-status')); });
+        return;
+      case 'item-up':
+      case 'item-down': {
+        var day = C.dayOfItem(S, id);
+        if (!day) return;
+        var idx = day.items.map(function (x) { return x.id; }).indexOf(id);
+        commit(function () { C.moveItemWithinDay(day, idx, act === 'item-up' ? 'up' : 'down'); });
+        toast('순서를 바꿨습니다. 앞뒤 이동시간은 재조회가 필요합니다.');
+        return;
+      }
+      case 'item-edit':
+        openItemEditor(id);
+        return;
+      case 'item-add':
+        openItemAdd();
+        return;
+      case 'item-del': {
+        if (!guard('del:' + id, 900)) return;
+        var payload = null;
+        commit(function (st) { payload = C.removeItem(st, id); });
+        if (payload) {
+          toast('삭제했습니다. 휴지통에 보관됩니다.', '실행취소', 'undo-del', payload.entry.id);
+        }
+        return;
+      }
+      case 'undo-del':
+        commit(function (st) { C.restoreTrash(st, t.getAttribute('data-payload')); });
+        toast('되돌렸습니다.');
+        return;
+      case 'item-to-cand': {
+        var it = C.findItem(S, id);
+        if (!it) return;
+        commit(function (st) {
+          st.candidates.push({
+            id: C.uid('c'), name: it.name, kind: it.kind, badge: 'optional', origin: it.origin || '일정에서 이동',
+            stay: it.stay, address: it.address, phone: it.phone, hours: it.hours, booking: it.booking,
+            note: it.note, details: it.details, travel: it.travel, access: it.access, links: it.links,
+            reason: '일정에서 후보로 옮김'
+          });
+          C.removeItem(st, id);
+        });
+        toast('후보로 옮겼습니다.');
+        return;
+      }
+      case 'cand-to-day':
+        openCandToDay(id);
+        return;
+      case 'cand-del': {
+        if (!guard('cdel:' + id, 900)) return;
+        commit(function (st) {
+          for (var i = 0; i < st.candidates.length; i++) {
+            if (st.candidates[i].id === id) { st.candidates.splice(i, 1); break; }
+          }
+        });
+        toast('후보에서 지웠습니다.');
+        return;
+      }
+      case 'travel-reset': {
+        var d2 = activeDay();
+        commit(function () {
+          d2.items.forEach(function (it2, i) {
+            if (i > 0 && it2.travel) { it2.travel.source = '확인 필요'; it2.travel.stale = true; }
+          });
+        });
+        toast('이 날 이동시간을 모두 ‘확인 필요’로 표시했습니다.');
+        return;
+      }
+      case 'personal':
+        openPersonal(id);
+        return;
+      case 'copy':
+        copyText(t.getAttribute('data-copy'));
+        return;
+      case 'budget-toggle':
+        commit(function (st) { st.budget.enabled = !st.budget.enabled; });
+        return;
+      case 'budget-add':
+        openBudgetEditor(null);
+        return;
+      case 'budget-edit':
+        openBudgetEditor(id);
+        return;
+      case 'budget-del': {
+        if (!guard('bdel:' + id, 900)) return;
+        commit(function (st) {
+          st.budget.items = st.budget.items.filter(function (x) { return x.id !== id; });
+        });
+        toast('예산 항목을 지웠습니다.');
+        return;
+      }
+      case 'budget-convert': {
+        var item = S.budget.items.filter(function (x) { return x.id === id; })[0];
+        if (!item) return;
+        openDlg({
+          title: '예상 → 실제 전환',
+          body: '<p class="small">같은 항목을 실제 결제로 바꿉니다. 새 항목이 생기지 않으므로 두 번 더해지지 않습니다.</p>' +
+            '<label for="cv-amount">실제 결제 금액 (' + esc(item.currency === 'JPY' ? '엔' : '원') + ')</label>' +
+            '<input id="cv-amount" type="number" inputmode="numeric" value="' + esc(item.amount === null ? '' : item.amount) + '">' +
+            '<p class="hint">예상 금액: ' + esc(C.fmtMoney(item.amount, item.currency)) + '</p>',
+          actions: [{ label: '취소', act: 'close' }, { label: '전환', act: 'do-convert', cls: 'btn-primary' }],
+          onAction: function (a) {
+            if (a === 'close') return closeDlg();
+            var v = document.getElementById('cv-amount').value;
+            commit(function (st) { C.estimateToActual(st.budget, id, v === '' ? null : Number(v)); });
+            closeDlg();
+            toast('실제 결제로 전환했습니다.');
+          }
+        });
+        return;
+      }
+      case 'budget-settings-save': {
+        var f = document.getElementById('budget-form');
+        var target = Number(f.querySelector('[name=target]').value) || 0;
+        var buffer = Number(f.querySelector('[name=buffer]').value) || 0;
+        var rateRaw = f.querySelector('[name=rate]').value;
+        commit(function (st) {
+          st.budget.targetKrw = target;
+          st.budget.bufferPct = buffer;
+          st.budget.jpyRate = rateRaw === '' ? null : Number(rateRaw);
+        });
+        toast('목표 예산을 저장했습니다.');
+        return;
+      }
+      case 'check-toggle': {
+        commit(function (st) {
+          st.checklist.forEach(function (k) { if (k.id === id) k.done = !k.done; });
+        });
+        return;
+      }
+      case 'check-del': {
+        if (!guard('kdel:' + id, 900)) return;
+        commit(function (st) { st.checklist = st.checklist.filter(function (k) { return k.id !== id; }); });
+        return;
+      }
+      case 'check-add':
+        openDlg({
+          title: '체크리스트 항목 추가',
+          body: '<label for="ck-new">할 일</label><input id="ck-new" type="text" name="text">',
+          actions: [{ label: '취소', act: 'close' }, { label: '추가', act: 'do-check-add', cls: 'btn-primary' }],
+          onAction: function (a) {
+            if (a === 'close') return closeDlg();
+            var v = document.getElementById('ck-new').value.trim();
+            if (!v) return;
+            commit(function (st) { st.checklist.push({ id: C.uid('k'), text: v, done: false }); });
+            closeDlg();
+          }
+        });
+        return;
+      case 'conf-toggle': {
+        commit(function (st) {
+          st.confirmations.forEach(function (q) { if (q.id === id) q.done = !q.done; });
+        });
+        return;
+      }
+      case 'alt-apply':
+        applyAlternative(id);
+        return;
+      case 'export':
+        exportJson(!!(document.getElementById('exp-personal') && document.getElementById('exp-personal').checked));
+        return;
+      case 'import-pick':
+        document.getElementById('import-file').click();
+        return;
+      case 'trash-restore': {
+        if (!guard('trrestore:' + id, 900)) return;
+        var r = null;
+        commit(function (st) { r = C.restoreTrash(st, id); });
+        if (r && r.ok) toast('복원했습니다.');
+        else if (r) toast(r.reason || '복원하지 못했습니다.');
+        return;
+      }
+      case 'trash-empty':
+        openEmptyTrash();
+        return;
+      case 'ics':
+        download('osaka-trip-' + stampName() + '.ics', C.buildICS(S, utcStampNow()), 'text/calendar');
+        toast('캘린더 파일을 만들었습니다. 파일을 열어 일정을 추가하세요.');
+        return;
+      case 'reset-all':
+        openReset();
+        return;
+      case 'conflict-load':
+        if (conflict) {
+          S = conflict;
+          baseRev = S.revision;
+          conflict = null;
+          render();
+          toast('다른 창의 내용을 불러왔습니다.');
+        }
+        return;
+      case 'conflict-merge':
+        if (conflict) {
+          var merged = C.mergeStates(S, conflict);
+          S = merged.state;
+          conflict = null;
+          S.revision = baseRev + 1;
+          writeNow();
+          render();
+          toast('합쳐서 저장했습니다. 새 항목 ' + (merged.report.addedItems + merged.report.addedCandidates) + '개 추가.');
+        }
+        return;
+      case 'recovery-restore': {
+        var raw2 = safeGet(C.RECOVERY_KEY);
+        if (!raw2) { toast('복구본이 없습니다.'); return; }
+        openDlg({
+          title: '복구본으로 되돌리기',
+          body: '<p class="small">지금 상태를 백업한 뒤 복구본으로 되돌립니다. 되돌린 뒤에도 다시 복구본을 만들 수 있습니다.</p>' +
+            '<label class="check"><input type="checkbox" id="rc-backup" checked><span>지금 상태를 먼저 백업 파일로 내려받습니다</span></label>',
+          actions: [{ label: '취소', act: 'close' }, { label: '되돌리기', act: 'do-recovery', cls: 'btn-warn' }],
+          onAction: function (act) {
+            if (act === 'close') return closeDlg();
+            if (act !== 'do-recovery') return;
+            var cb = document.getElementById('rc-backup');
+            if (cb && cb.checked) exportJson(false);
+            try {
+              var rec = JSON.parse(raw2);
+              safeSet(C.RECOVERY_KEY, JSON.stringify({ at: new Date().toISOString(), mode: '되돌리기 직전', state: C.clone(S) }));
+              S = rec.state;
+              S.revision = baseRev + 1;
+              writeNow();
+              closeDlg();
+              render({ top: true });
+              toast('복구본으로 되돌렸습니다.');
+            } catch (e) { toast('복구본을 읽지 못했습니다.'); }
+          }
+        });
+        return;
+      }
+      case 'import-undo': {
+        var raw = safeGet(C.RECOVERY_KEY);
+        if (!raw) { toast('복구본이 없습니다.'); return; }
+        try {
+          var rec = JSON.parse(raw);
+          S = rec.state;
+          S.revision = baseRev + 1;
+          writeNow();
+          render();
+          toast('가져오기 이전 상태로 되돌렸습니다.');
+        } catch (e) { toast('복구본을 읽지 못했습니다.'); }
+        return;
+      }
+      default:
+        return;
+    }
+  }
+
+  function applyAlternative(altId) {
+    var a = S.alternatives.filter(function (x) { return x.id === altId; })[0];
+    if (!a) return;
+    var day = C.findDay(S, a.dayDate);
+    if (!day) return;
+    openDlg({
+      title: '대안을 일정에 반영할까요?',
+      body: '<p class="small">' + esc(a.title) + '</p>' +
+        '<p>현재 ' + esc(C.dateLabel(day.date, day.weekday)) + ' 일정 ' + day.items.length + '개를 대안 항목으로 바꿉니다.</p>' +
+        '<div class="banner warn"><p class="small">지금 상태는 백업(복구본)에 저장됩니다. 바꾼 뒤 ‘가져오기 취소’ 대신 일정에서 되돌리거나, 먼저 백업 파일을 받아 두세요.</p></div>',
+      actions: [{ label: '취소', act: 'close' }, { label: '백업', act: 'export' }, { label: '반영', act: 'do-alt', cls: 'btn-warn' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        if (act === 'export') { exportJson(false); return; }
+        safeSet(C.RECOVERY_KEY, JSON.stringify({ at: new Date().toISOString(), mode: 'alternative', state: C.clone(S) }));
+        commit(function () {
+          day.items = a.steps.map(function (s, i) {
+            return {
+              id: C.uid('it'), time: '', endTime: '', name: s, kind: 'visit', badge: 'optional',
+              origin: '대안', stay: '', address: '', hours: '', booking: '', note: '',
+              details: '', travel: { mode: '도보', min: 0, source: '확인 필요', stale: true },
+              access: {}, links: {}, skip: 'rain', status: 'planned', order: i
+            };
+          });
+          day.note = '대안 반영: ' + a.title + ' (시각은 직접 채워야 합니다)';
+        });
+        closeDlg();
+        toast('대안을 반영했습니다. 시각은 직접 채워 넣으세요.');
+      }
+    });
+  }
+
+  function openEmptyTrash() {
+    var n = (S.trash || []).length;
+    openDlg({
+      title: '휴지통 비우기',
+      body: '<p>휴지통의 ' + n + '개 항목을 완전히 지웁니다. 되돌릴 수 없습니다.</p>' +
+        '<label class="check"><input type="checkbox" id="tr-backup"><span>먼저 백업 파일을 내려받았습니다</span></label>',
+      actions: [{ label: '취소', act: 'close' }, { label: '백업 내려받기', act: 'export' }, { label: '비우기', act: 'do-empty', cls: 'btn-danger' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        if (act === 'export') { exportJson(false); return; }
+        if (act !== 'do-empty') return;
+        var cb = document.getElementById('tr-backup');
+        if (!cb || !cb.checked) { toast('백업을 먼저 받고 체크해 주세요.'); return; }
+        var res = null;
+        commit(function (st) { res = C.emptyTrash(st, true); });
+        closeDlg();
+        toast('휴지통을 비웠습니다.');
+      }
+    });
+  }
+
+  function openCandToDay(candId) {
+    var c = S.candidates.filter(function (x) { return x.id === candId; })[0];
+    if (!c) return;
+    openDlg({
+      title: '일정에 넣기',
+      body: '<p class="small">' + esc(c.name) + '</p>' +
+        '<label for="cd-date">날짜</label><select id="cd-date" name="date">' +
+        S.days.map(function (d) {
+          return '<option value="' + d.date + '">' + esc(C.dateLabel(d.date, d.weekday)) + ' — ' + esc(d.title) + '</option>';
+        }).join('') + '</select>' +
+        '<label for="cd-time">시작 시각</label><input id="cd-time" type="time" value="10:00">',
+      actions: [{ label: '취소', act: 'close' }, { label: '넣기', act: 'do-cand', cls: 'btn-primary' }],
+      onAction: function (act) {
+        if (act === 'close') return closeDlg();
+        var date = document.getElementById('cd-date').value;
+        var time = document.getElementById('cd-time').value;
+        commit(function (st) {
+          var day = C.findDay(st, date);
+          day.items.push({
+            id: C.uid('it'), time: time, endTime: '', name: c.name, kind: c.kind || 'visit',
+            badge: 'optional', origin: '후보에서 추가', stay: c.stay || '', address: c.address || '',
+            phone: c.phone || '', hours: c.hours || '', booking: c.booking || '',
+            note: c.note || '', details: c.details || '', travel: c.travel || { mode: '도보', min: null, source: '확인 필요', stale: true },
+            access: c.access || {}, links: c.links || {}, skip: 'none', status: 'planned'
+          });
+          C.reindex(day);
+          C.markTravelStale(day, day.items.length - 1);
+          st.candidates = st.candidates.filter(function (x) { return x.id !== candId; });
+          st.settings.activeDate = date;
+        });
+        closeDlg();
+        toast('일정에 넣었습니다. 순서와 이동시간을 확인하세요.');
+      }
+    });
+  }
+
+  function copyText(text) {
+    if (!text) return;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast('주소를 복사했습니다.'); },
+        function () { fallbackCopy(text); });
+    } else fallbackCopy(text);
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); toast('주소를 복사했습니다.'); }
+    catch (e) { toast('복사하지 못했습니다. 길게 눌러 직접 복사하세요.'); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------------- 시작 ---------------- */
+  function bind() {
+    document.addEventListener('click', handleClick);
+    document.addEventListener('change', function (ev) {
+      if (ev.target && ev.target.id === 'import-file' && ev.target.files && ev.target.files[0]) {
+        handleImportFile(ev.target.files[0]);
+        ev.target.value = '';
+      }
+    });
+    document.getElementById('dlg-foot').addEventListener('click', function (ev) {
+      var b = ev.target.closest('[data-dlg]');
+      if (!b) return;
+      dlgHandler(b.getAttribute('data-dlg'));
+    });
+    document.getElementById('dlg').addEventListener('click', function (ev) {
+      if (ev.target === document.getElementById('dlg')) closeDlg();
+    });
+    window.addEventListener('storage', function (ev) {
+      if (ev.key === C.STORAGE_KEY && ev.newValue) {
+        try {
+          var incoming = JSON.parse(ev.newValue);
+          if (incoming && C.detectConflict(baseRev, incoming.revision)) {
+            conflict = incoming;
+            renderConflict();
+            toast('다른 창에서 수정했습니다. 덮어쓰지 않았습니다.');
+          }
+        } catch (e) { }
+      } else if (ev.key === C.PERSONAL_KEY && ev.newValue) {
+        try { var p = JSON.parse(ev.newValue); if (p) { P = p; render(); } } catch (e) { }
+      }
+    });
+    document.getElementById('tabbar').addEventListener('click', function (ev) {
+      var b = ev.target.closest('button[data-tab]');
+      if (b) go(b.getAttribute('data-tab'));
+    });
+  }
+
+  loadAll();
+  bind();
+  render();
+})();
+</script>
+</body>
+</html>
