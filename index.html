@@ -356,9 +356,10 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
 {
  "meta": {
   "title": "오사카 가족 여행 2026",
-  "dataCheckedAt": "2026-11-15",
+  "dataCheckedAt": "2026-11-19",
+  "contentVersion": "2026-11-19.1",
   "schemaVersion": 2,
-  "appVersion": "1.1.0",
+  "appVersion": "1.2.0",
   "tripTz": "Asia/Tokyo",
   "homeTz": "Asia/Seoul",
   "partySize": 6
@@ -373,7 +374,10 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
    "기존 12월 8일~11일 일정은 12월 15일~18일로 변경되었습니다. (12/8~11 관련 계획은 취소·제외로 표시)",
    "출발 공항은 청주공항 검토를 마치고 인천국제공항 제2여객터미널(T2)로 확정되었습니다.",
    "항공은 진에어 확정: 가는편 LJ355(12/15 14:50), 오는편 LJ314(12/18 10:50).",
-   "숙소는 호텔 몬토레 라 스루 오사카(교바시) 2객실 3박으로 확정되었습니다."
+   "숙소는 호텔 몬토레 라 스루 오사카(교바시) 2객실 3박으로 확정되었습니다.",
+   "2026-11-19 갱신: 공항→호텔 이동이 INNN 합승 공항 픽업(12/15 LJ355 16:35 도착편)으로 확정되었습니다. 1일차 JR 관공쾌속·6인 픽업밴 후보는 일정에서 뺐습니다.",
+   "2026-11-19 갱신: USJ 방문일을 12/16(수)로 확정해 2일차가 USJ, 3일차가 오사카성·해유관 일정으로 바뀌었습니다. 입장권은 아직 구매 전입니다.",
+   "이 페이지의 자료는 2026-11-19에 갱신되었습니다. 기기에 저장된 예전 상태는 이 갱신본으로 다시 시작하며, 바꾸기 직전 상태는 ‘저장·백업·복구’ 화면의 자동 복구본에 남습니다."
   ]
  },
  "party": [
@@ -610,17 +614,17 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     {
      "id": "d1-7",
      "time": "18:10",
-     "endTime": "19:25",
-     "name": "JR 간사이공항역 → 京橋(교바시) 관공쾌속",
+     "endTime": "19:40",
+     "name": "INNN 합승 공항 픽업 → 호텔 몬토레 라 스루 오사카",
      "kind": "move",
-     "badge": "needs_check",
-     "origin": "조사 참고",
-     "stay": "약 75분",
-     "address": "간사이국제공항역(JR) 1층 → JR 교바시역",
-     "hours": "",
-     "booking": "현장 발권 또는 ICOCA",
-     "note": "요금은 성인 약 1,180엔·소아 약 590엔으로 안내되어 있으나, 역에서 최종 확인하세요. 6인 픽업밴도 후보로 남아 있습니다.",
-     "details": "관공쾌속은 日根野에서 차량을 분리합니다. 앞쪽 4량이 간사이공항 방면·교바시 방면이므로 반드시 앞 4량에 타야 합니다. 큰 캐리어를 둘 공간이 좁고 저녁 시간대는 붐빕니다. 어르신과 아이를 먼저 앉히고 짐은 통로를 막지 않게 정리하세요.",
+     "badge": "confirmed",
+     "origin": "확정 예약",
+     "stay": "약 90분 (탑승 대기 포함)",
+     "address": "간사이국제공항 제1터미널 → 호텔 몬토레 라 스루 오사카",
+     "hours": "도착편 기준 배차",
+     "booking": "확정 · 합승 공항 픽업(편도)",
+     "note": "12/15 LJ355 16:35 도착편 기준으로 예약이 확정되어 있습니다. 합승 셔틀이라 다른 탑승객 숙소를 먼저 들르면 75분보다 더 걸릴 수 있습니다.",
+     "details": "입국심사·수하물 수취를 마치고 예약 안내에 나온 집결 장소로 이동해 QR로 탑승합니다. 정확한 탑승 시각과 집결 위치는 예약 안내와 현장 안내로 확인하세요. 1인당 32인치 1개 + 20인치 1개까지 무료 수하물로 안내되어 있어 캐리어가 많으면 초과 요금 여부를 미리 확인해야 합니다. 예약번호와 QR은 공개 페이지에 두지 않았으니 기기 개인 메모에만 적어 두세요.",
      "travel": {
       "mode": "도보",
       "min": 6,
@@ -628,44 +632,15 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       "stale": false
      },
      "access": {
-      "walk": "T1 2층에서 JR역까지 도보·에스컬레이터 이동",
+      "walk": "T1 도착 로비에서 집결 장소까지 도보 이동",
       "stairs": "확인 필요",
       "wheelchair": "확인 필요",
       "parking": ""
      },
      "links": {
-      "official": "https://www.jr-odekake.net/",
-      "ticket": "https://www.westjr.co.jp/global/kr/"
+      "official": "https://kr.innn.com/"
      },
-     "skip": "none"
-    },
-    {
-     "id": "d1-8",
-     "time": "19:35",
-     "endTime": "19:45",
-     "name": "교바시역 → 호텔 (OBP 연결통로 도보 5분)",
-     "kind": "move",
-     "badge": "planned",
-     "origin": "공식 자료",
-     "stay": "약 5~8분",
-     "address": "JR 교바시역 서쪽 출구 → 오사카비즈니스파크(OBP) 연결통로",
-     "hours": "",
-     "booking": "없음",
-     "note": "지붕이 있는 연결통로로 이동합니다. 통로 안 계단·경사·엘리베이터 위치는 확인이 필요합니다.",
-     "details": "공식 안내 기준 JR·京阪 교바시역, 지하철 오사카비즈니스파크역에서 도보 약 5분입니다. 캐리어가 있으면 엘리베이터 동선을 먼저 찾으세요.",
-     "travel": {
-      "mode": "도보",
-      "min": 6,
-      "source": "공식",
-      "stale": false
-     },
-     "access": {
-      "walk": "약 5~8분, 지붕 있는 연결통로",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
+     "checkedAt": "2026-11-19",
      "skip": "none"
     },
     {
@@ -681,16 +656,16 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
      "phone": "+81-6-6944-7111",
      "hours": "체크인 15:00~익일 06:00 / 체크아웃 11:00",
      "booking": "확정 · 객실 2개 · 3박",
-     "note": "도착이 늦을 경우 호텔에 미리 연락하는 것이 안내되어 있습니다. 이 일정은 19:25 도착 예상이라 연락은 필수는 아닙니다.",
+     "note": "도착이 늦을 경우 호텔에 미리 연락하는 것이 안내되어 있습니다. 셔틀 도착 예상이 19:40이고 체크인은 15:00부터 가능하므로 연락은 필수는 아닙니다.",
      "details": "오사카시 숙박세는 1인 1박 5,000~15,000엔 구간 200엔, 15,000~20,000엔 400엔, 20,000엔 초과 500엔(2025-09-01 개정)입니다. 프런트에서 별도로 받는지, 결제에 포함됐는지 확인이 필요합니다. 16층에 천연온천이 있다고 안내되어 있으나 이용 조건(유료·시간)은 확인이 필요합니다.",
      "travel": {
       "mode": "도보",
-      "min": 6,
-      "source": "공식",
+      "min": 3,
+      "source": "추정",
       "stale": false
      },
      "access": {
-      "walk": "연결통로 도보 5분",
+      "walk": "셔틀 하차 지점에서 프런트까지 도보 1~3분",
       "stairs": "확인 필요",
       "wheelchair": "확인 필요",
       "parking": "호텔 주차장 유료 여부 확인 필요"
@@ -799,392 +774,8 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
   {
    "date": "2026-12-16",
    "weekday": "수",
-   "title": "오사카성 · 해유관 · 나카노시마",
-   "note": "걷는 시간이 가장 긴 날입니다. 오전 오사카성, 오후 해유관, 밤 일루미네이션은 생략 가능 항목입니다.",
-   "items": [
-    {
-     "id": "d2-1",
-     "time": "07:30",
-     "endTime": "08:30",
-     "name": "조식 (호텔 또는 편의점)",
-     "kind": "meal",
-     "badge": "needs_check",
-     "origin": "사용자 계획",
-     "stay": "약 60분",
-     "address": "호텔 몬토레 라 스루 오사카",
-     "hours": "",
-     "booking": "조식 포함 여부 확인 필요",
-     "note": "에어텔 조건에 조식이 포함됐는지 확인되지 않았습니다. 미포함이면 호텔 주변 편의점·카페를 이용하세요.",
-     "details": "아이와 어르신이 있다면 아침을 든든히 먹고 나가는 편이 좋습니다. 물과 간식은 미리 사 두세요.",
-     "access": {
-      "walk": "호텔 내",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
-     "skip": "none"
-    },
-    {
-     "id": "d2-2",
-     "time": "08:50",
-     "endTime": "09:10",
-     "name": "호텔 → 오사카성 공원 (도보)",
-     "kind": "move",
-     "badge": "planned",
-     "origin": "조사 참고",
-     "stay": "약 15~20분",
-     "address": "오사카비즈니스파크 → 오사카성 공원",
-     "hours": "",
-     "booking": "없음",
-     "note": "도보 15~20분은 추정값입니다. 계단·경사·엘리베이터 유무는 확인이 필요합니다.",
-     "details": "지하철로 이동하면 오사카비즈니스파크역 → 오사카성공원역 1정거장이지만, 역 안 이동과 계단이 더 부담일 수 있습니다. 걸을 수 있으면 도보가 오히려 편합니다.",
-     "travel": {
-      "mode": "도보",
-      "min": 18,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "약 15~20분, 오사카성 공원 내 완만한 경사",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": "공원 주차장 유료(요금 확인 필요)"
-     },
-     "links": {},
-     "skip": "none"
-    },
-    {
-     "id": "d2-3",
-     "time": "09:15",
-     "endTime": "10:45",
-     "name": "오사카성 천수각 (오사카성 박물관)",
-     "kind": "visit",
-     "badge": "planned",
-     "origin": "공식 자료",
-     "stay": "약 90분",
-     "address": "오사카시 주오구 오사카성 1-1",
-     "phone": "+81-6-6941-3044",
-     "hours": "09:00~18:00 (마지막 입장 17:30) · 휴관 12/28~1/1",
-     "booking": "현장 구매 (성인 1,200엔 · 대학생·고등학생 600엔 · 중학생 이하 무료, 증빙 필요)",
-     "note": "개장 직후가 가장 덜 붐빕니다. 8층 전망대까지 오르는 동선의 엘리베이터·계단 상황은 확인이 필요합니다.",
-     "details": "2025-04-01부터 입장료가 성인 1,200엔으로 변경되었습니다(오사카성 풍신수길 석벽관 관람 포함). 중학생 이하는 무료지만 연령 확인 서류(학생증·여권 등)가 필요합니다. 전시실은 층마다 계단 이동이 있고 엘리베이터 대기 줄이 길 수 있어, 어르신과 함께라면 엘리베이터 우선 이용을 권합니다.",
-     "travel": {
-      "mode": "도보",
-      "min": 5,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "공원 내 도보 후 천수각 입구까지",
-      "stairs": "전시실 층간 계단 있음 · 엘리베이터 유무 확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": "공원 주차장은 유료이며 성수기 만차가 잦습니다(추정). 만차 시 오사카비즈니스파크(OBP) 주차장 또는 지하철 이용을 대안으로 보세요. 요금은 확인 필요."
-     },
-     "links": {
-      "official": "https://www.osakacastle.net/guide/"
-     },
-     "opening": {
-      "open": "09:00",
-      "close": "18:00",
-      "lastEntry": "17:30",
-      "closed": "12/28~1/1"
-     },
-     "skip": "none"
-    },
-    {
-     "id": "d2-4",
-     "time": "10:55",
-     "endTime": "11:35",
-     "name": "오사카성 고자부네(황금배) 승선",
-     "kind": "visit",
-     "badge": "planned",
-     "origin": "공식 자료",
-     "stay": "약 40분 (승선 20분 + 대기)",
-     "address": "오사카시 주오구 오사카성 2 · 극락교 북서쪽 승선장",
-     "phone": "+81-6-6314-3773",
-     "hours": "10:00~16:30 (최종편) · 10~15분 간격 · 악천후 결항",
-     "booking": "현장 구매 (성인 1,800엔 · 초·중학생 900엔 · 65세 이상 1,200엔)",
-     "note": "승하선 시 단차가 있는지 확인이 필요합니다. 어르신은 승선 전에 직원에게 도움을 요청하세요.",
-     "details": "내호를 약 20분 도는 코스입니다. 배에 지붕은 있지만 바람이 차므로 12월에는 방한 준비가 필요합니다. 정원이 작아 6명이 한 배에 타지 못할 수 있습니다.",
-     "travel": {
-      "mode": "도보",
-      "min": 8,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "천수각 북쪽 극락교까지 도보",
-      "stairs": "승하선 단차 확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {
-      "official": "https://www.banpr.co.jp/"
-     },
-     "opening": {
-      "open": "10:00",
-      "close": "16:30",
-      "closed": "연말연시·악천후"
-     },
-     "skip": "rain"
-    },
-    {
-     "id": "d2-5",
-     "time": "11:45",
-     "endTime": "12:45",
-     "name": "점심 — 오사카성 공원 JO-TERRACE",
-     "kind": "meal",
-     "badge": "planned",
-     "origin": "조사 참고",
-     "stay": "약 60분",
-     "address": "오사카시 주오구 오사카성 3-11",
-     "hours": "점포별 상이 (확인 필요)",
-     "booking": "예약 없음",
-     "note": "공원 안 상업시설입니다. 6명 동시 착석 가능 여부는 현장 확인이 필요합니다.",
-     "details": "공원 밖으로 나가면 이동이 길어집니다. 붐비면 공원 내 매점에서 간단히 먹고 오후 일정을 앞당기는 편이 낫습니다.",
-     "travel": {
-      "mode": "도보",
-      "min": 5,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "확인 필요",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
-     "skip": "none"
-    },
-    {
-     "id": "d2-6",
-     "time": "13:25",
-     "endTime": "14:05",
-     "name": "오사카성 → 해유관 (전철)",
-     "kind": "move",
-     "badge": "needs_check",
-     "origin": "조사 참고",
-     "stay": "약 35~40분 (추정)",
-     "address": "오사카성공원역 → 오사카코역(Osaka Metro 중앙선)",
-     "hours": "",
-     "booking": "ICOCA 등 교통카드",
-     "note": "환승 1~2회, 요금·소요 시간은 출발 시각에 따라 다릅니다. 역 엘리베이터 위치 확인이 필요합니다.",
-     "details": "JR 오사카조코엔역 → 벤텐초 → 오사카코역 경로도 있습니다. 어르신 동반이면 환승이 적은 경로를 역무원에게 문의하는 편이 빠릅니다.",
-     "travel": {
-      "mode": "전철",
-      "min": 38,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "역 내 이동 있음",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
-     "skip": "none"
-    },
-    {
-     "id": "d2-7",
-     "time": "14:15",
-     "endTime": "16:25",
-     "name": "해유관 (오사카 수족관)",
-     "kind": "visit",
-     "badge": "planned",
-     "origin": "공식 자료",
-     "stay": "약 2시간 10분",
-     "address": "오사카시 미나토구 가이간도리 1-1-10",
-     "phone": "+81-6-6576-5501",
-     "hours": "10:00~20:00 (입관 마감 19:00) · 계절 변동 · 1월 휴관일 있음",
-     "booking": "현장 또는 e-티켓 (성인 2,700엔 · 소·중학생 1,400엔 · 3세 이상 700엔 / 변동 가격제)",
-     "note": "입장권은 날짜·시간 지정 e-티켓이 편합니다. 12/16 요금은 공식 요금 캘린더에서 확인하세요.",
-     "details": "요금은 날짜별 변동 가격제라 위 금액은 기준가입니다. 관람 동선이 아래로 내려가는 구조라 유모차 이용 시 엘리베이터를 이용해야 합니다. 어르신은 중간중간 앉을 곳이 있으니 천천히 도세요. 근처 덴포잔 대관람차는 선택 일정입니다.",
-     "travel": {
-      "mode": "도보",
-      "min": 7,
-      "source": "공식",
-      "stale": false
-     },
-     "access": {
-      "walk": "오사카코역 1번 출구에서 도보 약 5분",
-      "stairs": "에스컬레이터·엘리베이터 있음(확인 필요)",
-      "wheelchair": "확인 필요",
-      "parking": "해유관 주차장이 만차이면 덴포잔 주차장을 이용합니다. 요금·만차 여부는 확인 필요."
-     },
-     "links": {
-      "official": "https://www.kaiyukan.com/",
-      "ticket": "https://www.kaiyukan.com/info/ticket/kaiyukan/"
-     },
-     "opening": {
-      "open": "10:00",
-      "close": "20:00",
-      "lastEntry": "19:00",
-      "closed": "1월 중 2일(확인 필요)"
-     },
-     "skip": "none"
-    },
-    {
-     "id": "d2-8",
-     "time": "16:35",
-     "endTime": "17:15",
-     "name": "휴식 — 해유관 카페 / 덴포잔 (선택)",
-     "kind": "rest",
-     "badge": "planned",
-     "origin": "사용자 계획",
-     "stay": "약 40분",
-     "address": "해유관 2층 카페 또는 덴포잔 상점가",
-     "hours": "점포별 상이",
-     "booking": "없음",
-     "note": "이 시간은 일부러 비워 둔 휴식 시간입니다. 일정이 밀리면 여기서 줄이세요.",
-     "details": "어르신과 아이가 함께 쉬려면 앉을 자리가 있는 실내가 좋습니다. 대관람차는 줄이 길면 생략하세요.",
-     "travel": {
-      "mode": "도보",
-      "min": 3,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "확인 필요",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
-     "skip": "none"
-    },
-    {
-     "id": "d2-9",
-     "time": "17:25",
-     "endTime": "18:25",
-     "name": "저녁 — 덴포잔 상점가",
-     "kind": "meal",
-     "badge": "planned",
-     "origin": "사용자 계획",
-     "stay": "약 60분",
-     "address": "오사카시 미나토구 지카코 3-13-9 일대",
-     "hours": "점포별 상이",
-     "booking": "예약 없음",
-     "note": "복권·회전초밥 등 선택지가 있습니다. 6명 착석 가능 여부를 먼저 확인하세요.",
-     "details": "상점가 안쪽은 바람이 덜합니다. 식사 후 바로 나카노시마로 이동합니다.",
-     "travel": {
-      "mode": "도보",
-      "min": 5,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "확인 필요",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
-     "skip": "none"
-    },
-    {
-     "id": "d2-10",
-     "time": "19:00",
-     "endTime": "19:35",
-     "name": "오사카코 → 나카노시마 (전철)",
-     "kind": "move",
-     "badge": "planned",
-     "origin": "조사 참고",
-     "stay": "약 30분 (추정)",
-     "address": "오사카코역 → 나니와바시역(게이한 나카노시마선)",
-     "hours": "",
-     "booking": "교통카드",
-     "note": "환승 1회 추정. 나니와바시역 출구에서 회장까지 도보 이동이 있습니다.",
-     "details": "짐이 많으면 호텔로 먼저 돌아가 짐을 두고 나오는 편이 낫습니다.",
-     "travel": {
-      "mode": "전철",
-      "min": 30,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "역에서 회장까지 도보",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
-     "skip": "none"
-    },
-    {
-     "id": "d2-11",
-     "time": "19:45",
-     "endTime": "20:45",
-     "name": "OSAKA 광의 르네상스 2026 (나카노시마)",
-     "kind": "visit",
-     "badge": "optional",
-     "origin": "공식 자료",
-     "stay": "약 60분",
-     "address": "오사카시청 앞 ~ 나카노시마 공원 (나니와바시역·오에바시역 주변)",
-     "hours": "2026-12-11 ~ 12-25 · 17:00~25:00 (프로젝션 매핑 17:30~21:30)",
-     "booking": "없음 · 무료",
-     "note": "야외 행사입니다. 비·강풍이면 일부 중단될 수 있어 대체 일정을 보세요. 체력이 부족하면 생략하세요.",
-     "details": "大阪市中央公会堂 프로젝션 매핑은 약 7~10분, 12분 간격으로 상영됩니다(공식 자료 기준 21:20 마지막). 12/11~12/25 한정이며 관람 무료입니다. 행사 기간 16:00~22:00 차량 통행이 제한됩니다.",
-     "travel": {
-      "mode": "도보",
-      "min": 6,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "강변 산책로, 노면 평탄(추정)",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": "행사 기간 16:00~22:00 차량 통행 제한 — 주차 후 도보 이동을 권합니다."
-     },
-     "links": {
-      "official": "https://hikari-kyoen.com/core/renaissance/"
-     },
-     "opening": {
-      "open": "17:00",
-      "close": "25:00",
-      "closed": "12/11~12/25 외"
-     },
-     "skip": "tired"
-    },
-    {
-     "id": "d2-12",
-     "time": "21:05",
-     "endTime": "21:25",
-     "name": "나카노시마 → 호텔 (전철)",
-     "kind": "move",
-     "badge": "planned",
-     "origin": "조사 참고",
-     "stay": "약 20분 (추정)",
-     "address": "나니와바시역 → 교바시역",
-     "hours": "",
-     "booking": "교통카드",
-     "note": "막차 시간은 확인하지 않았습니다. 21시 이전 이동을 권합니다.",
-     "details": "게이한 나카노시마선 → 京橋 방면으로 이동하거나, 요도야바시역에서 지하철로 이동합니다.",
-     "travel": {
-      "mode": "전철",
-      "min": 20,
-      "source": "추정",
-      "stale": false
-     },
-     "access": {
-      "walk": "확인 필요",
-      "stairs": "확인 필요",
-      "wheelchair": "확인 필요",
-      "parking": ""
-     },
-     "links": {},
-     "skip": "none"
-    }
-   ]
-  },
-  {
-   "date": "2026-12-17",
-   "weekday": "목",
    "title": "유니버설 스튜디오 재팬 (USJ)",
-   "note": "하루 종일 테마파크입니다. 입장권·확약권·익스프레스 구매 여부가 일정 품질을 좌우합니다.",
+   "note": "방문일은 12/16(수)로 확정입니다. 하루 종일 테마파크라 입장권·확약권·익스프레스 구매 여부가 일정 품질을 좌우합니다.",
    "items": [
     {
      "id": "d3-1",
@@ -1253,7 +844,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
      "hours": "공식 09:00 개장 (조기 개장 가능)",
      "booking": "입장권 필요 — 미구매",
      "note": "공식 개장 시각은 09:00으로 안내되어 있으나 실제로는 15~30분 일찍 열리는 경우가 있습니다. 입장권이 없으면 이 단계에서 들어갈 수 없습니다.",
-     "details": "12/17은 평일이지만 겨울 이벤트 기간입니다. 입장 직후 닌텐도 월드로 바로 이동하는 동선이 유리합니다.",
+     "details": "12/16은 수요일 평일이지만 겨울 이벤트 기간입니다. 입장 직후 닌텐도 월드로 바로 이동하는 동선이 유리합니다.",
      "travel": {
       "mode": "도보",
       "min": 6,
@@ -1493,6 +1084,390 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
      "travel": {
       "mode": "전철",
       "min": 30,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-17",
+   "weekday": "목",
+   "title": "오사카성 · 해유관 · 나카노시마",
+   "note": "걷는 시간이 가장 긴 날입니다. 오전 오사카성, 오후 해유관, 밤 일루미네이션은 생략 가능 항목입니다.",
+   "items": [
+    {
+     "id": "d2-1",
+     "time": "07:30",
+     "endTime": "08:30",
+     "name": "조식 (호텔 또는 편의점)",
+     "kind": "meal",
+     "badge": "needs_check",
+     "origin": "사용자 계획",
+     "stay": "약 60분",
+     "address": "호텔 몬토레 라 스루 오사카",
+     "hours": "",
+     "booking": "조식 포함 여부 확인 필요",
+     "note": "에어텔 조건에 조식이 포함됐는지 확인되지 않았습니다. 미포함이면 호텔 주변 편의점·카페를 이용하세요.",
+     "details": "아이와 어르신이 있다면 아침을 든든히 먹고 나가는 편이 좋습니다. 물과 간식은 미리 사 두세요.",
+     "access": {
+      "walk": "호텔 내",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-2",
+     "time": "08:50",
+     "endTime": "09:10",
+     "name": "호텔 → 오사카성 공원 (도보)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 15~20분",
+     "address": "오사카비즈니스파크 → 오사카성 공원",
+     "hours": "",
+     "booking": "없음",
+     "note": "도보 15~20분은 추정값입니다. 계단·경사·엘리베이터 유무는 확인이 필요합니다.",
+     "details": "지하철로 이동하면 오사카비즈니스파크역 → 오사카성공원역 1정거장이지만, 역 안 이동과 계단이 더 부담일 수 있습니다. 걸을 수 있으면 도보가 오히려 편합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 18,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "약 15~20분, 오사카성 공원 내 완만한 경사",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "공원 주차장 유료(요금 확인 필요)"
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-3",
+     "time": "09:15",
+     "endTime": "10:45",
+     "name": "오사카성 천수각 (오사카성 박물관)",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 90분",
+     "address": "오사카시 주오구 오사카성 1-1",
+     "phone": "+81-6-6941-3044",
+     "hours": "09:00~18:00 (마지막 입장 17:30) · 휴관 12/28~1/1",
+     "booking": "현장 구매 (성인 1,200엔 · 대학생·고등학생 600엔 · 중학생 이하 무료, 증빙 필요)",
+     "note": "개장 직후가 가장 덜 붐빕니다. 8층 전망대까지 오르는 동선의 엘리베이터·계단 상황은 확인이 필요합니다.",
+     "details": "2025-04-01부터 입장료가 성인 1,200엔으로 변경되었습니다(오사카성 풍신수길 석벽관 관람 포함). 중학생 이하는 무료지만 연령 확인 서류(학생증·여권 등)가 필요합니다. 전시실은 층마다 계단 이동이 있고 엘리베이터 대기 줄이 길 수 있어, 어르신과 함께라면 엘리베이터 우선 이용을 권합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "공원 내 도보 후 천수각 입구까지",
+      "stairs": "전시실 층간 계단 있음 · 엘리베이터 유무 확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "공원 주차장은 유료이며 성수기 만차가 잦습니다(추정). 만차 시 오사카비즈니스파크(OBP) 주차장 또는 지하철 이용을 대안으로 보세요. 요금은 확인 필요."
+     },
+     "links": {
+      "official": "https://www.osakacastle.net/guide/"
+     },
+     "opening": {
+      "open": "09:00",
+      "close": "18:00",
+      "lastEntry": "17:30",
+      "closed": "12/28~1/1"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d2-4",
+     "time": "10:55",
+     "endTime": "11:35",
+     "name": "오사카성 고자부네(황금배) 승선",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 40분 (승선 20분 + 대기)",
+     "address": "오사카시 주오구 오사카성 2 · 극락교 북서쪽 승선장",
+     "phone": "+81-6-6314-3773",
+     "hours": "10:00~16:30 (최종편) · 10~15분 간격 · 악천후 결항",
+     "booking": "현장 구매 (성인 1,800엔 · 초·중학생 900엔 · 65세 이상 1,200엔)",
+     "note": "승하선 시 단차가 있는지 확인이 필요합니다. 어르신은 승선 전에 직원에게 도움을 요청하세요.",
+     "details": "내호를 약 20분 도는 코스입니다. 배에 지붕은 있지만 바람이 차므로 12월에는 방한 준비가 필요합니다. 정원이 작아 6명이 한 배에 타지 못할 수 있습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 8,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "천수각 북쪽 극락교까지 도보",
+      "stairs": "승하선 단차 확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {
+      "official": "https://www.banpr.co.jp/"
+     },
+     "opening": {
+      "open": "10:00",
+      "close": "16:30",
+      "closed": "연말연시·악천후"
+     },
+     "skip": "rain"
+    },
+    {
+     "id": "d2-5",
+     "time": "11:45",
+     "endTime": "12:45",
+     "name": "점심 — 오사카성 공원 JO-TERRACE",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 60분",
+     "address": "오사카시 주오구 오사카성 3-11",
+     "hours": "점포별 상이 (확인 필요)",
+     "booking": "예약 없음",
+     "note": "공원 안 상업시설입니다. 6명 동시 착석 가능 여부는 현장 확인이 필요합니다.",
+     "details": "공원 밖으로 나가면 이동이 길어집니다. 붐비면 공원 내 매점에서 간단히 먹고 오후 일정을 앞당기는 편이 낫습니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-6",
+     "time": "13:25",
+     "endTime": "14:05",
+     "name": "오사카성 → 해유관 (전철)",
+     "kind": "move",
+     "badge": "needs_check",
+     "origin": "조사 참고",
+     "stay": "약 35~40분 (추정)",
+     "address": "오사카성공원역 → 오사카코역(Osaka Metro 중앙선)",
+     "hours": "",
+     "booking": "ICOCA 등 교통카드",
+     "note": "환승 1~2회, 요금·소요 시간은 출발 시각에 따라 다릅니다. 역 엘리베이터 위치 확인이 필요합니다.",
+     "details": "JR 오사카조코엔역 → 벤텐초 → 오사카코역 경로도 있습니다. 어르신 동반이면 환승이 적은 경로를 역무원에게 문의하는 편이 빠릅니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 38,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "역 내 이동 있음",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-7",
+     "time": "14:15",
+     "endTime": "16:25",
+     "name": "해유관 (오사카 수족관)",
+     "kind": "visit",
+     "badge": "planned",
+     "origin": "공식 자료",
+     "stay": "약 2시간 10분",
+     "address": "오사카시 미나토구 가이간도리 1-1-10",
+     "phone": "+81-6-6576-5501",
+     "hours": "10:00~20:00 (입관 마감 19:00) · 계절 변동 · 1월 휴관일 있음",
+     "booking": "현장 또는 e-티켓 (성인 2,700엔 · 소·중학생 1,400엔 · 3세 이상 700엔 / 변동 가격제)",
+     "note": "입장권은 날짜·시간 지정 e-티켓이 편합니다. 12/17 요금은 공식 요금 캘린더에서 확인하세요.",
+     "details": "요금은 날짜별 변동 가격제라 위 금액은 기준가입니다. 관람 동선이 아래로 내려가는 구조라 유모차 이용 시 엘리베이터를 이용해야 합니다. 어르신은 중간중간 앉을 곳이 있으니 천천히 도세요. 근처 덴포잔 대관람차는 선택 일정입니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 7,
+      "source": "공식",
+      "stale": false
+     },
+     "access": {
+      "walk": "오사카코역 1번 출구에서 도보 약 5분",
+      "stairs": "에스컬레이터·엘리베이터 있음(확인 필요)",
+      "wheelchair": "확인 필요",
+      "parking": "해유관 주차장이 만차이면 덴포잔 주차장을 이용합니다. 요금·만차 여부는 확인 필요."
+     },
+     "links": {
+      "official": "https://www.kaiyukan.com/",
+      "ticket": "https://www.kaiyukan.com/info/ticket/kaiyukan/"
+     },
+     "opening": {
+      "open": "10:00",
+      "close": "20:00",
+      "lastEntry": "19:00",
+      "closed": "1월 중 2일(확인 필요)"
+     },
+     "skip": "none"
+    },
+    {
+     "id": "d2-8",
+     "time": "16:35",
+     "endTime": "17:15",
+     "name": "휴식 — 해유관 카페 / 덴포잔 (선택)",
+     "kind": "rest",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 40분",
+     "address": "해유관 2층 카페 또는 덴포잔 상점가",
+     "hours": "점포별 상이",
+     "booking": "없음",
+     "note": "이 시간은 일부러 비워 둔 휴식 시간입니다. 일정이 밀리면 여기서 줄이세요.",
+     "details": "어르신과 아이가 함께 쉬려면 앉을 자리가 있는 실내가 좋습니다. 대관람차는 줄이 길면 생략하세요.",
+     "travel": {
+      "mode": "도보",
+      "min": 3,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-9",
+     "time": "17:25",
+     "endTime": "18:25",
+     "name": "저녁 — 덴포잔 상점가",
+     "kind": "meal",
+     "badge": "planned",
+     "origin": "사용자 계획",
+     "stay": "약 60분",
+     "address": "오사카시 미나토구 지카코 3-13-9 일대",
+     "hours": "점포별 상이",
+     "booking": "예약 없음",
+     "note": "복권·회전초밥 등 선택지가 있습니다. 6명 착석 가능 여부를 먼저 확인하세요.",
+     "details": "상점가 안쪽은 바람이 덜합니다. 식사 후 바로 나카노시마로 이동합니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 5,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "확인 필요",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-10",
+     "time": "19:00",
+     "endTime": "19:35",
+     "name": "오사카코 → 나카노시마 (전철)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 30분 (추정)",
+     "address": "오사카코역 → 나니와바시역(게이한 나카노시마선)",
+     "hours": "",
+     "booking": "교통카드",
+     "note": "환승 1회 추정. 나니와바시역 출구에서 회장까지 도보 이동이 있습니다.",
+     "details": "짐이 많으면 호텔로 먼저 돌아가 짐을 두고 나오는 편이 낫습니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 30,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "역에서 회장까지 도보",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": ""
+     },
+     "links": {},
+     "skip": "none"
+    },
+    {
+     "id": "d2-11",
+     "time": "19:45",
+     "endTime": "20:45",
+     "name": "OSAKA 광의 르네상스 2026 (나카노시마)",
+     "kind": "visit",
+     "badge": "optional",
+     "origin": "공식 자료",
+     "stay": "약 60분",
+     "address": "오사카시청 앞 ~ 나카노시마 공원 (나니와바시역·오에바시역 주변)",
+     "hours": "2026-12-11 ~ 12-25 · 17:00~25:00 (프로젝션 매핑 17:30~21:30)",
+     "booking": "없음 · 무료",
+     "note": "야외 행사입니다. 비·강풍이면 일부 중단될 수 있어 대체 일정을 보세요. 체력이 부족하면 생략하세요.",
+     "details": "大阪市中央公会堂 프로젝션 매핑은 약 7~10분, 12분 간격으로 상영됩니다(공식 자료 기준 21:20 마지막). 12/11~12/25 한정이며 관람 무료입니다. 행사 기간 16:00~22:00 차량 통행이 제한됩니다.",
+     "travel": {
+      "mode": "도보",
+      "min": 6,
+      "source": "추정",
+      "stale": false
+     },
+     "access": {
+      "walk": "강변 산책로, 노면 평탄(추정)",
+      "stairs": "확인 필요",
+      "wheelchair": "확인 필요",
+      "parking": "행사 기간 16:00~22:00 차량 통행 제한 — 주차 후 도보 이동을 권합니다."
+     },
+     "links": {
+      "official": "https://hikari-kyoen.com/core/renaissance/"
+     },
+     "opening": {
+      "open": "17:00",
+      "close": "25:00",
+      "closed": "12/11~12/25 외"
+     },
+     "skip": "tired"
+    },
+    {
+     "id": "d2-12",
+     "time": "21:05",
+     "endTime": "21:25",
+     "name": "나카노시마 → 호텔 (전철)",
+     "kind": "move",
+     "badge": "planned",
+     "origin": "조사 참고",
+     "stay": "약 20분 (추정)",
+     "address": "나니와바시역 → 교바시역",
+     "hours": "",
+     "booking": "교통카드",
+     "note": "막차 시간은 확인하지 않았습니다. 21시 이전 이동을 권합니다.",
+     "details": "게이한 나카노시마선 → 京橋 방면으로 이동하거나, 요도야바시역에서 지하철로 이동합니다.",
+     "travel": {
+      "mode": "전철",
+      "min": 20,
       "source": "추정",
       "stale": false
      },
@@ -1830,7 +1805,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     "source": "조사 참고"
    },
    "note": "교바시에서 게이한 특급으로 한 번에 갑니다. 성인 480엔·소아 240엔(2026-11-15 조회).",
-   "details": "기요미즈데라는 언덕과 계단이 많아 어르신·유모차에 부담이 큽니다. 간다면 버스보다 택시를 섞는 편이 낫고, 반나절 코스로 줄이는 것을 권합니다. 3일차 USJ를 하루 비우고 교토로 바꾸는 방식이 현실적입니다.",
+   "details": "기요미즈데라는 언덕과 계단이 많아 어르신·유모차에 부담이 큽니다. 간다면 버스보다 택시를 섞는 편이 낫고, 반나절 코스로 줄이는 것을 권합니다. 2일차 USJ를 하루 비우고 교토로 바꾸는 방식이 현실적입니다.",
    "access": {
     "walk": "언덕·계단 많음(확인 필요)",
     "stairs": "계단 다수",
@@ -1888,7 +1863,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     "source": "추정"
    },
    "note": "오전이 덜 붐비고 물건도 좋습니다. 일요일은 쉬는 점포가 많습니다.",
-   "details": "아케이드라 비가 와도 걷기 편합니다. 다만 노면이 젖어 미끄러울 수 있고 유모차가 지나가기 좁습니다. 2일차 오전을 구로몬으로 바꾸면 오사카성 일정이 밀리므로, 별도 반나절로 보는 편이 좋습니다.",
+   "details": "아케이드라 비가 와도 걷기 편합니다. 다만 노면이 젖어 미끄러울 수 있고 유모차가 지나가기 좁습니다. 3일차 오전을 구로몬으로 바꾸면 오사카성 일정이 밀리므로, 별도 반나절로 보는 편이 좋습니다.",
    "access": {
     "walk": "아케이드 580m, 좁은 구간 있음",
     "stairs": "확인 필요",
@@ -1930,28 +1905,30 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
   },
   {
    "id": "c5",
-   "name": "6인 공항 픽업밴 (간사이 → 호텔)",
+   "name": "INNN 공항 샌딩 (귀국일 12/18 · 후보)",
    "kind": "transfer",
    "badge": "needs_check",
-   "origin": "사용자 계획",
-   "stay": "약 50~60분",
-   "address": "간사이국제공항 → 호텔 몬토레 라 스루 오사카",
-   "booking": "업체·요금 미확인",
+   "origin": "조사 참고",
+   "stay": "약 75분",
+   "address": "호텔 몬토레 라 스루 오사카 → 간사이국제공항 제1터미널",
+   "booking": "미예약 · 요금 확인 필요",
    "travel": {
     "mode": "차량",
-    "min": 55,
+    "min": 75,
     "source": "추정"
    },
-   "note": "짐이 많고 어르신이 있어 매력적이지만, 요금과 예약 가능 여부를 확인하지 못했습니다.",
-   "details": "6인 + 캐리어 6개면 밴 1대 또는 2대가 필요할 수 있습니다. 공항 도착 후 짐을 찾는 시간이 60~90분이라 픽업 시간을 여유 있게 잡아야 합니다. 예약하지 않으면 현장 택시 승강장 대기가 깁니다.",
+   "note": "가는편(12/15)은 INNN 합승 픽업으로 확정되었습니다. 귀국일 12/18 LJ314(10:50 출발) 공항 이동은 아직 예약하지 않았습니다.",
+   "details": "10:50 출발편은 수속 마감이 09:50이라 07:00~07:30 호텔 출발이 안전합니다. 같은 업체에서 샌딩을 예약하면 픽업 시각을 항공편에 맞춰 잡을 수 있습니다. 요금·취소 조건은 예약 화면에서 확인하세요.",
    "access": {
-    "walk": "터미널 앞 승하차",
+    "walk": "호텔 앞 승하차(추정)",
     "stairs": "확인 필요",
     "wheelchair": "확인 필요",
     "parking": ""
    },
-   "links": {},
-   "reason": "요금·업체 미확인 — 예약 전 견적 필요"
+   "links": {
+    "official": "https://kr.innn.com/"
+   },
+   "reason": "귀국일 이동편 미확정 — 예약 여부 결정 필요"
   },
   {
    "id": "c6",
@@ -1968,7 +1945,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     "min": 5,
     "source": "추정"
    },
-   "note": "해유관 옆입니다. 2일차 오후에 붙이기 좋습니다.",
+   "note": "해유관 옆입니다. 3일차 오후(해유관 관람 뒤)에 붙이기 좋습니다.",
    "details": "6세 아이와 타기 좋지만 어르신이 고소 공포가 있으면 무리하지 마세요. 강풍 시 운휴될 수 있습니다.",
    "access": {
     "walk": "확인 필요",
@@ -2106,12 +2083,12 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
    "category": "experience",
    "title": "USJ 1일 스튜디오 패스 (6명)",
    "provider": "유니버설 스튜디오 재팬",
-   "date": "2026-12-17",
+   "date": "2026-12-16",
    "time": "09:00",
    "endTime": "21:00",
    "status": "needs_action",
    "route": "유니버설 스튜디오 재팬",
-   "details": "성인 9,400엔 · 어린이(4~11세) 5,800엔 · 시니어(65세 이상) 7,600엔~ (2026-12-17 기준 조회, 변동 가격제). 닌텐도 월드 확약권과 익스프레스는 별도.",
+   "details": "방문일 12/16(수) 확정 · 입장권은 아직 구매 전입니다. 성인 9,400엔 · 어린이(4~11세) 5,800엔 · 시니어(65세 이상) 7,600엔~ (변동 가격제라 12/16 요금은 예매 화면에서 확인). 닌텐도 월드 확약권과 익스프레스는 별도.",
    "docs": [
     {
      "label": "QR 입장권",
@@ -2135,7 +2112,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
    "category": "experience",
    "title": "해유관 입장권 (6명)",
    "provider": "해유관",
-   "date": "2026-12-16",
+   "date": "2026-12-17",
    "time": "13:45",
    "endTime": "15:55",
    "status": "needs_action",
@@ -2158,7 +2135,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
    "category": "experience",
    "title": "오사카성 고자부네 (현장 구매)",
    "provider": "반피아르",
-   "date": "2026-12-16",
+   "date": "2026-12-17",
    "time": "10:55",
    "endTime": "11:35",
    "status": "planned",
@@ -2256,7 +2233,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     "status": "estimate",
     "currency": "JPY",
     "amount": 37600,
-    "note": "9,400엔 × 4 (2026-12-17 기준가, 변동 가격제)",
+    "note": "9,400엔 × 4 (변동 가격제 · 12/16 요금은 예매 화면에서 확인)",
     "refundCondition": "구매 후 취소·변경 불가 안내 — 공식 규정 확인 필요"
    },
    {
@@ -2351,13 +2328,13 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
    },
    {
     "id": "b12",
-    "label": "공항 픽업밴 (선택)",
+    "label": "공항 셔틀 (INNN 합승 픽업 · 12/15)",
     "category": "교통",
     "status": "unknown",
     "currency": "JPY",
     "amount": null,
-    "note": "업체·요금 미확인. 예약 여부를 정하면 입력하세요.",
-    "refundCondition": "예약 조건에 따라 다름"
+    "note": "예약 확정. 결제 금액은 예약 내역에서 확인해 입력하세요.",
+    "refundCondition": "이용 1일 전 오전 9시 이후 취소·환불 불가로 안내됨"
    }
   ]
  },
@@ -2394,8 +2371,8 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
   },
   {
    "id": "k7",
-   "text": "공항→호텔 이동수단 확정 (관공쾌속 또는 6인 픽업밴)",
-   "done": false
+   "text": "공항→호텔 이동수단 확정 (INNN 합승 공항 픽업 예약 완료 · 12/15)",
+   "done": true
   },
   {
    "id": "k8",
@@ -2459,7 +2436,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
    "text": "USJ 입장권 6매 — 아직 구매 전",
    "done": false,
    "owner": "사용자",
-   "impact": "미구매 시 3일차 입장 불가"
+   "impact": "미구매 시 2일차(12/16) 입장 불가"
   },
   {
    "id": "q2",
@@ -2470,10 +2447,10 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
   },
   {
    "id": "q3",
-   "text": "공항→호텔 이동수단 — 미확정(관공쾌속/픽업밴)",
-   "done": false,
+   "text": "공항→호텔 이동수단 — INNN 합승 픽업으로 확정",
+   "done": true,
    "owner": "사용자",
-   "impact": "1일차 저녁 도착 시각이 달라짐"
+   "impact": "확정(12/15 LJ355 16:35 도착편) — 호텔 도착 예상 19:40"
   },
   {
    "id": "q4",
@@ -2528,9 +2505,9 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
  "alternatives": [
   {
    "id": "a1",
-   "dayDate": "2026-12-16",
+   "dayDate": "2026-12-17",
    "condition": "비·강풍",
-   "title": "2일차 비 오면: 실내 중심으로 압축",
+   "title": "3일차 비 오면: 실내 중심으로 압축",
    "note": "오사카성 공원 산책과 고자부네(야외)를 빼고, 천수각 → 해유관 → 하루카스 300 순서로 바꿉니다.",
    "steps": [
     "09:30 오사카성 천수각 (실내 전시·전망) — 엘리베이터 대기 확인",
@@ -2547,9 +2524,9 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
   },
   {
    "id": "a2",
-   "dayDate": "2026-12-17",
+   "dayDate": "2026-12-16",
    "condition": "비·한파",
-   "title": "3일차 USJ 비·한파 대응",
+   "title": "2일차 USJ 비·한파 대응",
    "note": "일정을 바꾸기보다 복장과 순서를 조정합니다. 야외 어트랙션 운휴 가능성을 전제로 합니다.",
    "steps": [
     "우비·방수 신발·여분 양말 준비, 유모차 방수 커버",
@@ -2571,14 +2548,14 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
    "title": "1일차 야간 일정 생략안",
    "note": "도톤보리·미도스지(선택 항목)를 모두 빼고 호텔 근처에서 저녁만 먹고 쉽니다.",
    "steps": [
-    "19:25 체크인 후 짐 정리",
-    "20:10 교바시에서 저녁",
-    "21:10 호텔 복귀, 16층 온천 이용 가능 여부 확인",
-    "다음 날 08:50 출발을 위해 22:30 취침"
+    "19:55 체크인 후 짐 정리",
+    "20:45 교바시에서 저녁",
+    "21:45 호텔 복귀, 16층 온천 이용 가능 여부 확인",
+    "다음 날 07:00 조식·08:05 출발(USJ)을 위해 22:30 취침"
    ],
    "cautions": [
     "호텔 온천 이용 조건(유료·시간)은 확인이 필요합니다.",
-    "도톤보리를 포기하면 2일차 밤이나 4일차 이전 일정에 넣을 수 없습니다(4일차는 이른 출발).",
+    "도톤보리를 포기하면 3일차 밤에 넣는 것이 현실적입니다(2일차는 USJ, 4일차는 이른 출발).",
     "호텔 온천·실내 시설도 계단·미끄러운 바닥이 있을 수 있습니다. 무장애로 가정하지 말고 프런트에 확인하세요."
    ]
   }
@@ -2637,7 +2614,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
   "note": "예보와 실제는 다를 수 있습니다. '예측'과 '확인된 사실'을 구분해 표시하고, 개방 여부는 시설 공식 안내를 따르세요."
  },
  "notices": [
-  "이 앱의 모든 장소 정보는 2026-11-15에 확인한 값입니다. 요금·영업시간은 바뀔 수 있습니다.",
+  "장소 정보는 2026-11-15에 확인한 값이고, 2026-11-19에 확정된 공항 픽업(INNN)·USJ 방문일(12/16)을 반영했습니다. 요금·영업시간은 바뀔 수 있습니다.",
   "확인된 예약 정보(항공·숙소) 외의 시간은 계획이며, 추정값과 확인 필요 항목을 배지로 구분했습니다.",
   "도보 시간·계단·휠체어 접근성은 실측하지 않았습니다. '추정' 또는 '확인 필요'로 표시했습니다.",
   "이 앱은 예약·결제를 대신 하지 않습니다. 링크는 공식 사이트로 이동만 합니다."
@@ -2751,6 +2728,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     return {
       schemaVersion: C.SCHEMA_VERSION,
       appVersion: data.meta.appVersion,
+      contentVersion: data.meta.contentVersion || '',
       revision: 1,
       savedAt: null,
       dataCheckedAt: data.meta.dataCheckedAt,
@@ -3165,7 +3143,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     var payload = {
       app: 'osaka-trip-app',
       schemaVersion: C.SCHEMA_VERSION,
-      appVersion: (state && state.appVersion) || '1.1.0',
+      appVersion: (state && state.appVersion) || '1.2.0',
       exportedAt: nowIso || new Date().toISOString(),
       includePersonal: !!includePersonal,
       data: {
@@ -3577,6 +3555,19 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
         var parsed = JSON.parse(raw);
         if (parsed && parsed.schemaVersion && parsed.days) S = parsed;
       } catch (e) { S = null; }
+      /* 자료(확정 내용)가 갱신되면 기기에 저장된 예전 상태 대신 새 자료로 시작합니다.
+         바꾸기 직전 상태는 자동 복구본에 남겨 ‘저장·백업·복구’ 화면에서 되돌릴 수 있습니다. */
+      if (S && DATA.meta.contentVersion && S.contentVersion !== DATA.meta.contentVersion) {
+        try {
+          safeSet(C.RECOVERY_KEY, JSON.stringify({ at: new Date().toISOString(), mode: '새 자료 반영 직전', state: S }));
+        } catch (e3) { }
+        var prev = S;
+        S = C.buildInitialState(DATA);
+        if (prev.settings) S.settings = prev.settings;
+        if (Array.isArray(prev.trash)) S.trash = prev.trash;
+        S.revision = (Number(prev.revision) || 1) + 1;
+        writeNow();
+      }
     }
     if (!S) {
       S = C.buildInitialState(DATA);
@@ -3734,7 +3725,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       '<p class="muted" style="margin-top:4px">인천 T2 ↔ 간사이 T1 · 호텔 몬토레 라 스루 오사카(교바시)</p>' +
       '<ul class="list-plain" style="margin-top:10px">' +
       '<li><b>12/15(화) 14:50</b> LJ355 인천 T2 → 16:35 간사이 T1 <span class="pill">수속 마감 13:50</span></li>' +
-      '<li><b>12/15 15:00</b> 체크인 (도착 예상 19:25)</li>' +
+      '<li><b>12/15 16:35</b> 간사이 T1 도착 → <b>INNN 공항 픽업</b> → 호텔 도착 예상 19:40 <span class="pill">체크인 15:00~</span></li>' +
       '<li><b>12/18(금) 11:00</b> 체크아웃 → <b>10:50</b> LJ314 간사이 T1 → 13:05 인천 T2 <span class="pill">수속 마감 09:50</span></li>' +
       '</ul>' +
       '<div class="row" style="margin-top:10px">' +
@@ -3764,7 +3755,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       viewSwitch() + '</div>';
 
     html += '<div class="banner info"><h4>이 앱의 데이터 기준</h4>' +
-      '<p class="small">장소·요금·운영시간은 <b>2026-11-15</b>에 확인한 값입니다. 확인된 예약과 계획, 선택 항목, 확인 필요 항목을 배지로 구분했고, 실측하지 않은 도보·계단·휠체어 정보는 ‘추정’ 또는 ‘확인 필요’로 표시했습니다.</p></div>';
+      '<p class="small">데이터 기준일은 <b>2026-11-19</b>입니다. 장소·요금·운영시간은 2026-11-15에 확인한 값을 바탕으로 하고, 2026-11-19에 확정된 공항 픽업(INNN)과 USJ 방문일(12/16)을 반영했습니다. 실측하지 않은 도보·계단·휠체어 정보는 ‘추정’ 또는 ‘확인 필요’로 표시했습니다.</p></div>';
 
     html += '<div class="row"><button type="button" class="btn" data-act="go" data-tab="weather">날씨와 대체 일정</button>' +
       '<button type="button" class="btn" data-act="go" data-tab="data">백업·복구</button></div>';
@@ -3836,7 +3827,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       (it.skip === 'tired' ? '<span class="badge plain">체력 부족 시 우선 생략</span>' : '') +
       (it.skip === 'rain' ? '<span class="badge plain">비 오면 생략</span>' : '') +
       (it.origin ? '<span class="badge plain">출처: ' + esc(it.origin) + '</span>' : '') +
-      '<span class="badge plain">확인 2026-11-15</span>' +
+      '<span class="badge plain">확인 ' + esc(it.checkedAt || '2026-11-15') + '</span>' +
       '</div>';
 
     h += '<div class="item-meta">';
@@ -3922,7 +3913,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       '<li>' + badge('needs_check') + ' 아직 확인·예약이 필요한 사항</li>' +
       '<li>' + badge('cancelled') + ' 취소·제외된 일정</li>' +
       '</ul>' +
-      '<p class="small"><b>출처</b>: ‘확정 예약’은 예약된 사실, ‘사용자 계획’은 요청하신 계획, ‘조사 참고’는 제가 찾은 자료, ‘공식 자료’는 시설·행사 공식 안내입니다. 모든 값의 확인일은 2026-11-15입니다.</p></div></details>';
+      '<p class="small"><b>출처</b>: ‘확정 예약’은 예약된 사실, ‘사용자 계획’은 요청하신 계획, ‘조사 참고’는 제가 찾은 자료, ‘공식 자료’는 시설·행사 공식 안내입니다. 항목별 확인일은 배지에 표시했고(2026-11-19에 갱신한 항목은 그 날짜), 예약·일정이 바뀌면 함께 갱신합니다.</p></div></details>';
 
     h += '<div class="tabs" role="tablist">' + days().map(function (d) {
       return '<button type="button" class="tab" role="tab" aria-selected="' + (d.date === day.date) + '" data-act="set-date" data-date="' + d.date + '">' +
