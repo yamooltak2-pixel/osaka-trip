@@ -242,6 +242,37 @@ details .body{font-size:16px;color:var(--ink-2)}
 .maplinks .full{grid-column:1 / -1}
 .drive-note{font-size:13.5px;color:var(--ink-3);margin-top:6px;line-height:1.45}
 
+/* ---------- 주요 장소 지도 (Leaflet + OpenStreetMap) ---------- */
+.map-quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0}
+.map-quick .btn{font-size:15px;min-height:46px;padding:8px 4px;gap:4px;white-space:nowrap}
+.map-quick .btn:active,.map-quick .btn.on{background:var(--accent-soft);border-color:#9dbfe8;color:#083d78}
+.trip-map{
+  position:relative;z-index:0;height:280px;border-radius:12px;overflow:hidden;
+  border:1px solid var(--line);background:#e9eef3;
+}
+.trip-map .leaflet-container{font:inherit;background:#e9eef3}
+.trip-map .leaflet-control-zoom a{width:38px;height:38px;line-height:36px;font-size:20px}
+.trip-map .leaflet-popup-content{font-size:14.5px;line-height:1.45;margin:10px 12px}
+.trip-map .leaflet-popup-content-wrapper{border-radius:11px}
+.map-pin{
+  display:flex;align-items:center;justify-content:center;width:38px;height:38px;
+  border-radius:50%;background:#fff;border:3px solid var(--accent);
+  box-shadow:0 3px 9px rgba(0,0,0,.35);font-size:19px;line-height:1;
+}
+.map-pin.hotel{border-color:#0b4f9e}
+.map-pin.kix{border-color:#0d6b3c}
+.map-pin.usj{border-color:#8a2f9e}
+.map-pin-label{
+  background:#0d2b4e;color:#fff;border:none;border-radius:8px;padding:2px 7px;
+  font-size:12.5px;font-weight:800;line-height:1.35;box-shadow:0 2px 6px rgba(0,0,0,.28);
+}
+.map-pin-label::before{display:none}
+.map-fallback{padding:14px;text-align:center}
+.map-fallback h4{color:var(--ink);margin-bottom:4px}
+.map-list li{gap:8px}
+.map-list .grow{flex:1 1 160px;min-width:0}
+.map-list .btn{min-height:42px;font-size:14px;padding:6px 10px}
+
 /* ---------- 요약 수치 ---------- */
 .kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}
 .kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
@@ -303,6 +334,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
   .topbar h1{font-size:22px}
   .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
   .maplinks{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .trip-map{height:360px}
   .maplinks .full{grid-column:auto}
   body{font-size:17px}
 }
@@ -3709,6 +3741,178 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       '</div>';
   }
 
+  /* ---------------- 주요 장소 지도 (Leaflet + OpenStreetMap) ----------------
+     핀 좌표는 구글 지도에서 확인한 값입니다. 지도 라이브러리는 처음 필요할 때만
+     불러오고, 인터넷이 없으면 목록과 구글 지도 링크로 대신합니다. */
+  var MAP_PLACES = [
+    { id: 'hotel', emoji: '🏨', short: '호텔', name: '호텔 몬토레 라 스루 오사카',
+      role: '숙소 · 12/15~18 (3박)', lat: 34.6938858, lng: 135.5325623,
+      gmap: 'https://maps.google.com/?cid=1227554916086652441' },
+    { id: 'kix', emoji: '✈️', short: '공항', name: '간사이국제공항 제1터미널',
+      role: '입·출국 · 12/15 도착 / 12/18 출발', lat: 34.4319994, lng: 135.2366019,
+      gmap: 'https://maps.google.com/?cid=17397871139225636744' },
+    { id: 'usj', emoji: '🎢', short: 'USJ', name: '유니버설 스튜디오 재팬 (USJ)',
+      role: '2일차 방문 · 12/16', lat: 34.6656768, lng: 135.4323185,
+      gmap: 'https://maps.google.com/?cid=3892796888607511210' }
+  ];
+  var tripMap = null;
+  var leafletLoader = { loading: false, failed: false, queue: [] };
+  var LEAFLET_URLS = {
+    css: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
+    js: [
+      'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+      'https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js'
+    ]
+  };
+
+  function mapPlace(id) {
+    for (var i = 0; i < MAP_PLACES.length; i++) if (MAP_PLACES[i].id === id) return MAP_PLACES[i];
+    return null;
+  }
+
+  function mapCard() {
+    var h = '<div class="card">' +
+      '<div class="card-head"><div><h3>주요 장소 지도</h3>' +
+      '<p class="small muted">숙소·공항·USJ 세 곳의 실제 위치입니다. 핀을 누르면 일정 역할과 Google 지도 링크가 나옵니다.</p></div>' +
+      '<span class="badge plain">3곳</span></div>' +
+      '<div class="map-quick" role="group" aria-label="지도에서 장소 찾기">' +
+      MAP_PLACES.map(function (p) {
+        return '<button type="button" class="btn" data-map-focus="' + p.id + '" aria-label="' + esc(p.name) + ' 위치로 이동">' +
+          '<span aria-hidden="true">' + p.emoji + '</span>' + esc(p.short) + '</button>';
+      }).join('') +
+      '</div>' +
+      '<div class="trip-map" id="trip-map" role="application" aria-label="오사카 숙소·공항·유니버설 스튜디오 위치 지도"></div>' +
+      '<p class="hint" id="map-hint">지도 타일은 인터넷이 연결될 때 표시됩니다. 화면이 잘 움직이지 않으면 위 버튼으로 장소를 고르세요.</p>' +
+      '<details><summary>장소 세 곳과 Google 지도 링크</summary><div class="body"><ul class="list-plain map-list">' +
+      MAP_PLACES.map(function (p) {
+        return '<li><span class="grow"><b>' + p.emoji + ' ' + esc(p.name) + '</b><br><span class="small muted">' + esc(p.role) + '</span></span>' +
+          '<a class="btn btn-sm" href="' + p.gmap + '" target="_blank" rel="noopener">Google 지도</a></li>';
+      }).join('') +
+      '</ul></div></details>' +
+      '</div>';
+    return h;
+  }
+
+  function ensureLeaflet(cb) {
+    if (window.L && window.L.map) { cb(null); return; }
+    if (leafletLoader.failed) { cb(new Error('leaflet-unavailable')); return; }
+    leafletLoader.queue.push(cb);
+    if (leafletLoader.loading) return;
+    leafletLoader.loading = true;
+    if (!document.getElementById('leaflet-css')) {
+      var link = document.createElement('link');
+      link.id = 'leaflet-css';
+      link.rel = 'stylesheet';
+      link.href = LEAFLET_URLS.css;
+      link.crossOrigin = 'anonymous';
+      document.head.appendChild(link);
+    }
+    loadScript(0);
+
+    function loadScript(i) {
+      if (i >= LEAFLET_URLS.js.length) { finish(new Error('leaflet-load')); return; }
+      var s = document.createElement('script');
+      s.src = LEAFLET_URLS.js[i];
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      s.onload = function () {
+        if (window.L && window.L.map) finish(null); else loadScript(i + 1);
+      };
+      s.onerror = function () { loadScript(i + 1); };
+      document.head.appendChild(s);
+    }
+
+    function finish(err) {
+      leafletLoader.loading = false;
+      if (err) leafletLoader.failed = true;
+      var q = leafletLoader.queue;
+      leafletLoader.queue = [];
+      for (var i = 0; i < q.length; i++) { try { q[i](err); } catch (e) { } }
+    }
+  }
+
+  function mapFallback(host) {
+    host.innerHTML = '<div class="map-fallback"><h4>지도를 불러오지 못했습니다</h4>' +
+      '<p class="small muted">인터넷 연결을 확인한 뒤 다시 시도하거나, 아래 목록의 Google 지도 링크를 이용하세요.</p>' +
+      '<button type="button" class="btn btn-sm" id="map-retry">다시 시도</button></div>';
+    var b = document.getElementById('map-retry');
+    if (b) {
+      b.addEventListener('click', function () {
+        leafletLoader.failed = false;
+        host.innerHTML = '';
+        initTripMap();
+      });
+    }
+  }
+
+  function initTripMap() {
+    var el = document.getElementById('trip-map');
+    if (!el) {
+      if (tripMap) { try { tripMap.remove(); } catch (e) { } tripMap = null; }
+      return;
+    }
+    ensureLeaflet(function (err) {
+      var host = document.getElementById('trip-map');
+      if (!host) return; /* 그사이 다른 화면으로 바뀌었으면 아무것도 하지 않습니다. */
+      if (err || !window.L) { mapFallback(host); return; }
+      var L = window.L;
+      if (tripMap) { try { tripMap.remove(); } catch (e) { } tripMap = null; }
+      host.innerHTML = '';
+      var coarse = !!(window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
+      var map = L.map(host, {
+        scrollWheelZoom: false,
+        dragging: !coarse,
+        tap: true,
+        zoomControl: true,
+        minZoom: 5,
+        maxZoom: 18
+      });
+      tripMap = map;
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> 기여자'
+      }).addTo(map);
+
+      var bounds = L.latLngBounds([]);
+      var markers = {};
+      MAP_PLACES.forEach(function (p) {
+        var icon = L.divIcon({
+          className: '',
+          html: '<div class="map-pin ' + p.id + '">' + p.emoji + '</div>',
+          iconSize: [38, 38],
+          iconAnchor: [19, 19],
+          popupAnchor: [0, -22]
+        });
+        var marker = L.marker([p.lat, p.lng], { icon: icon, title: p.name, alt: p.name, keyboard: true }).addTo(map);
+        marker.bindTooltip(p.short, { permanent: true, direction: 'top', offset: [0, -20], className: 'map-pin-label' });
+        marker.bindPopup('<div><b>' + p.emoji + ' ' + esc(p.name) + '</b>' +
+          '<div class="small muted" style="margin:4px 0 8px">' + esc(p.role) + '</div>' +
+          '<a class="btn btn-sm" href="' + p.gmap + '" target="_blank" rel="noopener">Google 지도에서 열기</a></div>',
+          { maxWidth: 240 });
+        markers[p.id] = marker;
+        bounds.extend([p.lat, p.lng]);
+      });
+
+      /* 초기에 세 핀이 모두 보이도록 맞춥니다. */
+      map.fitBounds(bounds, { padding: [38, 38] });
+      window.requestAnimationFrame(function () {
+        if (tripMap !== map) return;
+        map.invalidateSize();
+        map.fitBounds(bounds, { padding: [38, 38] });
+      });
+
+      Array.prototype.forEach.call(document.querySelectorAll('[data-map-focus]'), function (b) {
+        b.addEventListener('click', function () {
+          var p = mapPlace(b.getAttribute('data-map-focus'));
+          var marker = p && markers[p.id];
+          if (!marker) return;
+          marker.openPopup();
+          map.flyTo([p.lat, p.lng], 14, { duration: 0.6 });
+        });
+      });
+    });
+  }
+
   /* ---------------- 홈 ---------------- */
   function renderHome() {
     var sum = C.summarize(S);
@@ -3732,6 +3936,8 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       '<button type="button" class="btn-primary" data-act="go" data-tab="schedule">일정 보기</button>' +
       '<button type="button" class="btn-soft" data-act="go" data-tab="prep">확인할 일 ' + left.length + '개</button>' +
       '</div></div>';
+
+    html += mapCard();
 
     html += '<div class="kpis">' +
       '<div class="kpi"><div class="k">일정 항목</div><div class="v">' + sum.items + '<small>개</small></div></div>' +
@@ -4285,6 +4491,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
     if (!SCREENS[tab]) tab = 'home';
     var keepY = window.scrollY || 0;
     document.getElementById('app').innerHTML = SCREENS[tab]();
+    initTripMap();
     document.getElementById('trip-line').textContent = S.trip.headline;
     Array.prototype.forEach.call(document.querySelectorAll('.tabbar button'), function (b) {
       if (b.getAttribute('data-tab') === tab) b.setAttribute('aria-current', 'page');
