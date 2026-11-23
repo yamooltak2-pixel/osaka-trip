@@ -3782,7 +3782,7 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
       }).join('') +
       '</div>' +
       '<div class="trip-map" id="trip-map" role="application" aria-label="오사카 숙소·공항·유니버설 스튜디오 위치 지도"></div>' +
-      '<p class="hint" id="map-hint">지도 타일은 인터넷이 연결될 때 표시됩니다. 화면이 잘 움직이지 않으면 위 버튼으로 장소를 고르세요.</p>' +
+      '<p class="hint" id="map-hint">지도는 인터넷이 연결될 때 표시됩니다. 휴대폰에서는 한 손가락 밀기로 페이지가 스크롤되고, 지도는 두 손가락으로 확대·축소하거나 위 버튼으로 장소를 고르세요.</p>' +
       '<details><summary>장소 세 곳과 Google 지도 링크</summary><div class="body"><ul class="list-plain map-list">' +
       MAP_PLACES.map(function (p) {
         return '<li><span class="grow"><b>' + p.emoji + ' ' + esc(p.name) + '</b><br><span class="small muted">' + esc(p.role) + '</span></span>' +
@@ -3884,6 +3884,8 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
           popupAnchor: [0, -22]
         });
         var marker = L.marker([p.lat, p.lng], { icon: icon, title: p.name, alt: p.name, keyboard: true }).addTo(map);
+        var markerEl = marker.getElement();
+        if (markerEl) markerEl.setAttribute('aria-label', p.name + ' · ' + p.role);
         marker.bindTooltip(p.short, { permanent: true, direction: 'top', offset: [0, -20], className: 'map-pin-label' });
         marker.bindPopup('<div><b>' + p.emoji + ' ' + esc(p.name) + '</b>' +
           '<div class="small muted" style="margin:4px 0 8px">' + esc(p.role) + '</div>' +
