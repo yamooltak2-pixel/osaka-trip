@@ -3884,8 +3884,6 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
           popupAnchor: [0, -22]
         });
         var marker = L.marker([p.lat, p.lng], { icon: icon, title: p.name, alt: p.name, keyboard: true }).addTo(map);
-        var markerEl = marker.getElement();
-        if (markerEl) markerEl.setAttribute('aria-label', p.name + ' · ' + p.role);
         marker.bindTooltip(p.short, { permanent: true, direction: 'top', offset: [0, -20], className: 'map-pin-label' });
         marker.bindPopup('<div><b>' + p.emoji + ' ' + esc(p.name) + '</b>' +
           '<div class="small muted" style="margin:4px 0 8px">' + esc(p.role) + '</div>' +
@@ -3897,6 +3895,11 @@ dialog::backdrop{background:rgba(10,14,20,.55)}
 
       /* 초기에 세 핀이 모두 보이도록 맞춥니다. */
       map.fitBounds(bounds, { padding: [38, 38] });
+      /* 핀은 지도에 그려진 다음에야 요소가 생깁니다. 그 뒤에 읽어주는 이름을 붙입니다. */
+      MAP_PLACES.forEach(function (p) {
+        var el = markers[p.id] && markers[p.id].getElement();
+        if (el) el.setAttribute('aria-label', p.name + ' · ' + p.role);
+      });
       window.requestAnimationFrame(function () {
         if (tripMap !== map) return;
         map.invalidateSize();
